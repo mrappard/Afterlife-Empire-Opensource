@@ -529,7 +529,6 @@ void AudioController::thinkAllBuffers(){
     
 }
 
-
 void AudioController::loadAudioBuffer(std::string theNameI){
 
     std::string nameReturn =  findFile(theNameI).c_str();
@@ -753,6 +752,8 @@ void AudioController::removeSoundItemfromSource(unsigned int * theSourcePointer)
 
 unsigned int * AudioController::getSourceNotPlayingMusic(){
 
+    GDebug::lastFunction = DEBUG_AUDIO_GET_NOT_PLAY_MUSIC;
+    
 	if (theMusicSources.size() == 0){
 
 		ALuint sourceid[NUMBER_OF_MUSIC_SOURCES];
@@ -801,6 +802,9 @@ unsigned int * AudioController::getSourceNotPlayingMusic(){
 }
 
 unsigned int * AudioController::getSourceNotPlaying(){
+    
+    GDebug::lastFunction = DEBUG_AUDIO_GET_NOT_PLAY;
+    
 	if (theEffectsSources.size() == 0){
 
 		ALuint sourceid[NUMBER_OF_EFFECT_SOURCES];
@@ -853,12 +857,19 @@ unsigned int * AudioController::getSourceNotPlaying(){
 
 
 void AudioController::stopAudio(std::string theNameI){
+    GDebug::lastFunction = DEBUG_AUDIO_STOP;
+    GDebug::textSave = theNameI;
+    
+    
     if (loadedSounds.find(theNameI)!=loadedSounds.end()){
             alSourceStop(*loadedSounds[theNameI].sourceRef);
     }
 }
 
 void AudioController::loadAudio(std::string theNameI, int numberOfSources,std::string group_i){
+    
+    GDebug::lastFunction = DEBUG_AUDIO_LOAD;
+    GDebug::textSave = theNameI;
     
     std::string nameReturn =  findFile(theNameI).c_str();
     const char * theName = nameReturn.c_str();
@@ -948,6 +959,8 @@ void AudioController::loadAudio(std::string theNameI, int numberOfSources,std::s
 }
 
 void AudioController::playAudioLoop(std::string theNameI){
+    GDebug::lastFunction = DEBUG_AUDIO_LOOP;
+    GDebug::textSave = theNameI;
     
     std::map<std::string, soundItem>::iterator IT =loadedSounds.find(theNameI);
     
@@ -971,6 +984,10 @@ void AudioController::playAudioLoop(std::string theNameI){
 
 void AudioController::playAudio(std::string theNameI){
     
+    GDebug::lastFunction = DEBUG_AUDIO_PLAY;
+    GDebug::textSave = theNameI;
+    
+    GDebug::textSave = theNameI;
     //const char * theName = findFile(theNameI).c_str();
     
     std::map<std::string, soundItem>::iterator IT =loadedSounds.find(theNameI);
@@ -1030,29 +1047,7 @@ double AudioController::getVolume(std::string group_i){
 
 }
 
-/*
-void AudioController::playAudio(std::string theNameI, float pitch){
-    
 
-    
-    std::map<std::string, soundItem>::iterator IT =loadedSounds.find(theNameI);
-    
-    if (IT==loadedSounds.end()){
-        
-        
-        
-    } else {
-        IT->second.currentCounter++;
-        if (IT->second.currentCounter>=IT->second.maxCounter){
-            IT->second.currentCounter=0;
-        }
-        alSourcef(IT->second.source[IT->second.currentCounter], AL_PITCH, pitch);
-        alSourcePlay(IT->second.source[IT->second.currentCounter]);
-    }
-    
-    
-}
-*/
 
 int AudioController::purge(){
     alcDestroyContext(context);

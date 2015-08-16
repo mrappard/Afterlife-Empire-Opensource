@@ -5189,32 +5189,33 @@ void Tiles::stageTwelveRender(){
 
 void Tiles::render(){
     
-
-    
+    GDebug::lastFunction = DEBUG_RENDER_TILE_1;
     stageOneRender();
    
+    GDebug::lastFunction = DEBUG_RENDER_TILE_2;
+    stageTwoRender();
     
-    
-    
-    
- 
-    
-    
-    //Render Bad Tiles
-   
-     stageTwoRender();
-    
-
+    GDebug::lastFunction = DEBUG_RENDER_TILE_4;
     stageFourRender();
+    
+    GDebug::lastFunction = DEBUG_RENDER_TILE_5;
     stageFiveRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_6;
     stageSixRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_7;
     stageSevenRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_8;
     stageEightRender();
     
+    GDebug::lastFunction = DEBUG_RENDER_TILE_9;
     stageNineRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_10;
     stageThreeRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_11;
     stageTenRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_12;
     stageElevenRender();
+    GDebug::lastFunction = DEBUG_RENDER_TILE_13;
     stageTwelveRender();
     
     

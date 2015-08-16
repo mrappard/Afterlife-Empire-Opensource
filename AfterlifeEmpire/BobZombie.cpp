@@ -228,6 +228,8 @@ static  std::pair<GLfloat, GLfloat> rotate(GLfloat x1,
 //			Return the game to a state before the Tutorial
 //-----------------------------------------------------------------------------
 void BobZombie::returnNormal(){
+    
+    GDebug::lastFunction = DEBUG_BOB_RETURN_NORMAL;
   
     if (currentTutorialState !=NO_TUTORIAL) {
         
@@ -321,7 +323,7 @@ void BobZombie::levelUp(int newLevel){
 //
 //-----------------------------------------------------------------------------
 void BobZombie::think(){
-    
+    GDebug::lastFunction = DEBUG_BOB_THINK;
     if (toggle){
         timer += 1.0/30.0;
     } else {
@@ -373,7 +375,7 @@ void BobZombie::think(){
 //
 //-----------------------------------------------------------------------------
 void BobZombie::thinkLogicBobZombie(){
-    
+    GDebug::lastFunction = DEBUG_BOB_THINK_LOGIC;
     switch (currentTutorialState) {
             
             
@@ -877,6 +879,8 @@ void BobZombie::restSlideState(){
 //
 //-----------------------------------------------------------------------------
 void BobZombie::changeTutorialState(){
+    
+    GDebug::lastFunction = DEBUG_BOB_CHANGE_TUTORIAL_STATE;
     
     if (NO_TUTORIAL==currentTutorialState){
         return;
@@ -1725,6 +1729,7 @@ void BobZombie::renderLoading(){
 }
 
 void BobZombie::update(){
+    GDebug::lastFunction = DEBUG_BOB_UPDATE;
     
     switch (currentTutorialState) {
 
@@ -2803,7 +2808,7 @@ void BobZombie::update(){
 }
 
 void BobZombie::render(){
-    
+    GDebug::lastFunction = DEBUG_BOB_RENDER;
     
     switch (currentTutorialState) {
 
@@ -3387,7 +3392,7 @@ void BobZombie::cursorRender(){
 
 bool BobZombie::mouseInput(MOUSE_STATES input, cpVect control, long theTouchNumber){
 
-    
+    GDebug::lastFunction = DEBUG_BOB_STATE_MOUSE;
    
     
     

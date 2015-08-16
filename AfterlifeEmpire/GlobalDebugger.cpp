@@ -38,10 +38,20 @@ bool GDebug::debuggingActive = false;
 
 
 
+int GDebug::gameMode = -1;
+int GDebug::currentGameState = 0;
+int GDebug::lastFunction = 0;
+double GDebug::mouseInputX = 0;
+double GDebug::mouseInputY = 0;
+int GDebug::mouseState = 0;
+
+
 int GDebug::value1 = 0;
 int GDebug::value2 = 0;
 int GDebug::value3 = 0;
 int GDebug::value4 = 0;
+
+std::string GDebug::textSave;
 
 
 void GDebug::changeValue(int index, int value){
