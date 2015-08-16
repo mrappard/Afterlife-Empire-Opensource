@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Afterlife Empire No Steam.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Afterlife Empire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>765BF3E51B7F9365003C3B00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>765BF3F71B7F9365003C3B00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>766213CF1B7F83F3000C0CFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>766213E21B7F83F3000C0CFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
