@@ -11,14 +11,9 @@
 #include "Float.h"
 
 #if defined(_WIN32)
-#include "chipmunk.h"
 #define SIZE_T_MAX ((size_t) -1)
 #define _USE_MATH_DEFINES
-#include <cmath> 
-
-
-
-#else
+#endif
 #include "Math.h"
 
 #include <cmath> 
@@ -207,6 +202,6 @@ static inline bool cpveql(const cpVect v1, const cpVect v2)
 }
 
 
-#endif
+
 
 #endif

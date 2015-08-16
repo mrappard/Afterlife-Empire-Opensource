@@ -51,6 +51,7 @@
 #include "Achievements.h"
 
 #include "ModManager.h"
+#include "Window_OSX_Linux_fix.h"
 
 std::set<int> Sprite::trees;
 
@@ -226,7 +227,7 @@ void Sprite::keyDebug(int keyCode){
         char holdString[600];
         
         
-        sprintf(holdString, "Name - %s, X = %f, Y = %f, W = %f, H =%f",debugDict->name.c_str(), debugDict->sludgeX, debugDict->sludgeY, debugDict->width, debugDict->height);
+		sprintfAL(holdString, "Name - %s, X = %f, Y = %f, W = %f, H =%f", debugDict->name.c_str(), debugDict->sludgeX, debugDict->sludgeY, debugDict->width, debugDict->height);
         
         /*
          printf("Name - %s, X = %f, Y = %f, W = %f, H =%f",debugDict->name.c_str(), debugDict->sludgeX, debugDict->sludgeY, debugDict->width, debugDict->height);
@@ -1527,11 +1528,11 @@ bool Sprite::loadDictTextureLoaderReturn(std::string * path){
     if (path==0){
         
         theFile = findFile("Sprites.json");
-        sprintf (buffer, "%s", theFile.c_str());
+		sprintfAL(buffer, "%s", theFile.c_str());
         original = true;
         
     }else{
-        sprintf (buffer, "%s", path->c_str());
+        sprintfAL (buffer, "%s", path->c_str());
         theFile = *path;
         original = false;
     }
@@ -1664,11 +1665,11 @@ bool Sprite::loadDictTextureLoader(std::string * path){
     if (path==0){
         
         theFile = findFile("Sprites.json");
-        sprintf (buffer, "%s", theFile.c_str());
+        sprintfAL (buffer, "%s", theFile.c_str());
         original = true;
         
     }else{
-        sprintf (buffer, "%s", path->c_str());
+        sprintfAL (buffer, "%s", path->c_str());
         theFile = *path;
         original = false;
     }

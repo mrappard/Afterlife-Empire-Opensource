@@ -1891,7 +1891,7 @@ void GameLogic::decreaseSpeed(){
 
 static bool ctrl_isDown = false;
 
-#include "Capp.h"
+#include "CApp.h"
 
 #endif
 

@@ -1727,8 +1727,8 @@
 		765BF3FE1B7F9365003C3B00 /* Afterlife_Empire_No_SteamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Afterlife_Empire_No_SteamTests.m; sourceTree = "<group>"; };
 		765BF7461B7F9863003C3B00 /* Steam_API_Access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Steam_API_Access.h; path = ../AfterlifeEmpire/Steam_API_Access.h; sourceTree = "<group>"; };
 		765BF7471B7F98EE003C3B00 /* Steam_API_Access_No_Steam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Steam_API_Access_No_Steam.cpp; path = ../AfterlifeEmpire/Steam_API_Access_No_Steam.cpp; sourceTree = "<group>"; };
-		765BF74A1B7FAB88003C3B00 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameWindow.h; path = ../AfterlifeEmpire/GameWindow.h; sourceTree = "<group>"; };
-		765BF74B1B7FAB88003C3B00 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameWindow.m; path = ../AfterlifeEmpire/GameWindow.m; sourceTree = "<group>"; };
+		765BF74A1B7FAB88003C3B00 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameWindow.h; path = "../OSX Files/GameWindow.h"; sourceTree = "<group>"; };
+		765BF74B1B7FAB88003C3B00 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameWindow.m; path = "../OSX Files/GameWindow.m"; sourceTree = "<group>"; };
 		766213D01B7F83F3000C0CFE /* Afterlife Empire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Afterlife Empire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		766213D41B7F83F3000C0CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766213D51B7F83F3000C0CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1753,7 +1753,7 @@
 		766214011B7F8442000C0CFE /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ../AfterlifeEmpire/Camera.h; sourceTree = "<group>"; };
 		766214021B7F8442000C0CFE /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Circle.cpp; path = ../AfterlifeEmpire/Circle.cpp; sourceTree = "<group>"; };
 		766214031B7F8442000C0CFE /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = ../AfterlifeEmpire/Circle.h; sourceTree = "<group>"; };
-		766214041B7F8442000C0CFE /* DebugTools_OSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DebugTools_OSX.mm; path = ../AfterlifeEmpire/DebugTools_OSX.mm; sourceTree = "<group>"; };
+		766214041B7F8442000C0CFE /* DebugTools_OSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DebugTools_OSX.mm; path = "../OSX Files/DebugTools_OSX.mm"; sourceTree = "<group>"; };
 		766214051B7F8442000C0CFE /* DebugTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugTools.h; path = ../AfterlifeEmpire/DebugTools.h; sourceTree = "<group>"; };
 		766214061B7F8442000C0CFE /* Directions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Directions.h; path = ../AfterlifeEmpire/Directions.h; sourceTree = "<group>"; };
 		766214071B7F8442000C0CFE /* Door.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Door.cpp; path = ../AfterlifeEmpire/Door.cpp; sourceTree = "<group>"; };
@@ -1791,7 +1791,7 @@
 		766214291B7F8442000C0CFE /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderManager.h; path = ../AfterlifeEmpire/ShaderManager.h; sourceTree = "<group>"; };
 		7662142A1B7F8442000C0CFE /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sprite.cpp; path = ../AfterlifeEmpire/Sprite.cpp; sourceTree = "<group>"; };
 		7662142B1B7F8442000C0CFE /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprite.h; path = ../AfterlifeEmpire/Sprite.h; sourceTree = "<group>"; };
-		7662142C1B7F8442000C0CFE /* TextureGenerator_Cocoa.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TextureGenerator_Cocoa.mm; path = ../AfterlifeEmpire/TextureGenerator_Cocoa.mm; sourceTree = "<group>"; };
+		7662142C1B7F8442000C0CFE /* TextureGenerator_Cocoa.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TextureGenerator_Cocoa.mm; path = "../OSX Files/TextureGenerator_Cocoa.mm"; sourceTree = "<group>"; };
 		7662142D1B7F8442000C0CFE /* TextureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureGenerator.h; path = ../AfterlifeEmpire/TextureGenerator.h; sourceTree = "<group>"; };
 		7662142E1B7F8442000C0CFE /* Tiles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tiles.cpp; path = ../AfterlifeEmpire/Tiles.cpp; sourceTree = "<group>"; };
 		7662142F1B7F8442000C0CFE /* Tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tiles.h; path = ../AfterlifeEmpire/Tiles.h; sourceTree = "<group>"; };
@@ -2777,7 +2777,6 @@
 				766214011B7F8442000C0CFE /* Camera.h */,
 				766214021B7F8442000C0CFE /* Circle.cpp */,
 				766214031B7F8442000C0CFE /* Circle.h */,
-				766214041B7F8442000C0CFE /* DebugTools_OSX.mm */,
 				766214051B7F8442000C0CFE /* DebugTools.h */,
 				766214061B7F8442000C0CFE /* Directions.h */,
 				766214071B7F8442000C0CFE /* Door.cpp */,
@@ -2815,7 +2814,6 @@
 				766214291B7F8442000C0CFE /* ShaderManager.h */,
 				7662142A1B7F8442000C0CFE /* Sprite.cpp */,
 				7662142B1B7F8442000C0CFE /* Sprite.h */,
-				7662142C1B7F8442000C0CFE /* TextureGenerator_Cocoa.mm */,
 				7662142D1B7F8442000C0CFE /* TextureGenerator.h */,
 				7662142E1B7F8442000C0CFE /* Tiles.cpp */,
 				7662142F1B7F8442000C0CFE /* Tiles.h */,
@@ -2867,6 +2865,8 @@
 		766214671B7F8677000C0CFE /* OSX */ = {
 			isa = PBXGroup;
 			children = (
+				766214041B7F8442000C0CFE /* DebugTools_OSX.mm */,
+				7662142C1B7F8442000C0CFE /* TextureGenerator_Cocoa.mm */,
 				765BF74A1B7FAB88003C3B00 /* GameWindow.h */,
 				765BF74B1B7FAB88003C3B00 /* GameWindow.m */,
 				766214681B7F8685000C0CFE /* FileManager_OSX.mm */,
@@ -6237,6 +6237,7 @@
 				765BF4011B7F9365003C3B00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		765BF4051B7F9365003C3B00 /* Build configuration list for PBXNativeTarget "Afterlife Empire No SteamTests" */ = {
 			isa = XCConfigurationList;
@@ -6245,6 +6246,7 @@
 				765BF4031B7F9365003C3B00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		766213CB1B7F83F3000C0CFE /* Build configuration list for PBXProject "Afterlife Empire" */ = {
 			isa = XCConfigurationList;

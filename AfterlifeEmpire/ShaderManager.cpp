@@ -10,6 +10,7 @@
 #include "FileManager.h"
 #include <stdlib.h>
 #include "Camera.h"
+#include "Window_OSX_Linux_fix.h"
 
 #define doubleValue 1
 
@@ -760,7 +761,14 @@ shaderLoadSource(const char *filePath)
     size_t tmp, sourceLength = 0;
     
     /* open file */
-    fp = fopen(filePath, "r");
+	#if defined(_WIN32)
+
+	fopen_s(&fp,filePath, "r");
+	#else
+	fp = fopen(filePath, "r");
+	#endif
+
+   
     if(!fp) {
         fprintf(stderr, "shaderLoadSource(): Unable to open %s for reading\n", filePath);
         return NULL;

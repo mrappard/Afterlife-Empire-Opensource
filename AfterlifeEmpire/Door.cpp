@@ -25,6 +25,7 @@
 #include "SaveObject.h"
 
 #include "Userinterface.h"
+#include "Window_OSX_Linux_fix.h"
 
 
 #define CLOSED_L 0
@@ -217,7 +218,7 @@ void Door::keyDebug(int keyCode){
          char holdString[600];
         
         
-        sprintf(holdString, "Name - %s, XL = %f, YL = %f, XR = %f, YR = %f, W = %f, H =%f",createThis->name.c_str(), createThis->sludgeX_L, createThis->sludgeY_L, createThis->sludgeX_R, createThis->sludgeY_R, createThis->width, createThis->height);
+        sprintfAL(holdString, "Name - %s, XL = %f, YL = %f, XR = %f, YR = %f, W = %f, H =%f",createThis->name.c_str(), createThis->sludgeX_L, createThis->sludgeY_L, createThis->sludgeX_R, createThis->sludgeY_R, createThis->width, createThis->height);
         
         /*
          printf("Name - %s, X = %f, Y = %f, W = %f, H =%f",debugDict->name.c_str(), debugDict->sludgeX, debugDict->sludgeY, debugDict->width, debugDict->height);
@@ -512,10 +513,10 @@ bool Door::loadDict(std::string * path){
     if (path==0){
         
         std::string theFile = findFile("Tiles.json");
-        sprintf (buffer, "%s", theFile.c_str());
+        sprintfAL (buffer, "%s", theFile.c_str());
         
     }else{
-        sprintf (buffer, "%s", path->c_str());
+        sprintfAL (buffer, "%s", path->c_str());
     }
     
     

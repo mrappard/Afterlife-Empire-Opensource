@@ -51,6 +51,8 @@
 #include <unordered_set>
 #include "SetupVars.h"
 #include "AudioController.h"
+#include "Window_OSX_Linux_fix.h"
+
 
 //std::vector<short> Tiles::tiles;
 std::vector<TileObject> Tiles::mapValues;
@@ -2609,7 +2611,7 @@ int Tiles::mouseInput(MOUSE_STATES input, cpVect control, long theTouchNumber){
                     std::string theRoom = "The Room is ";
                     char dumpText[400];
                     if (!value){
-                    sprintf(dumpText, TranslationMatrix::translate("THE_ROOM_IS_X_BY_X").c_str(), abs(x1-x2)+1,abs(y1-y2)+1, whatIsAlreadyUsed);
+					sprintfAL(dumpText, TranslationMatrix::translate("THE_ROOM_IS_X_BY_X").c_str(), abs(x1 - x2) + 1, abs(y1 - y2) + 1, whatIsAlreadyUsed);
                     UserInterface::spawnTextBox(dumpText, TEXTBOX_STAY_UP);
                     } else {
                     UserInterface::spawnTextBox(TranslationMatrix::translate("YOU_CAN'T_PLACE_TILES_HERE"), TEXTBOX_STAY_UP);

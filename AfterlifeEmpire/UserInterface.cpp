@@ -27,6 +27,7 @@
 #include "AudioController.h"
 #include "GameClock.h"
 #include "Camera.h"
+#include "Window_OSX_Linux_fix.h"
 
 GLuint UserInterface::_vertexArray=0;
 GLuint UserInterface::_vertexBuffer=0;
@@ -1587,7 +1588,7 @@ void UserInterface::updateDashboard(){
         std::string tiText = tilesP +"/" + tilesN;
         
         char textValue[400];
-        sprintf(textValue, "%i/%i",(int)GameLogic::awareness,(int)GameLogic::awarenessSink);
+		sprintfAL(textValue, "%i/%i", (int)GameLogic::awareness, (int)GameLogic::awarenessSink);
         
         scareEnergy.setText(std::to_string((int)GameLogic::energy));
         scareEnergy.setMod(modValue);
@@ -1906,19 +1907,19 @@ void UserInterface::updateWarningMessages(){
          warning.setText(TranslationMatrix::translate("AWARENESS_ALMOST_TO_HIGH"));
     } else if (GameLogic::gameMode==TILEMODE){
         char textValue[400];
-        sprintf(textValue, TranslationMatrix::translate("NEED_SPEND_MORE_ON_TILES").c_str(),GameLogic::numberOfTilesNeeded-GameLogic::numberOfTilesInPlay);
+        sprintfAL(textValue, TranslationMatrix::translate("NEED_SPEND_MORE_ON_TILES").c_str(),GameLogic::numberOfTilesNeeded-GameLogic::numberOfTilesInPlay);
         
         warning.setText(textValue);
     
     } else if (GameLogic::gameMode==TRAPMODE){
         
         char textValue[400];
-        sprintf(textValue, TranslationMatrix::translate("NEED_MORE_TRAPS_A").c_str(),GameLogic::numberOfTrapsNeeded-GameLogic::numberOfTrapsInPlay);
+        sprintfAL(textValue, TranslationMatrix::translate("NEED_MORE_TRAPS_A").c_str(),GameLogic::numberOfTrapsNeeded-GameLogic::numberOfTrapsInPlay);
     
         warning.setText(textValue);
     } else if (GameLogic::gameMode==PROPMODE){
         char textValue[400];
-        sprintf(textValue, TranslationMatrix::translate("NEED_MORE_PROP_VALUE").c_str(),int(GameLogic::awareness),int(GameLogic::awarenessSink));
+		sprintfAL(textValue, TranslationMatrix::translate("NEED_MORE_PROP_VALUE").c_str(), int(GameLogic::awareness), int(GameLogic::awarenessSink));
         
         warning.setText(textValue);
     
