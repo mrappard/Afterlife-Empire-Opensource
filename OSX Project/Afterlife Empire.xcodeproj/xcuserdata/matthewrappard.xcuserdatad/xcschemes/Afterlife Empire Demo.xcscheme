@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "766213CF1B7F83F3000C0CFE"
-               BuildableName = "Afterlife Empire.app"
-               BlueprintName = "Afterlife Empire"
+               BlueprintIdentifier = "762B17D01B81732C00D9D728"
+               BuildableName = "Afterlife Empire Demo.app"
+               BlueprintName = "Afterlife Empire Demo"
                ReferencedContainer = "container:Afterlife Empire.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "766213E21B7F83F3000C0CFE"
-               BuildableName = "Afterlife EmpireTests.xctest"
-               BlueprintName = "Afterlife EmpireTests"
+               BlueprintIdentifier = "762B17E21B81732C00D9D728"
+               BuildableName = "Afterlife Empire DemoTests.xctest"
+               BlueprintName = "Afterlife Empire DemoTests"
                ReferencedContainer = "container:Afterlife Empire.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "766213E21B7F83F3000C0CFE"
-               BuildableName = "Afterlife EmpireTests.xctest"
-               BlueprintName = "Afterlife EmpireTests"
+               BlueprintIdentifier = "762B17E21B81732C00D9D728"
+               BuildableName = "Afterlife Empire DemoTests.xctest"
+               BlueprintName = "Afterlife Empire DemoTests"
                ReferencedContainer = "container:Afterlife Empire.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "766213CF1B7F83F3000C0CFE"
-            BuildableName = "Afterlife Empire.app"
-            BlueprintName = "Afterlife Empire"
+            BlueprintIdentifier = "762B17D01B81732C00D9D728"
+            BuildableName = "Afterlife Empire Demo.app"
+            BlueprintName = "Afterlife Empire Demo"
             ReferencedContainer = "container:Afterlife Empire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -68,7 +68,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -76,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "766213CF1B7F83F3000C0CFE"
-            BuildableName = "Afterlife Empire.app"
-            BlueprintName = "Afterlife Empire"
+            BlueprintIdentifier = "762B17D01B81732C00D9D728"
+            BuildableName = "Afterlife Empire Demo.app"
+            BlueprintName = "Afterlife Empire Demo"
             ReferencedContainer = "container:Afterlife Empire.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,9 +95,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "766213CF1B7F83F3000C0CFE"
-            BuildableName = "Afterlife Empire.app"
-            BlueprintName = "Afterlife Empire"
+            BlueprintIdentifier = "762B17D01B81732C00D9D728"
+            BuildableName = "Afterlife Empire Demo.app"
+            BlueprintName = "Afterlife Empire Demo"
             ReferencedContainer = "container:Afterlife Empire.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

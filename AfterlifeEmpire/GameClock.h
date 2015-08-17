@@ -32,8 +32,9 @@ public:
 
 
 	static bool winLoop();
-
+	static bool winRender();
 	static void renderIncrease();
+	static void loopIncrease();
 };
 
 #endif /* defined(__After_Life_Empire__GameClock__) */

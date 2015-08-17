@@ -10,13 +10,13 @@ long tick = 0;
 //==============================================================================
 void CApp::OnLoop() {
 
-
+	
 
 	if (GameClock::winLoop()){
 
 	GameLogic::tick(tick++);
 	GameLogic::update();
-	GameClock::renderIncrease();
+	GameClock::loopIncrease();
 	}
 }
 

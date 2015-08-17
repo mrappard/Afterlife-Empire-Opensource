@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Afterlife Empire Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Afterlife Empire No Steam.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>762B17D01B81732C00D9D728</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>762B17E21B81732C00D9D728</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>765BF3E51B7F9365003C3B00</key>
 		<dict>
 			<key>primary</key>

@@ -205,9 +205,6 @@ static bool testIfGameMode(){
 }
 
 void GameLogic::changeGameMode(GAMEMODETYPE change){
-    GDebug::gameMode= change;
-    
-    
     gameMode = change;
     UserInterface::uiOffset =0;
     if (Sprite::testSprite){
@@ -328,8 +325,8 @@ void GameLogic::_initVideo(){
 
 void GameLogic::start(){
     
-    GDebug::currentGameState =DEBUG_INIT_STATE;
-    GDebug::lastFunction = 0;
+    
+   
 
     
     
@@ -566,37 +563,22 @@ double timeValue;
 bool testAudio = false;
 
 void GameLogic::tick(long tick){
-    GDebug::currentGameState =DEBUG_TICK_STATE;
-    GDebug::lastFunction = 0;
-    
-    /*if (
-    !GameClock::tCheck()
-        ){
-        return;
-    
-    }
-     */
-    
-	if (false){
-		if (actPlay()){
-            if (GameLogic::timePassed > 60 * 60*15){
+   
+ 
+#if defined(DEMO)
+
+	if (actPlay()){
+		if (GameLogic::timePassed > 60 * 60 * 15){
 
 			BobZombie::demoEnd();
 
-            }
-        }
+		}
 	}
-
-
-
+#endif
     
-    GDebug::lastFunction = DEBUG_THINK_BOB;
     BobZombie::think();
-    GDebug::lastFunction = DEBUG_THINK_WAIT_BOB;
     BobZombie::bobWaitTime();
-    GDebug::lastFunction = DEBUG_THINK_AUDIO;
     AudioController::thinkAllBuffers();
-    GDebug::lastFunction = DEBUG_THINK_UNIT_FINDER;
     UnitFinder::thinkAll();
     if (tick%100==0){
         calculateCurrentLevel();
@@ -639,7 +621,7 @@ void GameLogic::tick(long tick){
         }
         
     
-        GDebug::lastFunction = DEBUG_THINK_USERINTERFACE;
+        
         UserInterface::think();
         UserInterface::createCircle();
         Circle::tickAll();
@@ -650,17 +632,11 @@ void GameLogic::tick(long tick){
             for (int counter = 0; counter<GameLogic::speedSetting; counter++){
         
                 GameClock::time++;
-                GDebug::lastFunction = DEBUG_THINK_SPRITE;
                 Sprite::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_DIALOG;
                 UserInterface::dialogThink();
-                GDebug::lastFunction = DEBUG_THINK_PLAYER;
                 player.think();
-                GDebug::lastFunction = DEBUG_THINK_DOOR;
                 Door::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_BULLDOZER;
                 Bulldozer::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_DRAIN;
                 drainEnergyTick();
             
             }
@@ -671,17 +647,11 @@ void GameLogic::tick(long tick){
         
         
             GameClock::time++;
-            GDebug::lastFunction = DEBUG_THINK_SPRITE;
             Sprite::thinkAll();
-            GDebug::lastFunction = DEBUG_THINK_DIALOG;
             UserInterface::dialogThink();
-            GDebug::lastFunction = DEBUG_THINK_PLAYER;
             player.think();
-            GDebug::lastFunction = DEBUG_THINK_DOOR;
             Door::thinkAll();
-            GDebug::lastFunction = DEBUG_THINK_BULLDOZER;
             Bulldozer::thinkAll();
-            GDebug::lastFunction = DEBUG_THINK_DRAIN;
             drainEnergyTick();
          
         
@@ -690,17 +660,11 @@ void GameLogic::tick(long tick){
             if (count<=speedSetting){
             
                 GameClock::time++;
-                GDebug::lastFunction = DEBUG_THINK_SPRITE;
                 Sprite::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_DIALOG;
                 UserInterface::dialogThink();
-                GDebug::lastFunction = DEBUG_THINK_PLAYER;
                 player.think();
-                GDebug::lastFunction = DEBUG_THINK_DOOR;
                 Door::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_BULLDOZER;
                 Bulldozer::thinkAll();
-                GDebug::lastFunction = DEBUG_THINK_DRAIN;
                 drainEnergyTick();
 
                 count=0;
@@ -800,8 +764,8 @@ double frameRateTest;
 
 
 void GameLogic::update(){
-    GDebug::currentGameState =DEBUG_UPDATE_STATE;
-    GDebug::lastFunction = 0;
+    
+ 
     
 
  
@@ -836,7 +800,6 @@ void GameLogic::update(){
     
 
     if (!Sprite::loadAllTextureTimed()){
-        GDebug::lastFunction = DEBUG_UPDATE_LOAD_ALL_TEXTURES;
         UserInterface::loadScreenUpdate();
         return;
     }
@@ -849,7 +812,7 @@ void GameLogic::update(){
     
 
     if (gameMode==CREDITMODE) {
-        GDebug::lastFunction = DEBUG_UPDATE_CREDIT_MODE;
+
         if(updateVideo()){
             return;
         }else{
@@ -860,7 +823,7 @@ void GameLogic::update(){
     }
     
     if (gameMode==CREDITTEXTMODE){
-        GDebug::lastFunction = DEBUG_UPDATE_CREDIT_MODE_TEXT;
+    
         
        
         GLfloat xValue = width;
@@ -933,9 +896,82 @@ void GameLogic::update(){
     }
     
     
+    if (gameMode==CREDITTEXTMODE){
+        
+        
+        
+        GLfloat xValue = width;
+        GLfloat yValue = width*(3005.0/1024.0);
+        
+        
+        
+        
+        if (!_texture){
+            int heldValues[10];
+            _texture = dontStore(findFile("CreditScreen.png"),heldValues);
+        }
+        
+        GLfloat offsetY = creditOffset.y;
+        offsetY = (offsetY<0)?0:offsetY*5.0;
+        
+        offsetY = (offsetY>+yValue+yValue-height*2.0)?+yValue+yValue-height*2.0:offsetY;
+        
+        
+        
+        
+        GLfloat gBoxVertexData[] = {
+            
+            (GLfloat)(-xValue),
+            (GLfloat)(height+offsetY),
+            0,  0,
+            
+            
+            (GLfloat)(-xValue),
+            (GLfloat)(height-yValue-yValue+offsetY),
+            0,  1,
+            
+            (GLfloat)(xValue),
+            (GLfloat)(height+offsetY),
+            1,  0,
+            
+            (GLfloat)(xValue),
+            (GLfloat)(height-yValue-yValue+offsetY),
+            1,  1
+        };
+        
+        if (!_vertexArray){
+            glGenVertexArraysCon(1, &_vertexArray);
+        }
+        glBindVertexArrayCon(_vertexArray);
+        
+        if(!_vertexBuffer){
+            glGenBuffers(1, &_vertexBuffer);
+        }
+        glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(gBoxVertexData), gBoxVertexData, GL_STATIC_DRAW);
+        
+        
+        glEnableVertexAttribArray(GLKVertexAttribPosition);
+        glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 4*4, BUFFER_OFFSET(0));
+        glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+        glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 4*4, BUFFER_OFFSET(8));
+        
+        
+        
+        
+        
+        glBindVertexArrayCon(0);
+        
+        
+        
+        
+        
+        return;
+    }
+    
+    
     if (gameMode==HELPSCREENMODE){
     
-        GDebug::lastFunction = DEBUG_UPDATE_CREDIT_HELP_TEXT;
         
         GLfloat xValue = width;
         GLfloat yValue = width*(2);
@@ -1010,36 +1046,25 @@ void GameLogic::update(){
         if (newRenderScheme){
         SaveMap::update();
         }
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_1;
+        
         Tiles::update();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_2;
         Tiles::updateSelection();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_3;
         Door::updateAll();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_4;
         Sprite::updateAll();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_5;
         UserInterface::update();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_6;
         UserInterface::dialogUpdate();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_7;
         player.update();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_8;
         Sprite::testSpriteUpdate();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_9;
         Circle::updateAll();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_10;
         Bulldozer::updateAll();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_11;
+        
         UserInterface::bobUpdate();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_12;
+      
         UnitFinder::updateAll();
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_13;
         
     } else {
         
-        GDebug::lastFunction = DEBUG_UPDATE_STAGE_5;
-        UserInterface::update();
+    UserInterface::update();
     
     }
     
@@ -1053,7 +1078,21 @@ void GameLogic::update(){
     
     
     
- 
+    
+#if defined(__APPLE__ )
+
+	/*gettimeofday( &afterTime,NULL);
+
+	double startTimeD = double(startTime.tv_sec)*1000.0;
+	startTimeD  += (startTime.tv_usec)/1000.0;
+
+	double endTimeD = double(afterTime.tv_sec)*1000.0;
+	endTimeD += (afterTime.tv_usec) / 1000.0;
+*/
+
+#endif
+
+
 
 
 };
@@ -1196,8 +1235,6 @@ CBitmapFont textGen;
 
 
 void GameLogic::render(){
-    GDebug::currentGameState =DEBUG_RENDER_STATE;
-    GDebug::lastFunction = 0;
     
     if (gameQuit){
         return;
@@ -1368,12 +1405,12 @@ void GameLogic::moveCameraSafe(cpVect moveAmount){
     
 }
 
+
+
+
+
 void GameLogic::mouseInput(MOUSE_STATES input, cpVect control, long theTouchNumber){
-    GDebug::currentGameState =DEBUG_MOUSE_STATE;
-    GDebug::lastFunction = 0;
-    GDebug::mouseInputX = control.x;
-    GDebug::mouseInputY = control.y;
-    GDebug::mouseState = input;
+    
     
     
     

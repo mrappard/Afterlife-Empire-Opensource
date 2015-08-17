@@ -188,6 +188,7 @@ static LARGE_INTEGER startGameTime;
 static LARGE_INTEGER frequencyGame;
 static bool clockTimed = false;
 static int renderTick=0;
+static int updateTick = 0;
 //QueryPerformanceCounter(&startTime);
 
 //QueryPerformanceFrequency(&frequency);
@@ -206,18 +207,19 @@ bool GameClock::winLoop(){
 
 
 		
-		double checkTick = renderTick;
+		double checkTick = updateTick;
 		LARGE_INTEGER currentGameTime;
 		QueryPerformanceCounter(&currentGameTime);
 
 		double checkthis  = double(currentGameTime.QuadPart - startGameTime.QuadPart) / frequencyGame.QuadPart;
-		if (checkthis<((double)(renderTick)) / 60.0){
+		if (checkthis<((double)(updateTick)) / 60.0){
 			return false;
 		}
 
-		if (checkthis>(double)(renderTick + 15.0) / 60.0){
+		if (checkthis>(double)(updateTick + 15.0) / 60.0){
 			QueryPerformanceCounter(&startGameTime);
-			renderTick=0;
+			updateTick=0;
+			renderTick = 0;
 			return true;
 		}
 
@@ -227,10 +229,50 @@ bool GameClock::winLoop(){
 }
 
 
+bool GameClock::winRender(){
+
+	if (!clockTimed){
+		QueryPerformanceFrequency(&frequencyGame);
+		QueryPerformanceCounter(&startGameTime);
+		renderTick = 0;
+		clockTimed = true;
+	}
+
+
+
+
+
+
+	double checkTick = renderTick;
+	LARGE_INTEGER currentGameTime;
+	QueryPerformanceCounter(&currentGameTime);
+
+	double checkthis = double(currentGameTime.QuadPart - startGameTime.QuadPart) / frequencyGame.QuadPart;
+	if (checkthis<((double)(renderTick)) / 60.0){
+		return false;
+	}
+
+	if (checkthis>(double)(renderTick + 15.0) / 60.0){
+		QueryPerformanceCounter(&startGameTime);
+		renderTick = 0;
+		updateTick = 0;
+		return true;
+	}
+
+
+
+	return true;
+}
+
+
 
 void GameClock::renderIncrease(){
 	renderTick++;
 
 
+}
+
+void GameClock::loopIncrease(){
+	updateTick++;
 }
 #endif

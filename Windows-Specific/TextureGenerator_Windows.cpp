@@ -278,39 +278,7 @@ Return:
 
 
 
-VOID GetImageFromFile(LPCWSTR file, IWICBitmap** bitmap)
-{
-	IWICImagingFactory* factory = NULL;
-	IWICBitmapDecoder* decoder = NULL;
-	IWICBitmapFrameDecode* frame = NULL;
-	IWICFormatConverter* converter = NULL;
 
-	CoCreateInstance(CLSID_WICImagingFactory, NULL, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&factory));
-	factory->CreateDecoderFromFilename(file, NULL, GENERIC_READ | GENERIC_WRITE, WICDecodeMetadataCacheOnDemand, &decoder);
-	decoder->GetFrame(0, &frame);
-	factory->CreateFormatConverter(&converter);
-	converter->Initialize(frame, GUID_WICPixelFormat32bppBGRA, WICBitmapDitherTypeNone, NULL, 0.0, WICBitmapPaletteTypeCustom);
-	factory->CreateBitmapFromSource(frame, WICBitmapNoCache, bitmap);
-
-	if (factory){
-	
-		factory->Release();
-	}
-
-	if (decoder){
-		decoder->Release();
-	}
-
-	if (frame){
-		frame->Release();
-	}
-
-	if (converter){
-		converter->Release();
-	}
-
-
-}
 
 
 

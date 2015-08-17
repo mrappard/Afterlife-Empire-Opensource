@@ -9,12 +9,12 @@
 #include "openglimports.h"
 //==============================================================================
 bool CApp::OnInit() {
-    if(SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-        return false;
-    }
-	
-	screenWidth = 512;
-	screenHeight = 512;
+	if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+		return false;
+	}
+
+	screenWidth = 640;
+	screenHeight = 480;
 
 
 
@@ -47,23 +47,41 @@ bool CApp::OnInit() {
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
 	//Create context
-	
+
 
 
 	//Create window
-	gWindow = SDL_CreateWindow("Afterlife Empire", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, GameLogic::width, GameLogic::height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
-	if (gWindow == NULL)
-	{
-		printf("Window could not be created! SDL Error: %s\n", SDL_GetError());
-		return false;
+	//
+
+	if (!goFullScreen){
+		gWindow = SDL_CreateWindow("Afterlife Empire", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, GameLogic::width, GameLogic::height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+		if (gWindow == NULL)
+		{
+			printf("Window could not be created! SDL Error: %s\n", SDL_GetError());
+			return false;
+		}
+		if (
+			SDL_Surface *surface = IMG_Load(findFile("Icon.png").c_str())
+			){
+			SDL_SetWindowIcon(gWindow, surface);
+
+
+		}
 	}
+	else {
 
-	gWindow = SDL_CreateWindow("Afterlife Empire",
-		SDL_WINDOWPOS_UNDEFINED,
-		SDL_WINDOWPOS_UNDEFINED,
-		0, 0,
-		SDL_WINDOW_FULLSCREEN_DESKTOP);
+		gWindow = SDL_CreateWindow("Afterlife Empire",
+			SDL_WINDOWPOS_UNDEFINED,
+			SDL_WINDOWPOS_UNDEFINED,
+			resolutionWidth, resolutionHeight,
+			SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 
+		GameLogic::width = 1920;
+		GameLogic::height = 1080;
+		screenWidth = 1920;
+		screenHeight = 1080;
+
+	}
 	gContext = SDL_GL_CreateContext(gWindow);
 	if (gContext == NULL)
 	{
@@ -89,7 +107,7 @@ bool CApp::OnInit() {
 
 	}
 
-	
+
 
 
 	glEnable(GL_MULTISAMPLE);
@@ -98,26 +116,6 @@ bool CApp::OnInit() {
 
 	glEnable(GL_LINE_SMOOTH);
 	glEnable(GL_POLYGON_SMOOTH);
-
-
-	/*
-	SDL_GL_SetAttribute(SDL_GL_RED_SIZE,        8);
-	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE,      8);
-	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE,       8);
-	SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE,      8);
-
-	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE,      16);
-	SDL_GL_SetAttribute(SDL_GL_BUFFER_SIZE,        32);
-
-	SDL_GL_SetAttribute(SDL_GL_ACCUM_RED_SIZE,    8);
-	SDL_GL_SetAttribute(SDL_GL_ACCUM_GREEN_SIZE,    8);
-	SDL_GL_SetAttribute(SDL_GL_ACCUM_BLUE_SIZE,    8);
-	SDL_GL_SetAttribute(SDL_GL_ACCUM_ALPHA_SIZE,    8);
-
-	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS,  1);
-	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES,  2);
-	*/
-	//
 
 
 	glClearColor(0, 0, 0, 0);
@@ -158,10 +156,11 @@ bool CApp::OnInit() {
 	GameLogic::start();
 	GameClock::startStopWatch();
 
+	GameLogic::setWindow(screenWidth, screenHeight);
 
 
-    return true;
-	
+	return true;
+
 }
 
 //==============================================================================

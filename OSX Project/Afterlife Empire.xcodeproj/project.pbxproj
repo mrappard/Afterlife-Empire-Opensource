@@ -7,6 +7,841 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762B17D91B81732C00D9D728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 762B17D81B81732C00D9D728 /* main.m */; };
+		762B17DB1B81732C00D9D728 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762B17DA1B81732C00D9D728 /* Images.xcassets */; };
+		762B17DE1B81732C00D9D728 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762B17DC1B81732C00D9D728 /* MainMenu.xib */; };
+		762B17EA1B81732C00D9D728 /* Afterlife_Empire_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 762B17E91B81732C00D9D728 /* Afterlife_Empire_DemoTests.m */; };
+		762B17F11B8173DF00D9D728 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766213D61B7F83F3000C0CFE /* AppDelegate.mm */; };
+		762B17F21B81744C00D9D728 /* Achievements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766213F41B7F8442000C0CFE /* Achievements.cpp */; };
+		762B17F31B81744C00D9D728 /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766213F81B7F8442000C0CFE /* AudioController.cpp */; };
+		762B17F41B81744C00D9D728 /* AudioTranscode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766213FA1B7F8442000C0CFE /* AudioTranscode.cpp */; };
+		762B17F51B81744C00D9D728 /* BobZombie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766213FC1B7F8442000C0CFE /* BobZombie.cpp */; };
+		762B17F61B81744C00D9D728 /* Bulldozer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766213FE1B7F8442000C0CFE /* Bulldozer.cpp */; };
+		762B17F71B81744C00D9D728 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214001B7F8442000C0CFE /* Camera.cpp */; };
+		762B17F81B81744C00D9D728 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214021B7F8442000C0CFE /* Circle.cpp */; };
+		762B17F91B81744C00D9D728 /* Door.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214071B7F8442000C0CFE /* Door.cpp */; };
+		762B17FA1B81744C00D9D728 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662140A1B7F8442000C0CFE /* FrameBuffer.cpp */; };
+		762B17FB1B81744C00D9D728 /* GameClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662140C1B7F8442000C0CFE /* GameClock.cpp */; };
+		762B17FC1B81744C00D9D728 /* GameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662140E1B7F8442000C0CFE /* GameLogic.cpp */; };
+		762B17FD1B81744C00D9D728 /* GlobalDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214121B7F8442000C0CFE /* GlobalDebugger.cpp */; };
+		762B17FE1B81744C00D9D728 /* ModManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214161B7F8442000C0CFE /* ModManager.cpp */; };
+		762B17FF1B81744C00D9D728 /* Pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662141C1B7F8442000C0CFE /* Pathfinding.cpp */; };
+		762B18001B81744C00D9D728 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662141F1B7F8442000C0CFE /* Player.cpp */; };
+		762B18011B81744C00D9D728 /* SaveMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214211B7F8442000C0CFE /* SaveMap.cpp */; };
+		762B18021B81744C00D9D728 /* SaveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214231B7F8442000C0CFE /* SaveObject.cpp */; };
+		762B18031B81744C00D9D728 /* ScreenTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214251B7F8442000C0CFE /* ScreenTranslator.cpp */; };
+		762B18041B81744C00D9D728 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214281B7F8442000C0CFE /* ShaderManager.cpp */; };
+		762B18051B81744C00D9D728 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662142A1B7F8442000C0CFE /* Sprite.cpp */; };
+		762B18061B81744C00D9D728 /* Tiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662142E1B7F8442000C0CFE /* Tiles.cpp */; };
+		762B18071B81744C00D9D728 /* TranslationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214311B7F8442000C0CFE /* TranslationMatrix.cpp */; };
+		762B18081B81744C00D9D728 /* Tweener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214331B7F8442000C0CFE /* Tweener.cpp */; };
+		762B18091B81744C00D9D728 /* UnitFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214351B7F8442000C0CFE /* UnitFinder.cpp */; };
+		762B180A1B81744C00D9D728 /* UserInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214371B7F8442000C0CFE /* UserInterface.cpp */; };
+		762B180B1B81745000D9D728 /* BitmapFontClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 766214581B7F8461000C0CFE /* BitmapFontClass.cpp */; };
+		762B180C1B81745700D9D728 /* Steam_API_Access.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662145F1B7F860F000C0CFE /* Steam_API_Access.cpp */; };
+		762B180D1B81745700D9D728 /* CSteamAchievements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7662145C1B7F85ED000C0CFE /* CSteamAchievements.cpp */; };
+		762B180E1B81746400D9D728 /* TextureGenerator_Cocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7662142C1B7F8442000C0CFE /* TextureGenerator_Cocoa.mm */; };
+		762B180F1B81746400D9D728 /* FileManager_OSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766214681B7F8685000C0CFE /* FileManager_OSX.mm */; };
+		762B18101B81746400D9D728 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7662146A1B7F8685000C0CFE /* GameView.mm */; };
+		762B18111B81746400D9D728 /* MovieFullScreenOSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7662146B1B7F8685000C0CFE /* MovieFullScreenOSX.mm */; };
+		762B18121B81746400D9D728 /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662146D1B7F8685000C0CFE /* NSImage+MGCropExtensions.m */; };
+		762B18131B81746400D9D728 /* OpenGLMovieLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662146F1B7F8685000C0CFE /* OpenGLMovieLayer.m */; };
+		762B18141B8174B700D9D728 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766214621B7F8647000C0CFE /* OpenAL.framework */; };
+		762B18151B8174C600D9D728 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 766214651B7F865F000C0CFE /* libsteam_api.dylib */; };
+		762B18161B81750800D9D728 /* DebugTools_OSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766214041B7F8442000C0CFE /* DebugTools_OSX.mm */; };
+		762B18181B81756F00D9D728 /* libsteam_api.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 766214651B7F865F000C0CFE /* libsteam_api.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		762B18191B81758400D9D728 /* steam_appid.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 766214791B7F8A26000C0CFE /* steam_appid.txt */; };
+		762B181A1B8175C700D9D728 /* AudioTestGen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD01B7F8F36000C0CFE /* AudioTestGen.wav */; };
+		762B181B1B8175C700D9D728 /* Lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD11B7F8F36000C0CFE /* Lose.wav */; };
+		762B181C1B8175C700D9D728 /* Music1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD21B7F8F36000C0CFE /* Music1.wav */; };
+		762B181D1B8175C700D9D728 /* Terror1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD31B7F8F36000C0CFE /* Terror1.wav */; };
+		762B181E1B8175C700D9D728 /* Terror2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD41B7F8F36000C0CFE /* Terror2.wav */; };
+		762B181F1B8175C700D9D728 /* Terror3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AD51B7F8F36000C0CFE /* Terror3.wav */; };
+		762B18201B8175CB00D9D728 /* AudioTest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621ADD1B7F8F42000C0CFE /* AudioTest.wav */; };
+		762B18211B8175CB00D9D728 /* Nope.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621ADE1B7F8F42000C0CFE /* Nope.wav */; };
+		762B18221B8175D500D9D728 /* Copy_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A9F1B7F8ECF000C0CFE /* Copy_03.wav */; };
+		762B18231B8175D500D9D728 /* Copy_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AA01B7F8ECF000C0CFE /* Copy_04.wav */; };
+		762B18241B8175D500D9D728 /* Copy_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AA11B7F8ECF000C0CFE /* Copy_05.wav */; };
+		762B18251B8175D900D9D728 /* Risa_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC31B7F8F02000C0CFE /* Risa_07.wav */; };
+		762B18261B8175D900D9D728 /* Risa_08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC41B7F8F02000C0CFE /* Risa_08.wav */; };
+		762B18271B8175D900D9D728 /* Risa_09.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC51B7F8F02000C0CFE /* Risa_09.wav */; };
+		762B18281B8175D900D9D728 /* Risa_10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC61B7F8F02000C0CFE /* Risa_10.wav */; };
+		762B18291B8175D900D9D728 /* Risa_14.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC71B7F8F02000C0CFE /* Risa_14.wav */; };
+		762B182A1B8175D900D9D728 /* Risa_15.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AC81B7F8F02000C0CFE /* Risa_15.wav */; };
+		762B182B1B8175DC00D9D728 /* Vortex_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AA51B7F8EE5000C0CFE /* Vortex_02.wav */; };
+		762B182C1B8175DC00D9D728 /* Vortex_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AA61B7F8EE5000C0CFE /* Vortex_03.wav */; };
+		762B182D1B8175DC00D9D728 /* Vortex_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AA71B7F8EE5000C0CFE /* Vortex_04.wav */; };
+		762B182E1B8175DF00D9D728 /* Possess_06.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AAB1B7F8EED000C0CFE /* Possess_06.wav */; };
+		762B182F1B8175DF00D9D728 /* Possess_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AAC1B7F8EED000C0CFE /* Possess_07.wav */; };
+		762B18301B8175DF00D9D728 /* Possess_08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AAD1B7F8EED000C0CFE /* Possess_08.wav */; };
+		762B18311B8175DF00D9D728 /* Possess_10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AAE1B7F8EED000C0CFE /* Possess_10.wav */; };
+		762B18321B8175DF00D9D728 /* Possess_11.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AAF1B7F8EED000C0CFE /* Possess_11.wav */; };
+		762B18331B8175DF00D9D728 /* Possess_12.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AB01B7F8EED000C0CFE /* Possess_12.wav */; };
+		762B18341B8175E300D9D728 /* EQ_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AB71B7F8EF4000C0CFE /* EQ_01.wav */; };
+		762B18351B8175E300D9D728 /* EQ_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AB81B7F8EF4000C0CFE /* EQ_02.wav */; };
+		762B18361B8175E300D9D728 /* EQ_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621AB91B7F8EF4000C0CFE /* EQ_03.wav */; };
+		762B18371B8175E300D9D728 /* EQ_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621ABA1B7F8EF4000C0CFE /* EQ_07.wav */; };
+		762B18381B8175E300D9D728 /* EQ_08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621ABB1B7F8EF4000C0CFE /* EQ_08.wav */; };
+		762B18391B8175E300D9D728 /* EQ_09.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621ABC1B7F8EF4000C0CFE /* EQ_09.wav */; };
+		762B183A1B8175F100D9D728 /* BM_Die1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A8B1B7F8EC4000C0CFE /* BM_Die1.wav */; };
+		762B183B1B8175F100D9D728 /* BM_Die2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A8C1B7F8EC4000C0CFE /* BM_Die2.wav */; };
+		762B183C1B8175F100D9D728 /* BM_Run1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A8D1B7F8EC4000C0CFE /* BM_Run1.wav */; };
+		762B183D1B8175F100D9D728 /* BM_Run2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A8E1B7F8EC4000C0CFE /* BM_Run2.wav */; };
+		762B183E1B8175F100D9D728 /* BM_Run3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A8F1B7F8EC4000C0CFE /* BM_Run3.wav */; };
+		762B183F1B8175F100D9D728 /* BM_Run4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A901B7F8EC4000C0CFE /* BM_Run4.wav */; };
+		762B18401B8175F100D9D728 /* BM_Run5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A911B7F8EC4000C0CFE /* BM_Run5.wav */; };
+		762B18411B8175F100D9D728 /* BM_Scream1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A921B7F8EC4000C0CFE /* BM_Scream1.wav */; };
+		762B18421B8175F100D9D728 /* BM_Scream2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A931B7F8EC4000C0CFE /* BM_Scream2.wav */; };
+		762B18431B8175F100D9D728 /* BM_Scream3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A941B7F8EC4000C0CFE /* BM_Scream3.wav */; };
+		762B18441B81760100D9D728 /* Interface_Accept.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218A31B7F8D80000C0CFE /* Interface_Accept.wav */; };
+		762B18451B81760100D9D728 /* Interface_Cancel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218A41B7F8D80000C0CFE /* Interface_Cancel.wav */; };
+		762B18461B81760100D9D728 /* Interface_Select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218A51B7F8D80000C0CFE /* Interface_Select.wav */; };
+		762B18471B81760100D9D728 /* Interface_WellDone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218A61B7F8D80000C0CFE /* Interface_WellDone.wav */; };
+		762B18481B81760100D9D728 /* Interface_Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218A71B7F8D80000C0CFE /* Interface_Wrong.wav */; };
+		762B18491B81760500D9D728 /* Zombie_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218AD1B7F8D87000C0CFE /* Zombie_Die_1.wav */; };
+		762B184A1B81760500D9D728 /* Zombie_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218AE1B7F8D87000C0CFE /* Zombie_Die_2.wav */; };
+		762B184B1B81760500D9D728 /* Zombie_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218AF1B7F8D87000C0CFE /* Zombie_Die_3.wav */; };
+		762B184C1B81760500D9D728 /* Zombie_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B01B7F8D87000C0CFE /* Zombie_Die_4.wav */; };
+		762B184D1B81760500D9D728 /* Zombie_Die_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B11B7F8D87000C0CFE /* Zombie_Die_5.wav */; };
+		762B184E1B81760500D9D728 /* Zombie_Die_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B21B7F8D87000C0CFE /* Zombie_Die_6.wav */; };
+		762B184F1B81760500D9D728 /* Zombie_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B31B7F8D87000C0CFE /* Zombie_Run_1.wav */; };
+		762B18501B81760500D9D728 /* Zombie_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B41B7F8D87000C0CFE /* Zombie_Run_2.wav */; };
+		762B18511B81760500D9D728 /* Zombie_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B51B7F8D87000C0CFE /* Zombie_Run_3.wav */; };
+		762B18521B81760500D9D728 /* Zombie_Run_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B61B7F8D87000C0CFE /* Zombie_Run_4.wav */; };
+		762B18531B81760500D9D728 /* Zombie_Run_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B71B7F8D87000C0CFE /* Zombie_Run_5.wav */; };
+		762B18541B81760500D9D728 /* Zombie_Run_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B81B7F8D87000C0CFE /* Zombie_Run_6.wav */; };
+		762B18551B81760500D9D728 /* Zombie_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218B91B7F8D87000C0CFE /* Zombie_Scream_1.wav */; };
+		762B18561B81760500D9D728 /* Zombie_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218BA1B7F8D87000C0CFE /* Zombie_Scream_2.wav */; };
+		762B18571B81760500D9D728 /* Zombie_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218BB1B7F8D87000C0CFE /* Zombie_Scream_3.wav */; };
+		762B18581B81760500D9D728 /* Zombie_Scream_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218BC1B7F8D87000C0CFE /* Zombie_Scream_4.wav */; };
+		762B18591B81760500D9D728 /* Zombie_Scream_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218BD1B7F8D87000C0CFE /* Zombie_Scream_5.wav */; };
+		762B185A1B81760500D9D728 /* Zombie_Scream_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218BE1B7F8D87000C0CFE /* Zombie_Scream_6.wav */; };
+		762B185B1B81760800D9D728 /* Tourist_RH_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D21B7F8D9A000C0CFE /* Tourist_RH_Die_1.wav */; };
+		762B185C1B81760800D9D728 /* Tourist_RH_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D31B7F8D9A000C0CFE /* Tourist_RH_Die_2.wav */; };
+		762B185D1B81760800D9D728 /* Tourist_RH_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D41B7F8D9A000C0CFE /* Tourist_RH_Die_3.wav */; };
+		762B185E1B81760800D9D728 /* Tourist_RH_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D51B7F8D9A000C0CFE /* Tourist_RH_Run_1.wav */; };
+		762B185F1B81760800D9D728 /* Tourist_RH_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D61B7F8D9A000C0CFE /* Tourist_RH_Run_2.wav */; };
+		762B18601B81760800D9D728 /* Tourist_RH_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D71B7F8D9A000C0CFE /* Tourist_RH_Scream_1.wav */; };
+		762B18611B81760800D9D728 /* Tourist_RH_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D81B7F8D9A000C0CFE /* Tourist_RH_Scream_2.wav */; };
+		762B18621B81760800D9D728 /* Tourist_RH_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218D91B7F8D9A000C0CFE /* Tourist_RH_Scream_3.wav */; };
+		762B18631B81760D00D9D728 /* Tourist_PH_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E31B7F8DAB000C0CFE /* Tourist_PH_Die_1.wav */; };
+		762B18641B81760D00D9D728 /* Tourist_PH_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E41B7F8DAB000C0CFE /* Tourist_PH_Die_3.wav */; };
+		762B18651B81760D00D9D728 /* Tourist_PH_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E51B7F8DAB000C0CFE /* Tourist_PH_Die_4.wav */; };
+		762B18661B81760D00D9D728 /* Tourist_PH_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E61B7F8DAB000C0CFE /* Tourist_PH_Run_1.wav */; };
+		762B18671B81760D00D9D728 /* Tourist_PH_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E71B7F8DAB000C0CFE /* Tourist_PH_Run_2.wav */; };
+		762B18681B81760D00D9D728 /* Tourist_PH_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E81B7F8DAB000C0CFE /* Tourist_PH_Run_3.wav */; };
+		762B18691B81760D00D9D728 /* Tourist_PH_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218E91B7F8DAB000C0CFE /* Tourist_PH_Scream_1.wav */; };
+		762B186A1B81760D00D9D728 /* Tourist_PH_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218EA1B7F8DAB000C0CFE /* Tourist_PH_Scream_2.wav */; };
+		762B186B1B81760D00D9D728 /* Tourist_PH_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218EB1B7F8DAB000C0CFE /* Tourist_PH_Scream_3.wav */; };
+		762B186C1B81760D00D9D728 /* Tourist_PH_Scream_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218EC1B7F8DAB000C0CFE /* Tourist_PH_Scream_4.wav */; };
+		762B186D1B81761100D9D728 /* Touris_BH_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218F81B7F8DBA000C0CFE /* Touris_BH_Die_1.wav */; };
+		762B186E1B81761100D9D728 /* Touris_BH_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218F91B7F8DBA000C0CFE /* Touris_BH_Die_2.wav */; };
+		762B186F1B81761100D9D728 /* Touris_BH_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FA1B7F8DBA000C0CFE /* Touris_BH_Die_3.wav */; };
+		762B18701B81761100D9D728 /* Touris_BH_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FB1B7F8DBA000C0CFE /* Touris_BH_Run_1.wav */; };
+		762B18711B81761100D9D728 /* Touris_BH_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FC1B7F8DBA000C0CFE /* Touris_BH_Run_2.wav */; };
+		762B18721B81761100D9D728 /* Touris_BH_Run_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FD1B7F8DBA000C0CFE /* Touris_BH_Run_4.wav */; };
+		762B18731B81761100D9D728 /* Touris_BH_Run_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FE1B7F8DBA000C0CFE /* Touris_BH_Run_5.wav */; };
+		762B18741B81761100D9D728 /* Touris_BH_Run_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766218FF1B7F8DBA000C0CFE /* Touris_BH_Run_6.wav */; };
+		762B18751B81761100D9D728 /* Touris_BH_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219001B7F8DBA000C0CFE /* Touris_BH_Scream_1.wav */; };
+		762B18761B81761100D9D728 /* Touris_BH_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219011B7F8DBA000C0CFE /* Touris_BH_Scream_2.wav */; };
+		762B18771B81761100D9D728 /* Touris_BH_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219021B7F8DBA000C0CFE /* Touris_BH_Scream_3.wav */; };
+		762B18781B81761500D9D728 /* TeenGirl2_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662190F1B7F8DCA000C0CFE /* TeenGirl2_Die_1.wav */; };
+		762B18791B81761500D9D728 /* TeenGirl2_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219101B7F8DCA000C0CFE /* TeenGirl2_Die_2.wav */; };
+		762B187A1B81761500D9D728 /* TeenGirl2_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219111B7F8DCA000C0CFE /* TeenGirl2_Die_3.wav */; };
+		762B187B1B81761500D9D728 /* TeenGirl2_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219121B7F8DCA000C0CFE /* TeenGirl2_Run_1.wav */; };
+		762B187C1B81761500D9D728 /* TeenGirl2_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219131B7F8DCA000C0CFE /* TeenGirl2_Run_2.wav */; };
+		762B187D1B81761500D9D728 /* TeenGirl2_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219141B7F8DCA000C0CFE /* TeenGirl2_Scream_1.wav */; };
+		762B187E1B81761500D9D728 /* TeenGirl2_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219151B7F8DCA000C0CFE /* TeenGirl2_Scream_2.wav */; };
+		762B187F1B81761500D9D728 /* TeenGirl2_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219161B7F8DCA000C0CFE /* TeenGirl2_Scream_3.wav */; };
+		762B18801B81761900D9D728 /* TeenGirl1_Die1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219201B7F8DE0000C0CFE /* TeenGirl1_Die1.wav */; };
+		762B18811B81761900D9D728 /* TeenGirl1_Die2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219211B7F8DE0000C0CFE /* TeenGirl1_Die2.wav */; };
+		762B18821B81761900D9D728 /* TeenGirl1_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219221B7F8DE0000C0CFE /* TeenGirl1_Run_2.wav */; };
+		762B18831B81761900D9D728 /* TeenGirl1_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219231B7F8DE0000C0CFE /* TeenGirl1_Run_3.wav */; };
+		762B18841B81761900D9D728 /* TeenGirl1_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219241B7F8DE0000C0CFE /* TeenGirl1_Scream_1.wav */; };
+		762B18851B81761C00D9D728 /* TeenBoy_Die_01-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662192B1B7F8DF8000C0CFE /* TeenBoy_Die_01-01.wav */; };
+		762B18861B81761C00D9D728 /* TeenBoy_Die_02-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662192C1B7F8DF8000C0CFE /* TeenBoy_Die_02-01.wav */; };
+		762B18871B81761C00D9D728 /* TeenBoy_Die_03-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662192D1B7F8DF8000C0CFE /* TeenBoy_Die_03-03.wav */; };
+		762B18881B81761C00D9D728 /* TeenBoy_Run_01-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662192E1B7F8DF8000C0CFE /* TeenBoy_Run_01-01.wav */; };
+		762B18891B81761C00D9D728 /* TeenBoy_Run_02-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662192F1B7F8DF8000C0CFE /* TeenBoy_Run_02-01.wav */; };
+		762B188A1B81761C00D9D728 /* TeenBoy_Run_03-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219301B7F8DF8000C0CFE /* TeenBoy_Run_03-01.wav */; };
+		762B188B1B81761C00D9D728 /* TeenBoy_Run_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219311B7F8DF8000C0CFE /* TeenBoy_Run_04.wav */; };
+		762B188C1B81761C00D9D728 /* TeenBoy_Run_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219321B7F8DF8000C0CFE /* TeenBoy_Run_05.wav */; };
+		762B188D1B81761C00D9D728 /* TeenBoy_Run_06.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219331B7F8DF8000C0CFE /* TeenBoy_Run_06.wav */; };
+		762B188E1B81761C00D9D728 /* TeenBoy_Scream_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219341B7F8DF8000C0CFE /* TeenBoy_Scream_01.wav */; };
+		762B188F1B81761C00D9D728 /* TeenBoy_Scream_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219351B7F8DF8000C0CFE /* TeenBoy_Scream_02.wav */; };
+		762B18901B81761C00D9D728 /* TeenBoy_Scream_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219361B7F8DF8000C0CFE /* TeenBoy_Scream_03.wav */; };
+		762B18911B81766E00D9D728 /* BW_Die_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A7D1B7F8EBD000C0CFE /* BW_Die_02.wav */; };
+		762B18921B81766E00D9D728 /* BW_Die_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A7E1B7F8EBD000C0CFE /* BW_Die_01.wav */; };
+		762B18931B81766E00D9D728 /* BW_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A7F1B7F8EBD000C0CFE /* BW_Run_1.wav */; };
+		762B18941B81766E00D9D728 /* BW_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A801B7F8EBD000C0CFE /* BW_Run_2.wav */; };
+		762B18951B81766E00D9D728 /* BW_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A811B7F8EBD000C0CFE /* BW_Run_3.wav */; };
+		762B18961B81766E00D9D728 /* BW_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A821B7F8EBD000C0CFE /* BW_Scream_1.wav */; };
+		762B18971B81766E00D9D728 /* BW_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A831B7F8EBD000C0CFE /* BW_Scream_2.wav */; };
+		762B18981B81767300D9D728 /* CoupleMan_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A711B7F8EB6000C0CFE /* CoupleMan_Die_1.wav */; };
+		762B18991B81767300D9D728 /* CoupleMan_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A721B7F8EB6000C0CFE /* CoupleMan_Die_2.wav */; };
+		762B189A1B81767300D9D728 /* CoupleMan_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A731B7F8EB6000C0CFE /* CoupleMan_Run_1.wav */; };
+		762B189B1B81767300D9D728 /* CoupleMan_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A741B7F8EB6000C0CFE /* CoupleMan_Run_2.wav */; };
+		762B189C1B81767300D9D728 /* CoupleMan_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A751B7F8EB6000C0CFE /* CoupleMan_Scream_1.wav */; };
+		762B189D1B81767300D9D728 /* CoupleMan_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A761B7F8EB6000C0CFE /* CoupleMan_Scream_2.wav */; };
+		762B189E1B81767600D9D728 /* Casada_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A631B7F8EB0000C0CFE /* Casada_Die_1.wav */; };
+		762B189F1B81767600D9D728 /* Casada_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A641B7F8EB0000C0CFE /* Casada_Die_2.wav */; };
+		762B18A01B81767600D9D728 /* Casada_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A651B7F8EB0000C0CFE /* Casada_Run_1.wav */; };
+		762B18A11B81767600D9D728 /* Casada_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A661B7F8EB0000C0CFE /* Casada_Run_2.wav */; };
+		762B18A21B81767600D9D728 /* Casada_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A671B7F8EB0000C0CFE /* Casada_Scream_1.wav */; };
+		762B18A31B81767600D9D728 /* Casada_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A681B7F8EB0000C0CFE /* Casada_Scream_2.wav */; };
+		762B18A41B81767600D9D728 /* Casada_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A691B7F8EB0000C0CFE /* Casada_Scream_3.wav */; };
+		762B18A51B81767A00D9D728 /* Doctora_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A4E1B7F8E91000C0CFE /* Doctora_Die_2.wav */; };
+		762B18A61B81767A00D9D728 /* Doctora_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A4F1B7F8E91000C0CFE /* Doctora_Die_3.wav */; };
+		762B18A71B81767A00D9D728 /* Doctora_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A501B7F8E91000C0CFE /* Doctora_Run_1.wav */; };
+		762B18A81B81767A00D9D728 /* Doctora_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A511B7F8E91000C0CFE /* Doctora_Run_2.wav */; };
+		762B18A91B81767A00D9D728 /* Doctora_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A521B7F8E91000C0CFE /* Doctora_Scream_1.wav */; };
+		762B18AA1B81767A00D9D728 /* Doctora_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A531B7F8E91000C0CFE /* Doctora_Scream_2.wav */; };
+		762B18AB1B81767E00D9D728 /* Exorcista_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A381B7F8E8B000C0CFE /* Exorcista_Die_1.wav */; };
+		762B18AC1B81767E00D9D728 /* Exorcista_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A391B7F8E8B000C0CFE /* Exorcista_Die_2.wav */; };
+		762B18AD1B81767E00D9D728 /* Exorcista_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3A1B7F8E8B000C0CFE /* Exorcista_Die_3.wav */; };
+		762B18AE1B81767E00D9D728 /* Exorcista_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3B1B7F8E8B000C0CFE /* Exorcista_Run_1.wav */; };
+		762B18AF1B81767E00D9D728 /* Exorcista_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3C1B7F8E8B000C0CFE /* Exorcista_Run_2.wav */; };
+		762B18B01B81767E00D9D728 /* Exorcista_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3D1B7F8E8B000C0CFE /* Exorcista_Run_3.wav */; };
+		762B18B11B81767E00D9D728 /* Exorcista_Scream_0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3E1B7F8E8B000C0CFE /* Exorcista_Scream_0.wav */; };
+		762B18B21B81767E00D9D728 /* Exorcista_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A3F1B7F8E8B000C0CFE /* Exorcista_Scream_1.wav */; };
+		762B18B31B81767E00D9D728 /* Exorcista_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A401B7F8E8B000C0CFE /* Exorcista_Scream_2.wav */; };
+		762B18B41B81767E00D9D728 /* Exorcista_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A411B7F8E8B000C0CFE /* Exorcista_Scream_3.wav */; };
+		762B18B51B81767E00D9D728 /* Exorcista_Scream_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A421B7F8E8B000C0CFE /* Exorcista_Scream_5.wav */; };
+		762B18B61B81768200D9D728 /* Gamer_Die_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A241B7F8E83000C0CFE /* Gamer_Die_02.wav */; };
+		762B18B71B81768200D9D728 /* Gamer_Die_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A251B7F8E83000C0CFE /* Gamer_Die_03.wav */; };
+		762B18B81B81768200D9D728 /* Gamer_Die_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A261B7F8E83000C0CFE /* Gamer_Die_04.wav */; };
+		762B18B91B81768200D9D728 /* Gamer_Die_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A271B7F8E83000C0CFE /* Gamer_Die_05.wav */; };
+		762B18BA1B81768200D9D728 /* Gamer_Run_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A281B7F8E83000C0CFE /* Gamer_Run_02.wav */; };
+		762B18BB1B81768200D9D728 /* Gamer_Run_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A291B7F8E83000C0CFE /* Gamer_Run_03.wav */; };
+		762B18BC1B81768200D9D728 /* Gamer_Run_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A2A1B7F8E83000C0CFE /* Gamer_Run_04.wav */; };
+		762B18BD1B81768200D9D728 /* Gamer_Scream_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A2B1B7F8E83000C0CFE /* Gamer_Scream_01-02.wav */; };
+		762B18BE1B81768200D9D728 /* Gamer_Scream_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A2C1B7F8E83000C0CFE /* Gamer_Scream_01-05.wav */; };
+		762B18BF1B81768200D9D728 /* Gamer_Scream_01-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A2D1B7F8E83000C0CFE /* Gamer_Scream_01-08.wav */; };
+		762B18C01B81768600D9D728 /* Gotica_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A101B7F8E7C000C0CFE /* Gotica_Die_1.wav */; };
+		762B18C11B81768600D9D728 /* Gotica_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A111B7F8E7C000C0CFE /* Gotica_Die_2.wav */; };
+		762B18C21B81768600D9D728 /* Gotica_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A121B7F8E7C000C0CFE /* Gotica_Die_3.wav */; };
+		762B18C31B81768600D9D728 /* Gotica_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A131B7F8E7C000C0CFE /* Gotica_Die_4.wav */; };
+		762B18C41B81768600D9D728 /* Gotica_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A141B7F8E7C000C0CFE /* Gotica_Run_1.wav */; };
+		762B18C51B81768600D9D728 /* Gotica_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A151B7F8E7C000C0CFE /* Gotica_Run_2.wav */; };
+		762B18C61B81768600D9D728 /* Gotica_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A161B7F8E7C000C0CFE /* Gotica_Scream_1.wav */; };
+		762B18C71B81768600D9D728 /* Gotica_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A171B7F8E7C000C0CFE /* Gotica_Scream_2.wav */; };
+		762B18C81B81768600D9D728 /* Gotica_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A181B7F8E7C000C0CFE /* Gotica_Scream_3.wav */; };
+		762B18C91B81768600D9D728 /* Gotica_Scream_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A191B7F8E7C000C0CFE /* Gotica_Scream_4.wav */; };
+		762B18CA1B81768A00D9D728 /* Heroina_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A081B7F8E75000C0CFE /* Heroina_Die_1.wav */; };
+		762B18CB1B81768A00D9D728 /* Heroina_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A091B7F8E75000C0CFE /* Heroina_Run_1.wav */; };
+		762B18CC1B81768A00D9D728 /* Heroina_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A0A1B7F8E75000C0CFE /* Heroina_Run_2.wav */; };
+		762B18CD1B81768A00D9D728 /* Heroina_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A0B1B7F8E75000C0CFE /* Heroina_Scream_1.wav */; };
+		762B18CE1B81768F00D9D728 /* Hunter_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FA1B7F8E6E000C0CFE /* Hunter_Die_1.wav */; };
+		762B18CF1B81768F00D9D728 /* Hunter_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FB1B7F8E6E000C0CFE /* Hunter_Die_2.wav */; };
+		762B18D01B81768F00D9D728 /* Hunter_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FC1B7F8E6E000C0CFE /* Hunter_Run_1.wav */; };
+		762B18D11B81768F00D9D728 /* Hunter_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FD1B7F8E6E000C0CFE /* Hunter_Run_2.wav */; };
+		762B18D21B81768F00D9D728 /* Hunter_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FE1B7F8E6E000C0CFE /* Hunter_Scream_1.wav */; };
+		762B18D31B81768F00D9D728 /* Hunter_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219FF1B7F8E6E000C0CFE /* Hunter_Scream_2.wav */; };
+		762B18D41B81768F00D9D728 /* Hunter_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76621A001B7F8E6E000C0CFE /* Hunter_Scream_3.wav */; };
+		762B18D51B81769300D9D728 /* Idiot_Die_Fx_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E81B7F8E66000C0CFE /* Idiot_Die_Fx_01-02.wav */; };
+		762B18D61B81769300D9D728 /* Idiot_Die_Fx_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E91B7F8E66000C0CFE /* Idiot_Die_Fx_01-05.wav */; };
+		762B18D71B81769300D9D728 /* Idiot_Die_Fx_01-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219EA1B7F8E66000C0CFE /* Idiot_Die_Fx_01-08.wav */; };
+		762B18D81B81769300D9D728 /* Idiot_Run_Fx_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219EB1B7F8E66000C0CFE /* Idiot_Run_Fx_05.wav */; };
+		762B18D91B81769300D9D728 /* Idiot_Run_Fx_06.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219EC1B7F8E66000C0CFE /* Idiot_Run_Fx_06.wav */; };
+		762B18DA1B81769300D9D728 /* Idiot_Run_Fx_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219ED1B7F8E66000C0CFE /* Idiot_Run_Fx_07.wav */; };
+		762B18DB1B81769300D9D728 /* Idiot_Scream_Fx_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219EE1B7F8E66000C0CFE /* Idiot_Scream_Fx_01-02.wav */; };
+		762B18DC1B81769300D9D728 /* Idiot_Scream_Fx_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219EF1B7F8E66000C0CFE /* Idiot_Scream_Fx_01-05.wav */; };
+		762B18DD1B81769300D9D728 /* Idiot_Scream_Fx_01-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219F01B7F8E66000C0CFE /* Idiot_Scream_Fx_01-08.wav */; };
+		762B18DE1B81769700D9D728 /* Investigador_Die.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E01B7F8E5D000C0CFE /* Investigador_Die.wav */; };
+		762B18DF1B81769700D9D728 /* Investigador_Run.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E11B7F8E5D000C0CFE /* Investigador_Run.wav */; };
+		762B18E01B81769700D9D728 /* Investigador_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E21B7F8E5D000C0CFE /* Investigador_Scream_1.wav */; };
+		762B18E11B81769700D9D728 /* Investigador_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219E31B7F8E5D000C0CFE /* Investigador_Scream_2.wav */; };
+		762B18E21B81769A00D9D728 /* MusicLoverFX_Die_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D01B7F8E56000C0CFE /* MusicLoverFX_Die_01-02.wav */; };
+		762B18E31B81769A00D9D728 /* MusicLoverFX_Die_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D11B7F8E56000C0CFE /* MusicLoverFX_Die_01-05.wav */; };
+		762B18E41B81769A00D9D728 /* MusicLoverFX_Die_01-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D21B7F8E56000C0CFE /* MusicLoverFX_Die_01-08.wav */; };
+		762B18E51B81769A00D9D728 /* MusicLoverFX_Run_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D31B7F8E56000C0CFE /* MusicLoverFX_Run_01-02.wav */; };
+		762B18E61B81769A00D9D728 /* MusicLoverFX_Run_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D41B7F8E56000C0CFE /* MusicLoverFX_Run_01-05.wav */; };
+		762B18E71B81769A00D9D728 /* MusicLoverFX_Run_01-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D51B7F8E56000C0CFE /* MusicLoverFX_Run_01-08.wav */; };
+		762B18E81B81769A00D9D728 /* MusicLoverFX_Scream_01-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D61B7F8E56000C0CFE /* MusicLoverFX_Scream_01-02.wav */; };
+		762B18E91B81769A00D9D728 /* MusicLoverFX_Scream_01-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219D71B7F8E56000C0CFE /* MusicLoverFX_Scream_01-05.wav */; };
+		762B18EA1B81769E00D9D728 /* Ninja_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219B61B7F8E50000C0CFE /* Ninja_Die_1.wav */; };
+		762B18EB1B81769E00D9D728 /* Ninja_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219B71B7F8E50000C0CFE /* Ninja_Die_2.wav */; };
+		762B18EC1B81769E00D9D728 /* Ninja_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219B81B7F8E50000C0CFE /* Ninja_Die_3.wav */; };
+		762B18ED1B81769E00D9D728 /* Ninja_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219B91B7F8E50000C0CFE /* Ninja_Die_4.wav */; };
+		762B18EE1B81769E00D9D728 /* Ninja_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BA1B7F8E50000C0CFE /* Ninja_Run_1.wav */; };
+		762B18EF1B81769E00D9D728 /* Ninja_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BB1B7F8E50000C0CFE /* Ninja_Run_2.wav */; };
+		762B18F01B81769E00D9D728 /* Ninja_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BC1B7F8E50000C0CFE /* Ninja_Run_3.wav */; };
+		762B18F11B81769E00D9D728 /* Ninja_Run_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BD1B7F8E50000C0CFE /* Ninja_Run_4.wav */; };
+		762B18F21B81769E00D9D728 /* Ninja_Run_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BE1B7F8E50000C0CFE /* Ninja_Run_5.wav */; };
+		762B18F31B81769E00D9D728 /* Ninja_Run_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219BF1B7F8E50000C0CFE /* Ninja_Run_6.wav */; };
+		762B18F41B81769E00D9D728 /* Ninja_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219C01B7F8E50000C0CFE /* Ninja_Scream_1.wav */; };
+		762B18F51B81769E00D9D728 /* Ninja_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219C11B7F8E50000C0CFE /* Ninja_Scream_2.wav */; };
+		762B18F61B81769E00D9D728 /* Ninja_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219C21B7F8E50000C0CFE /* Ninja_Scream_3.wav */; };
+		762B18F71B8176A200D9D728 /* Police_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199A1B7F8E49000C0CFE /* Police_Die_1.wav */; };
+		762B18F81B8176A200D9D728 /* Police_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199B1B7F8E49000C0CFE /* Police_Die_2.wav */; };
+		762B18F91B8176A200D9D728 /* Police_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199C1B7F8E49000C0CFE /* Police_Die_3.wav */; };
+		762B18FA1B8176A200D9D728 /* Police_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199D1B7F8E49000C0CFE /* Police_Die_4.wav */; };
+		762B18FB1B8176A200D9D728 /* Police_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199E1B7F8E49000C0CFE /* Police_Run_1.wav */; };
+		762B18FC1B8176A200D9D728 /* Police_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662199F1B7F8E49000C0CFE /* Police_Run_2.wav */; };
+		762B18FD1B8176A200D9D728 /* Police_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A01B7F8E49000C0CFE /* Police_Run_3.wav */; };
+		762B18FE1B8176A200D9D728 /* Police_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A11B7F8E49000C0CFE /* Police_Scream_1.wav */; };
+		762B18FF1B8176A200D9D728 /* Police_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A21B7F8E49000C0CFE /* Police_Scream_2.wav */; };
+		762B19001B8176A200D9D728 /* Police_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A31B7F8E49000C0CFE /* Police_Scream_3.wav */; };
+		762B19011B8176A200D9D728 /* Police_Scream_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A41B7F8E49000C0CFE /* Police_Scream_4.wav */; };
+		762B19021B8176A200D9D728 /* PoliceTalking_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A51B7F8E49000C0CFE /* PoliceTalking_01.wav */; };
+		762B19031B8176A200D9D728 /* PoliceTalking_02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A61B7F8E49000C0CFE /* PoliceTalking_02.wav */; };
+		762B19041B8176A200D9D728 /* PoliceTalking_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219A71B7F8E49000C0CFE /* PoliceTalking_03.wav */; };
+		762B19051B8176A600D9D728 /* Renovator_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219821B7F8E41000C0CFE /* Renovator_Die_1.wav */; };
+		762B19061B8176A600D9D728 /* Renovator_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219831B7F8E41000C0CFE /* Renovator_Die_2.wav */; };
+		762B19071B8176A600D9D728 /* Renovator_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219841B7F8E41000C0CFE /* Renovator_Die_3.wav */; };
+		762B19081B8176A600D9D728 /* Renovator_Die_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219851B7F8E41000C0CFE /* Renovator_Die_4.wav */; };
+		762B19091B8176A600D9D728 /* Renovator_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219861B7F8E41000C0CFE /* Renovator_Run_1.wav */; };
+		762B190A1B8176A600D9D728 /* Renovator_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219871B7F8E41000C0CFE /* Renovator_Run_2.wav */; };
+		762B190B1B8176A600D9D728 /* Renovator_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219881B7F8E41000C0CFE /* Renovator_Run_3.wav */; };
+		762B190C1B8176A600D9D728 /* Renovator_Run_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219891B7F8E41000C0CFE /* Renovator_Run_4.wav */; };
+		762B190D1B8176A600D9D728 /* Renovator_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662198A1B7F8E41000C0CFE /* Renovator_Scream_1.wav */; };
+		762B190E1B8176A600D9D728 /* Renovator_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662198B1B7F8E41000C0CFE /* Renovator_Scream_2.wav */; };
+		762B190F1B8176A600D9D728 /* Renovator_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662198C1B7F8E41000C0CFE /* Renovator_Scream_3.wav */; };
+		762B19101B8176A600D9D728 /* Renovator_Scream_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662198D1B7F8E41000C0CFE /* Renovator_Scream_4.wav */; };
+		762B19111B8176AA00D9D728 /* Reportera_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219721B7F8E3A000C0CFE /* Reportera_Die_1.wav */; };
+		762B19121B8176AA00D9D728 /* Reportera_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219731B7F8E3A000C0CFE /* Reportera_Die_2.wav */; };
+		762B19131B8176AA00D9D728 /* Reportera_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219741B7F8E3A000C0CFE /* Reportera_Run_1.wav */; };
+		762B19141B8176AA00D9D728 /* Reportera_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219751B7F8E3A000C0CFE /* Reportera_Run_2.wav */; };
+		762B19151B8176AA00D9D728 /* Reportera_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219761B7F8E3A000C0CFE /* Reportera_Run_3.wav */; };
+		762B19161B8176AA00D9D728 /* Reportera_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219771B7F8E3A000C0CFE /* Reportera_Scream_1.wav */; };
+		762B19171B8176AA00D9D728 /* Reportera_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219781B7F8E3A000C0CFE /* Reportera_Scream_2.wav */; };
+		762B19181B8176AA00D9D728 /* Reportera_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219791B7F8E3A000C0CFE /* Reportera_Scream_3.wav */; };
+		762B19191B8176AE00D9D728 /* Scaredy_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662195E1B7F8E30000C0CFE /* Scaredy_Die_1.wav */; };
+		762B191A1B8176AE00D9D728 /* Scaredy_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7662195F1B7F8E30000C0CFE /* Scaredy_Die_2.wav */; };
+		762B191B1B8176AE00D9D728 /* Scaredy_Die_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219601B7F8E30000C0CFE /* Scaredy_Die_3.wav */; };
+		762B191C1B8176AE00D9D728 /* Scaredy_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219611B7F8E30000C0CFE /* Scaredy_Run_1.wav */; };
+		762B191D1B8176AE00D9D728 /* Scaredy_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219621B7F8E30000C0CFE /* Scaredy_Run_2.wav */; };
+		762B191E1B8176AE00D9D728 /* Scaredy_Run_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219631B7F8E30000C0CFE /* Scaredy_Run_3.wav */; };
+		762B191F1B8176AE00D9D728 /* Scaredy_Run_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219641B7F8E30000C0CFE /* Scaredy_Run_4.wav */; };
+		762B19201B8176AE00D9D728 /* Scaredy_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219651B7F8E30000C0CFE /* Scaredy_Scream_1.wav */; };
+		762B19211B8176AE00D9D728 /* Scaredy_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219661B7F8E30000C0CFE /* Scaredy_Scream_2.wav */; };
+		762B19221B8176AE00D9D728 /* Scaredy_Scream_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219671B7F8E30000C0CFE /* Scaredy_Scream_3.wav */; };
+		762B19231B8176B100D9D728 /* Skeptic_Die_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219441B7F8E09000C0CFE /* Skeptic_Die_1.wav */; };
+		762B19241B8176B100D9D728 /* Skeptic_Die_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219451B7F8E09000C0CFE /* Skeptic_Die_2.wav */; };
+		762B19251B8176B100D9D728 /* Skeptic_Run_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219461B7F8E09000C0CFE /* Skeptic_Run_1.wav */; };
+		762B19261B8176B100D9D728 /* Skeptic_Run_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219471B7F8E09000C0CFE /* Skeptic_Run_2.wav */; };
+		762B19271B8176B100D9D728 /* Skeptic_Scream_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219481B7F8E09000C0CFE /* Skeptic_Scream_1.wav */; };
+		762B19281B8176B100D9D728 /* Skeptic_Scream_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 766219491B7F8E09000C0CFE /* Skeptic_Scream_2.wav */; };
+		762B19291B8176DA00D9D728 /* NormalFastColorShift.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662147F1B7F8B84000C0CFE /* NormalFastColorShift.vsh */; };
+		762B192A1B8176DA00D9D728 /* NormalFastShadow.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214811B7F8B84000C0CFE /* NormalFastShadow.vsh */; };
+		762B192B1B8176DA00D9D728 /* NormalFastAlpha.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214841B7F8B84000C0CFE /* NormalFastAlpha.vsh */; };
+		762B192C1B8176DA00D9D728 /* NormalFastReverseAlpha.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214861B7F8B84000C0CFE /* NormalFastReverseAlpha.vsh */; };
+		762B192D1B8176DA00D9D728 /* deselectTextureShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214881B7F8B84000C0CFE /* deselectTextureShader.vsh */; };
+		762B192E1B8176DA00D9D728 /* DrawColor.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148A1B7F8B84000C0CFE /* DrawColor.vsh */; };
+		762B192F1B8176DA00D9D728 /* GlowShaderFade.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148C1B7F8B84000C0CFE /* GlowShaderFade.vsh */; };
+		762B19301B8176DA00D9D728 /* HighLightShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148E1B7F8B84000C0CFE /* HighLightShader.vsh */; };
+		762B19311B8176DA00D9D728 /* NormalFast.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214901B7F8B84000C0CFE /* NormalFast.vsh */; };
+		762B19321B8176DA00D9D728 /* NormalFastHalfAlpha.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214921B7F8B84000C0CFE /* NormalFastHalfAlpha.vsh */; };
+		762B19331B8176DA00D9D728 /* Select.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214941B7F8B84000C0CFE /* Select.vsh */; };
+		762B19341B8176E100D9D728 /* NormalFastColorShift.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662147E1B7F8B84000C0CFE /* NormalFastColorShift.fsh */; };
+		762B19351B8176E100D9D728 /* NormalFastShadow.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214801B7F8B84000C0CFE /* NormalFastShadow.fsh */; };
+		762B19361B8176E100D9D728 /* HighLightShader_Color.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214821B7F8B84000C0CFE /* HighLightShader_Color.fsh */; };
+		762B19371B8176E100D9D728 /* NormalFastAlpha.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214831B7F8B84000C0CFE /* NormalFastAlpha.fsh */; };
+		762B19381B8176E100D9D728 /* NormalFastReverseAlpha.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214851B7F8B84000C0CFE /* NormalFastReverseAlpha.fsh */; };
+		762B19391B8176E100D9D728 /* deselectTextureShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214871B7F8B84000C0CFE /* deselectTextureShader.fsh */; };
+		762B193A1B8176E100D9D728 /* DrawColor.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214891B7F8B84000C0CFE /* DrawColor.fsh */; };
+		762B193B1B8176E100D9D728 /* GlowShaderFade.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148B1B7F8B84000C0CFE /* GlowShaderFade.fsh */; };
+		762B193C1B8176E100D9D728 /* HighLightShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148D1B7F8B84000C0CFE /* HighLightShader.fsh */; };
+		762B193D1B8176E100D9D728 /* NormalFast.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7662148F1B7F8B84000C0CFE /* NormalFast.fsh */; };
+		762B193E1B8176E100D9D728 /* NormalFastHalfAlpha.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214911B7F8B84000C0CFE /* NormalFastHalfAlpha.fsh */; };
+		762B193F1B8176E100D9D728 /* Select.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 766214931B7F8B84000C0CFE /* Select.fsh */; };
+		762B19401B8176E800D9D728 /* BackgroundPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218491B7F8CDA000C0CFE /* BackgroundPattern.png */; };
+		762B19411B8176E800D9D728 /* WindowBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184A1B7F8CDA000C0CFE /* WindowBorder.png */; };
+		762B19421B8176E800D9D728 /* BottomBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184B1B7F8CDA000C0CFE /* BottomBorder.png */; };
+		762B19431B8176E800D9D728 /* EYES-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184C1B7F8CDA000C0CFE /* EYES-01.png */; };
+		762B19441B8176E800D9D728 /* EYES-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184D1B7F8CDA000C0CFE /* EYES-02.png */; };
+		762B19451B8176E800D9D728 /* EYES-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184E1B7F8CDA000C0CFE /* EYES-03.png */; };
+		762B19461B8176E800D9D728 /* EYES-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662184F1B7F8CDA000C0CFE /* EYES-04.png */; };
+		762B19471B8176E800D9D728 /* GHOSTLoadScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218501B7F8CDA000C0CFE /* GHOSTLoadScreen.png */; };
+		762B19481B8176E800D9D728 /* Credits.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218511B7F8CDA000C0CFE /* Credits.png */; };
+		762B19491B8176E800D9D728 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218521B7F8CDA000C0CFE /* Triangle.png */; };
+		762B194A1B8176E800D9D728 /* FreePlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218531B7F8CDA000C0CFE /* FreePlay.png */; };
+		762B194B1B8176E800D9D728 /* Mods.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218541B7F8CDA000C0CFE /* Mods.png */; };
+		762B194C1B8176E800D9D728 /* Scenerio.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218551B7F8CDA000C0CFE /* Scenerio.png */; };
+		762B194D1B8176EB00D9D728 /* BathtubShark.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218041B7F8CC4000C0CFE /* BathtubShark.png */; };
+		762B194E1B8176EB00D9D728 /* Wardrobe_Evil.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218061B7F8CC4000C0CFE /* Wardrobe_Evil.png */; };
+		762B194F1B8176EB00D9D728 /* Sacks_Moving.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218081B7F8CC4000C0CFE /* Sacks_Moving.png */; };
+		762B19501B8176EB00D9D728 /* Sculpture_move.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662180A1B7F8CC4000C0CFE /* Sculpture_move.png */; };
+		762B19511B8176EB00D9D728 /* ScaryMirror.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662180C1B7F8CC4000C0CFE /* ScaryMirror.png */; };
+		762B19521B8176EB00D9D728 /* Chest.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662180F1B7F8CC4000C0CFE /* Chest.png */; };
+		762B19531B8176EB00D9D728 /* DancingBarrel.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218111B7F8CC4000C0CFE /* DancingBarrel.png */; };
+		762B19541B8176EB00D9D728 /* Bath_Sink.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218131B7F8CC4000C0CFE /* Bath_Sink.png */; };
+		762B19551B8176EB00D9D728 /* Vase.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218141B7F8CC4000C0CFE /* Vase.png */; };
+		762B19561B8176EB00D9D728 /* Chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218161B7F8CC4000C0CFE /* Chair.png */; };
+		762B19571B8176EB00D9D728 /* Painting_m.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218191B7F8CC4000C0CFE /* Painting_m.png */; };
+		762B19581B8176EB00D9D728 /* JackInTheBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662181B1B7F8CC4000C0CFE /* JackInTheBox.png */; };
+		762B19591B8176EB00D9D728 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662181D1B7F8CC4000C0CFE /* fire.png */; };
+		762B195A1B8176EB00D9D728 /* Pans.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662181F1B7F8CC4000C0CFE /* Pans.png */; };
+		762B195B1B8176EB00D9D728 /* paintingA.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218211B7F8CC4000C0CFE /* paintingA.png */; };
+		762B195C1B8176EB00D9D728 /* chandelier.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218231B7F8CC4000C0CFE /* chandelier.png */; };
+		762B195D1B8176EB00D9D728 /* StoveFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 766218241B7F8CC4000C0CFE /* StoveFire.png */; };
+		762B195E1B8176F100D9D728 /* MoveSpriteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C11B7F8CB0000C0CFE /* MoveSpriteIcon.png */; };
+		762B195F1B8176F100D9D728 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C21B7F8CB0000C0CFE /* BackButton.png */; };
+		762B19601B8176F100D9D728 /* HelpScreenScroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C31B7F8CB0000C0CFE /* HelpScreenScroll.png */; };
+		762B19611B8176F100D9D728 /* ModActivate.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C41B7F8CB0000C0CFE /* ModActivate.png */; };
+		762B19621B8176F100D9D728 /* AwarenessButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C51B7F8CB0000C0CFE /* AwarenessButtonIcon.png */; };
+		762B19631B8176F100D9D728 /* EnergyButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C61B7F8CB0000C0CFE /* EnergyButtonIcon.png */; };
+		762B19641B8176F100D9D728 /* TileButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C71B7F8CB0000C0CFE /* TileButtonIcon.png */; };
+		762B19651B8176F100D9D728 /* TrapButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C81B7F8CB0000C0CFE /* TrapButtonIcon.png */; };
+		762B19661B8176F100D9D728 /* GhostHunterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217C91B7F8CB0000C0CFE /* GhostHunterIcon.png */; };
+		762B19671B8176F100D9D728 /* Police_Shield.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CA1B7F8CB0000C0CFE /* Police_Shield.png */; };
+		762B19681B8176F100D9D728 /* CircleToFindThings.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CB1B7F8CB0000C0CFE /* CircleToFindThings.png */; };
+		762B19691B8176F100D9D728 /* PokeArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CC1B7F8CB0000C0CFE /* PokeArrow.png */; };
+		762B196A1B8176F100D9D728 /* MusicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CD1B7F8CB0000C0CFE /* MusicButton.png */; };
+		762B196B1B8176F100D9D728 /* AudioButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CE1B7F8CB0000C0CFE /* AudioButton.png */; };
+		762B196C1B8176F100D9D728 /* HelpScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217CF1B7F8CB0000C0CFE /* HelpScreen.png */; };
+		762B196D1B8176F100D9D728 /* DeleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D01B7F8CB0000C0CFE /* DeleteButton.png */; };
+		762B196E1B8176F100D9D728 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D11B7F8CB0000C0CFE /* PlayButton.png */; };
+		762B196F1B8176F100D9D728 /* Gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D21B7F8CB0000C0CFE /* Gameover.png */; };
+		762B19701B8176F100D9D728 /* OptionButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D31B7F8CB0000C0CFE /* OptionButton.png */; };
+		762B19711B8176F100D9D728 /* BackgroundGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D41B7F8CB0000C0CFE /* BackgroundGame.png */; };
+		762B19721B8176F100D9D728 /* ArrowR.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D51B7F8CB0000C0CFE /* ArrowR.png */; };
+		762B19731B8176F100D9D728 /* ArrowL.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D61B7F8CB0000C0CFE /* ArrowL.png */; };
+		762B19741B8176F100D9D728 /* IconPlace.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D71B7F8CB0000C0CFE /* IconPlace.png */; };
+		762B19751B8176F100D9D728 /* HeaderUIBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D81B7F8CB0000C0CFE /* HeaderUIBar.png */; };
+		762B19761B8176F100D9D728 /* GhostButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217D91B7F8CB0000C0CFE /* GhostButton.png */; };
+		762B19771B8176F100D9D728 /* OptionEND.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DA1B7F8CB0000C0CFE /* OptionEND.png */; };
+		762B19781B8176F100D9D728 /* overlayForText.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DB1B7F8CB0000C0CFE /* overlayForText.png */; };
+		762B19791B8176F100D9D728 /* TrapButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DC1B7F8CB0000C0CFE /* TrapButton.png */; };
+		762B197A1B8176F100D9D728 /* PropButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DD1B7F8CB0000C0CFE /* PropButton.png */; };
+		762B197B1B8176F100D9D728 /* TileButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DE1B7F8CB0000C0CFE /* TileButton.png */; };
+		762B197C1B8176F100D9D728 /* DoorButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217DF1B7F8CB0000C0CFE /* DoorButton.png */; };
+		762B197D1B8176F100D9D728 /* SpriteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217E01B7F8CB0000C0CFE /* SpriteButton.png */; };
+		762B197E1B8176F100D9D728 /* TileChangeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217E11B7F8CB0000C0CFE /* TileChangeButton.png */; };
+		762B197F1B8176F600D9D728 /* DoorOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217991B7F8C93000C0CFE /* DoorOne.png */; };
+		762B19801B8176F600D9D728 /* DoorTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662179B1B7F8C93000C0CFE /* DoorTwo.png */; };
+		762B19811B8176F600D9D728 /* DoorFour.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662179D1B7F8C93000C0CFE /* DoorFour.png */; };
+		762B19821B8176F600D9D728 /* DoorFive.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662179F1B7F8C93000C0CFE /* DoorFive.png */; };
+		762B19831B8176F600D9D728 /* DoorSix.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217A11B7F8C93000C0CFE /* DoorSix.png */; };
+		762B19841B8176F600D9D728 /* DoorSeven.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217A31B7F8C93000C0CFE /* DoorSeven.png */; };
+		762B19851B8176F600D9D728 /* DoorEight.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217A41B7F8C93000C0CFE /* DoorEight.png */; };
+		762B19861B8176F600D9D728 /* DoorNine.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217A61B7F8C93000C0CFE /* DoorNine.png */; };
+		762B19871B8176F600D9D728 /* DoorBigOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217A91B7F8C93000C0CFE /* DoorBigOne.png */; };
+		762B19881B8176F600D9D728 /* Door.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217AA1B7F8C93000C0CFE /* Door.png */; };
+		762B19891B8176FA00D9D728 /* CreditScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662178F1B7F8C7D000C0CFE /* CreditScreen.png */; };
+		762B198A1B8176FA00D9D728 /* SaveGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217901B7F8C7D000C0CFE /* SaveGame.png */; };
+		762B198B1B8176FA00D9D728 /* NewGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217911B7F8C7D000C0CFE /* NewGame.png */; };
+		762B198C1B8176FA00D9D728 /* NoSaveGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217921B7F8C7D000C0CFE /* NoSaveGame.png */; };
+		762B198D1B81770300D9D728 /* Grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216AC1B7F8C47000C0CFE /* Grass.png */; };
+		762B198E1B81770300D9D728 /* Outside.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216AD1B7F8C47000C0CFE /* Outside.png */; };
+		762B198F1B81770300D9D728 /* Dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216AE1B7F8C47000C0CFE /* Dirt.png */; };
+		762B19901B81770300D9D728 /* OutSideL.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216AF1B7F8C47000C0CFE /* OutSideL.png */; };
+		762B19911B81770300D9D728 /* OutSideR.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B01B7F8C47000C0CFE /* OutSideR.png */; };
+		762B19921B81770300D9D728 /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B11B7F8C47000C0CFE /* Tile.png */; };
+		762B19931B81770300D9D728 /* Bathroom_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B21B7F8C47000C0CFE /* Bathroom_mansion.png */; };
+		762B19941B81770300D9D728 /* BathroomL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B31B7F8C47000C0CFE /* BathroomL_mansion.png */; };
+		762B19951B81770300D9D728 /* BathroomR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B41B7F8C47000C0CFE /* BathroomR_mansion.png */; };
+		762B19961B81770300D9D728 /* bush_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B51B7F8C47000C0CFE /* bush_mansion.png */; };
+		762B19971B81770300D9D728 /* bedroom1_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B61B7F8C47000C0CFE /* bedroom1_mansion.png */; };
+		762B19981B81770300D9D728 /* Bedroom1L_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B71B7F8C47000C0CFE /* Bedroom1L_mansion.png */; };
+		762B19991B81770300D9D728 /* Bedroom1LL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B81B7F8C47000C0CFE /* Bedroom1LL_mansion.png */; };
+		762B199A1B81770300D9D728 /* Bedroom1R_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216B91B7F8C47000C0CFE /* Bedroom1R_mansion.png */; };
+		762B199B1B81770300D9D728 /* Bedroom1RW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BA1B7F8C47000C0CFE /* Bedroom1RW_mansion.png */; };
+		762B199C1B81770300D9D728 /* Bedroom2_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BB1B7F8C47000C0CFE /* Bedroom2_mansion.png */; };
+		762B199D1B81770300D9D728 /* Bedroom2L_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BC1B7F8C47000C0CFE /* Bedroom2L_mansion.png */; };
+		762B199E1B81770300D9D728 /* Bedroom2LL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BD1B7F8C47000C0CFE /* Bedroom2LL_mansion.png */; };
+		762B199F1B81770300D9D728 /* Bedroom2R_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BE1B7F8C47000C0CFE /* Bedroom2R_mansion.png */; };
+		762B19A01B81770300D9D728 /* Bedroom2RW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216BF1B7F8C47000C0CFE /* Bedroom2RW_mansion.png */; };
+		762B19A11B81770300D9D728 /* Bedroom3_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C01B7F8C47000C0CFE /* Bedroom3_mansion.png */; };
+		762B19A21B81770300D9D728 /* Bedroom3L_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C11B7F8C47000C0CFE /* Bedroom3L_mansion.png */; };
+		762B19A31B81770300D9D728 /* Bedroom3LL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C21B7F8C47000C0CFE /* Bedroom3LL_mansion.png */; };
+		762B19A41B81770300D9D728 /* Bedroom3LW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C31B7F8C47000C0CFE /* Bedroom3LW_mansion.png */; };
+		762B19A51B81770300D9D728 /* Bedroom3R_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C41B7F8C47000C0CFE /* Bedroom3R_mansion.png */; };
+		762B19A61B81770300D9D728 /* Bedroom3RL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C51B7F8C47000C0CFE /* Bedroom3RL_mansion.png */; };
+		762B19A71B81770300D9D728 /* Hall1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C61B7F8C47000C0CFE /* Hall1.png */; };
+		762B19A81B81770300D9D728 /* Hall2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C71B7F8C47000C0CFE /* Hall2.png */; };
+		762B19A91B81770300D9D728 /* HallL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C81B7F8C47000C0CFE /* HallL_mansion.png */; };
+		762B19AA1B81770300D9D728 /* HallLl_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216C91B7F8C47000C0CFE /* HallLl_mansion.png */; };
+		762B19AB1B81770300D9D728 /* HallR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CA1B7F8C47000C0CFE /* HallR_mansion.png */; };
+		762B19AC1B81770300D9D728 /* HallRL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CB1B7F8C47000C0CFE /* HallRL_mansion.png */; };
+		762B19AD1B81770300D9D728 /* KitchenL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CC1B7F8C47000C0CFE /* KitchenL_mansion.png */; };
+		762B19AE1B81770300D9D728 /* KitchenR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CD1B7F8C47000C0CFE /* KitchenR_mansion.png */; };
+		762B19AF1B81770300D9D728 /* Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CE1B7F8C47000C0CFE /* Library.png */; };
+		762B19B01B81770300D9D728 /* LibraryL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216CF1B7F8C47000C0CFE /* LibraryL_mansion.png */; };
+		762B19B11B81770300D9D728 /* LibraryLW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D01B7F8C47000C0CFE /* LibraryLW_mansion.png */; };
+		762B19B21B81770300D9D728 /* LibraryR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D11B7F8C47000C0CFE /* LibraryR_mansion.png */; };
+		762B19B31B81770300D9D728 /* Musicroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D21B7F8C47000C0CFE /* Musicroom.png */; };
+		762B19B41B81770300D9D728 /* MusicroomL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D31B7F8C47000C0CFE /* MusicroomL_mansion.png */; };
+		762B19B51B81770300D9D728 /* MusicroomLW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D41B7F8C47000C0CFE /* MusicroomLW_mansion.png */; };
+		762B19B61B81770300D9D728 /* MusicroomR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D51B7F8C47000C0CFE /* MusicroomR_mansion.png */; };
+		762B19B71B81770300D9D728 /* Outside1L_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D71B7F8C47000C0CFE /* Outside1L_mansion.png */; };
+		762B19B81B81770300D9D728 /* Outside1R_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D81B7F8C47000C0CFE /* Outside1R_mansion.png */; };
+		762B19B91B81770300D9D728 /* Outside1RW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216D91B7F8C47000C0CFE /* Outside1RW_mansion.png */; };
+		762B19BA1B81770300D9D728 /* Outside2L_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DA1B7F8C47000C0CFE /* Outside2L_mansion.png */; };
+		762B19BB1B81770300D9D728 /* Outside2LW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DB1B7F8C47000C0CFE /* Outside2LW_mansion.png */; };
+		762B19BC1B81770300D9D728 /* Outside2R_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DC1B7F8C47000C0CFE /* Outside2R_mansion.png */; };
+		762B19BD1B81770300D9D728 /* Outside2RW_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DD1B7F8C47000C0CFE /* Outside2RW_mansion.png */; };
+		762B19BE1B81770300D9D728 /* storageroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DE1B7F8C47000C0CFE /* storageroom.png */; };
+		762B19BF1B81770300D9D728 /* StorageroomL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216DF1B7F8C47000C0CFE /* StorageroomL_mansion.png */; };
+		762B19C01B81770300D9D728 /* StorageroomR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E01B7F8C47000C0CFE /* StorageroomR_mansion.png */; };
+		762B19C11B81770300D9D728 /* Vest.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E11B7F8C47000C0CFE /* Vest.png */; };
+		762B19C21B81770300D9D728 /* VestL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E21B7F8C47000C0CFE /* VestL_mansion.png */; };
+		762B19C31B81770300D9D728 /* VestLL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E31B7F8C47000C0CFE /* VestLL_mansion.png */; };
+		762B19C41B81770300D9D728 /* VestR_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E41B7F8C47000C0CFE /* VestR_mansion.png */; };
+		762B19C51B81770300D9D728 /* VestRL_mansion.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E51B7F8C47000C0CFE /* VestRL_mansion.png */; };
+		762B19C61B81770300D9D728 /* Bathroom_castle.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E61B7F8C47000C0CFE /* Bathroom_castle.png */; };
+		762B19C71B81770300D9D728 /* BathroomL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E71B7F8C47000C0CFE /* BathroomL_cabin.png */; };
+		762B19C81B81770300D9D728 /* BathroomR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E81B7F8C47000C0CFE /* BathroomR_cabin.png */; };
+		762B19C91B81770300D9D728 /* bedroom1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216E91B7F8C47000C0CFE /* bedroom1.png */; };
+		762B19CA1B81770300D9D728 /* Bedroom1L_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216EA1B7F8C47000C0CFE /* Bedroom1L_cabin.png */; };
+		762B19CB1B81770300D9D728 /* Bedroom1LW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216EB1B7F8C47000C0CFE /* Bedroom1LW_cabin.png */; };
+		762B19CC1B81770300D9D728 /* Bedroom1R_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216EC1B7F8C47000C0CFE /* Bedroom1R_cabin.png */; };
+		762B19CD1B81770300D9D728 /* Bedroom1RW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216ED1B7F8C47000C0CFE /* Bedroom1RW_cabin.png */; };
+		762B19CE1B81770300D9D728 /* Bedroom2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216EE1B7F8C47000C0CFE /* Bedroom2.png */; };
+		762B19CF1B81770300D9D728 /* Bedroom2L_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216EF1B7F8C47000C0CFE /* Bedroom2L_cabin.png */; };
+		762B19D01B81770300D9D728 /* Bedroom2LW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F01B7F8C47000C0CFE /* Bedroom2LW_cabin.png */; };
+		762B19D11B81770300D9D728 /* Bedroom2R_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F11B7F8C47000C0CFE /* Bedroom2R_cabin.png */; };
+		762B19D21B81770300D9D728 /* Bedroom3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F21B7F8C47000C0CFE /* Bedroom3.png */; };
+		762B19D31B81770300D9D728 /* Bedroom3L_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F31B7F8C47000C0CFE /* Bedroom3L_cabin.png */; };
+		762B19D41B81770300D9D728 /* Bedroom3R_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F41B7F8C47000C0CFE /* Bedroom3R_cabin.png */; };
+		762B19D51B81770300D9D728 /* dinningroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F51B7F8C47000C0CFE /* dinningroom.png */; };
+		762B19D61B81770300D9D728 /* DinningroomL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F61B7F8C47000C0CFE /* DinningroomL_cabin.png */; };
+		762B19D71B81770300D9D728 /* DinningroomR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F71B7F8C47000C0CFE /* DinningroomR_cabin.png */; };
+		762B19D81B81770300D9D728 /* DinningroomRW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F81B7F8C47000C0CFE /* DinningroomRW_cabin.png */; };
+		762B19D91B81770300D9D728 /* kitchen.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216F91B7F8C47000C0CFE /* kitchen.png */; };
+		762B19DA1B81770300D9D728 /* KitchenL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FA1B7F8C47000C0CFE /* KitchenL_cabin.png */; };
+		762B19DB1B81770300D9D728 /* KitchenR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FB1B7F8C47000C0CFE /* KitchenR_cabin.png */; };
+		762B19DC1B81770300D9D728 /* LibraryL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FC1B7F8C47000C0CFE /* LibraryL_cabin.png */; };
+		762B19DD1B81770300D9D728 /* LibraryLW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FD1B7F8C47000C0CFE /* LibraryLW_cabin.png */; };
+		762B19DE1B81770300D9D728 /* LibraryR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FE1B7F8C47000C0CFE /* LibraryR_cabin.png */; };
+		762B19DF1B81770300D9D728 /* Livingroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216FF1B7F8C47000C0CFE /* Livingroom.png */; };
+		762B19E01B81770300D9D728 /* LivingroomL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217001B7F8C47000C0CFE /* LivingroomL_cabin.png */; };
+		762B19E11B81770300D9D728 /* LivingroomR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217011B7F8C47000C0CFE /* LivingroomR_cabin.png */; };
+		762B19E21B81770300D9D728 /* Outside1L_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217021B7F8C47000C0CFE /* Outside1L_cabin.png */; };
+		762B19E31B81770300D9D728 /* Outside1L2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217031B7F8C47000C0CFE /* Outside1L2_cabin.png */; };
+		762B19E41B81770300D9D728 /* Outside1Lcorner1_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217041B7F8C47000C0CFE /* Outside1Lcorner1_cabin.png */; };
+		762B19E51B81770300D9D728 /* Outside1Lcorner2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217051B7F8C47000C0CFE /* Outside1Lcorner2_cabin.png */; };
+		762B19E61B81770300D9D728 /* Outside1LW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217061B7F8C47000C0CFE /* Outside1LW_cabin.png */; };
+		762B19E71B81770300D9D728 /* Outside1R_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217071B7F8C47000C0CFE /* Outside1R_cabin.png */; };
+		762B19E81B81770300D9D728 /* Outside1R2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217081B7F8C47000C0CFE /* Outside1R2_cabin.png */; };
+		762B19E91B81770300D9D728 /* Outside1Rcorner1_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217091B7F8C47000C0CFE /* Outside1Rcorner1_cabin.png */; };
+		762B19EA1B81770300D9D728 /* Outside1Rcorner2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170A1B7F8C47000C0CFE /* Outside1Rcorner2_cabin.png */; };
+		762B19EB1B81770300D9D728 /* Outside1RW_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170B1B7F8C47000C0CFE /* Outside1RW_cabin.png */; };
+		762B19EC1B81770300D9D728 /* Outside2L_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170C1B7F8C47000C0CFE /* Outside2L_cabin.png */; };
+		762B19ED1B81770300D9D728 /* Outside2L2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170D1B7F8C47000C0CFE /* Outside2L2_cabin.png */; };
+		762B19EE1B81770300D9D728 /* Outside2Lcorner1_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170E1B7F8C47000C0CFE /* Outside2Lcorner1_cabin.png */; };
+		762B19EF1B81770300D9D728 /* Outside2Lcorner2_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662170F1B7F8C47000C0CFE /* Outside2Lcorner2_cabin.png */; };
+		762B19F01B81770300D9D728 /* Outside2LWcabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217101B7F8C47000C0CFE /* Outside2LWcabin.png */; };
+		762B19F11B81770300D9D728 /* Quad.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217111B7F8C47000C0CFE /* Quad.png */; };
+		762B19F21B81770300D9D728 /* QuadCgrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217121B7F8C47000C0CFE /* QuadCgrass.png */; };
+		762B19F31B81770300D9D728 /* QuadL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217131B7F8C47000C0CFE /* QuadL_cabin.png */; };
+		762B19F41B81770300D9D728 /* QuadLgrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217141B7F8C47000C0CFE /* QuadLgrass.png */; };
+		762B19F51B81770300D9D728 /* QuadR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217151B7F8C47000C0CFE /* QuadR_cabin.png */; };
+		762B19F61B81770300D9D728 /* QuadRgrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217161B7F8C47000C0CFE /* QuadRgrass.png */; };
+		762B19F71B81770300D9D728 /* StorageL_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217171B7F8C47000C0CFE /* StorageL_cabin.png */; };
+		762B19F81B81770300D9D728 /* StorageR_cabin.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217181B7F8C47000C0CFE /* StorageR_cabin.png */; };
+		762B19F91B81770300D9D728 /* Workshop.png in Resources */ = {isa = PBXBuildFile; fileRef = 766217191B7F8C47000C0CFE /* Workshop.png */; };
+		762B19FA1B81770300D9D728 /* WorkshopL.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662171A1B7F8C47000C0CFE /* WorkshopL.png */; };
+		762B19FB1B81770300D9D728 /* WorkshopR.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662171B1B7F8C47000C0CFE /* WorkshopR.png */; };
+		762B19FC1B81771200D9D728 /* GhostAllAnimations.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216A71B7F8C30000C0CFE /* GhostAllAnimations.png */; };
+		762B19FD1B81771700D9D728 /* Bulldozer.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216311B7F8C19000C0CFE /* Bulldozer.png */; };
+		762B19FE1B81771700D9D728 /* Vivian.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216331B7F8C19000C0CFE /* Vivian.png */; };
+		762B19FF1B81771700D9D728 /* Businessman.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216351B7F8C19000C0CFE /* Businessman.png */; };
+		762B1A001B81771700D9D728 /* BusinessWoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216371B7F8C19000C0CFE /* BusinessWoman.png */; };
+		762B1A011B81771700D9D728 /* Coupleman.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216391B7F8C19000C0CFE /* Coupleman.png */; };
+		762B1A021B81771700D9D728 /* Couplewoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662163B1B7F8C19000C0CFE /* Couplewoman.png */; };
+		762B1A031B81771700D9D728 /* Doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662163D1B7F8C19000C0CFE /* Doctor.png */; };
+		762B1A041B81771700D9D728 /* Exorcist.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662163F1B7F8C19000C0CFE /* Exorcist.png */; };
+		762B1A051B81771700D9D728 /* Gamer.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216411B7F8C19000C0CFE /* Gamer.png */; };
+		762B1A061B81771700D9D728 /* Gilda.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216431B7F8C19000C0CFE /* Gilda.png */; };
+		762B1A071B81771700D9D728 /* Gothic.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216451B7F8C19000C0CFE /* Gothic.png */; };
+		762B1A081B81771700D9D728 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216471B7F8C19000C0CFE /* Hero.png */; };
+		762B1A091B81771700D9D728 /* Hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216491B7F8C19000C0CFE /* Hunter.png */; };
+		762B1A0A1B81771700D9D728 /* Idiot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662164B1B7F8C19000C0CFE /* Idiot.png */; };
+		762B1A0B1B81771700D9D728 /* Investigator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662164D1B7F8C19000C0CFE /* Investigator.png */; };
+		762B1A0C1B81771700D9D728 /* MusicLover.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662164F1B7F8C19000C0CFE /* MusicLover.png */; };
+		762B1A0D1B81771700D9D728 /* Ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216511B7F8C19000C0CFE /* Ninja.png */; };
+		762B1A0E1B81771700D9D728 /* Policeman.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216531B7F8C19000C0CFE /* Policeman.png */; };
+		762B1A0F1B81771700D9D728 /* Renovator.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216551B7F8C19000C0CFE /* Renovator.png */; };
+		762B1A101B81771700D9D728 /* Reporter.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216571B7F8C19000C0CFE /* Reporter.png */; };
+		762B1A111B81771700D9D728 /* Scadery.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216591B7F8C19000C0CFE /* Scadery.png */; };
+		762B1A121B81771700D9D728 /* Skeptic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662165B1B7F8C19000C0CFE /* Skeptic.png */; };
+		762B1A131B81771700D9D728 /* Teen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662165D1B7F8C19000C0CFE /* Teen3.png */; };
+		762B1A141B81771700D9D728 /* Teen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662165F1B7F8C19000C0CFE /* Teen2.png */; };
+		762B1A151B81771700D9D728 /* Teen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216611B7F8C19000C0CFE /* Teen1.png */; };
+		762B1A161B81771700D9D728 /* Zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216631B7F8C19000C0CFE /* Zombie.png */; };
+		762B1A171B81771700D9D728 /* TilesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216641B7F8C19000C0CFE /* TilesButton.png */; };
+		762B1A181B81771700D9D728 /* Tourist3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216661B7F8C19000C0CFE /* Tourist3.png */; };
+		762B1A191B81771700D9D728 /* Tourist2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766216681B7F8C19000C0CFE /* Tourist2.png */; };
+		762B1A1A1B81771700D9D728 /* Tourist1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662166A1B7F8C19000C0CFE /* Tourist1.png */; };
+		762B1A1B1B81771D00D9D728 /* rocking-chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214FB1B7F8BFC000C0CFE /* rocking-chair.png */; };
+		762B1A1C1B81771D00D9D728 /* winestorage_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214FC1B7F8BFC000C0CFE /* winestorage_1.png */; };
+		762B1A1D1B81771D00D9D728 /* winestorage_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214FD1B7F8BFC000C0CFE /* winestorage_2.png */; };
+		762B1A1E1B81771D00D9D728 /* wardrobe_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214FE1B7F8BFC000C0CFE /* wardrobe_2.png */; };
+		762B1A1F1B81771D00D9D728 /* wardrobe_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214FF1B7F8BFC000C0CFE /* wardrobe_3.png */; };
+		762B1A201B81771D00D9D728 /* wardrobe_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215001B7F8BFC000C0CFE /* wardrobe_1.png */; };
+		762B1A211B81771D00D9D728 /* Wall elements_shield_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215011B7F8BFC000C0CFE /* Wall elements_shield_1.png */; };
+		762B1A221B81771D00D9D728 /* Wall elements_shield_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215021B7F8BFC000C0CFE /* Wall elements_shield_2.png */; };
+		762B1A231B81771D00D9D728 /* tree_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215031B7F8BFC000C0CFE /* tree_3.png */; };
+		762B1A241B81771D00D9D728 /* tree_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215041B7F8BFC000C0CFE /* tree_2.png */; };
+		762B1A251B81771D00D9D728 /* tree_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215051B7F8BFC000C0CFE /* tree_1.png */; };
+		762B1A261B81771D00D9D728 /* tools.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215061B7F8BFC000C0CFE /* tools.png */; };
+		762B1A271B81771D00D9D728 /* tools table_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215071B7F8BFC000C0CFE /* tools table_6.png */; };
+		762B1A281B81771D00D9D728 /* tools table_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215081B7F8BFC000C0CFE /* tools table_4.png */; };
+		762B1A291B81771D00D9D728 /* tools table_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215091B7F8BFC000C0CFE /* tools table_5.png */; };
+		762B1A2A1B81771D00D9D728 /* tools table_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150A1B7F8BFC000C0CFE /* tools table_2.png */; };
+		762B1A2B1B81771D00D9D728 /* tools table_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150B1B7F8BFC000C0CFE /* tools table_3.png */; };
+		762B1A2C1B81771D00D9D728 /* tools table_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150C1B7F8BFC000C0CFE /* tools table_1.png */; };
+		762B1A2D1B81771D00D9D728 /* stoveoven.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150D1B7F8BFC000C0CFE /* stoveoven.png */; };
+		762B1A2E1B81771D00D9D728 /* toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150E1B7F8BFC000C0CFE /* toilet.png */; };
+		762B1A2F1B81771D00D9D728 /* sofa_front_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662150F1B7F8BFC000C0CFE /* sofa_front_5.png */; };
+		762B1A301B81771D00D9D728 /* sofa_front_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215101B7F8BFC000C0CFE /* sofa_front_3.png */; };
+		762B1A311B81771D00D9D728 /* sofa_front_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215111B7F8BFC000C0CFE /* sofa_front_4.png */; };
+		762B1A321B81771D00D9D728 /* sofa_front_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215121B7F8BFC000C0CFE /* sofa_front_2.png */; };
+		762B1A331B81771D00D9D728 /* sofa_back_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215131B7F8BFC000C0CFE /* sofa_back_5.png */; };
+		762B1A341B81771D00D9D728 /* sofa_front_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215141B7F8BFC000C0CFE /* sofa_front_1.png */; };
+		762B1A351B81771D00D9D728 /* sofa_back_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215151B7F8BFC000C0CFE /* sofa_back_4.png */; };
+		762B1A361B81771D00D9D728 /* sofa_back_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215161B7F8BFC000C0CFE /* sofa_back_2.png */; };
+		762B1A371B81771D00D9D728 /* sofa_back_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215171B7F8BFC000C0CFE /* sofa_back_3.png */; };
+		762B1A381B81771D00D9D728 /* Smalltable_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215181B7F8BFC000C0CFE /* Smalltable_9.png */; };
+		762B1A391B81771D00D9D728 /* sofa_back_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215191B7F8BFC000C0CFE /* sofa_back_1.png */; };
+		762B1A3A1B81771D00D9D728 /* Smalltable_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151A1B7F8BFC000C0CFE /* Smalltable_7.png */; };
+		762B1A3B1B81771D00D9D728 /* Smalltable_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151B1B7F8BFC000C0CFE /* Smalltable_8.png */; };
+		762B1A3C1B81771D00D9D728 /* Smalltable_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151C1B7F8BFC000C0CFE /* Smalltable_5.png */; };
+		762B1A3D1B81771D00D9D728 /* Smalltable_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151D1B7F8BFC000C0CFE /* Smalltable_6.png */; };
+		762B1A3E1B81771D00D9D728 /* Smalltable_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151E1B7F8BFC000C0CFE /* Smalltable_4.png */; };
+		762B1A3F1B81771D00D9D728 /* Smalltable_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662151F1B7F8BFC000C0CFE /* Smalltable_2.png */; };
+		762B1A401B81771D00D9D728 /* Smalltable_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215201B7F8BFC000C0CFE /* Smalltable_3.png */; };
+		762B1A411B81771D00D9D728 /* single bed_3a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215211B7F8BFC000C0CFE /* single bed_3a.png */; };
+		762B1A421B81771D00D9D728 /* Smalltable_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215221B7F8BFC000C0CFE /* Smalltable_1.png */; };
+		762B1A431B81771D00D9D728 /* single bed_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215231B7F8BFC000C0CFE /* single bed_3.png */; };
+		762B1A441B81771D00D9D728 /* single bed_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215241B7F8BFC000C0CFE /* single bed_2.png */; };
+		762B1A451B81771D00D9D728 /* single bed_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215251B7F8BFC000C0CFE /* single bed_2a.png */; };
+		762B1A461B81771D00D9D728 /* single bed_1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215261B7F8BFC000C0CFE /* single bed_1a.png */; };
+		762B1A471B81771D00D9D728 /* single bed_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215271B7F8BFC000C0CFE /* single bed_1.png */; };
+		762B1A481B81771D00D9D728 /* round table_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215281B7F8BFC000C0CFE /* round table_2.png */; };
+		762B1A491B81771D00D9D728 /* round table_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215291B7F8BFC000C0CFE /* round table_3.png */; };
+		762B1A4A1B81771D00D9D728 /* rocking chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152A1B7F8BFC000C0CFE /* rocking chair.png */; };
+		762B1A4B1B81771D00D9D728 /* round table_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152B1B7F8BFC000C0CFE /* round table_1.png */; };
+		762B1A4C1B81771D00D9D728 /* pine_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152C1B7F8BFC000C0CFE /* pine_7.png */; };
+		762B1A4D1B81771D00D9D728 /* pine_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152D1B7F8BFC000C0CFE /* pine_6.png */; };
+		762B1A4E1B81771D00D9D728 /* pine_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152E1B7F8BFC000C0CFE /* pine_5.png */; };
+		762B1A4F1B81771D00D9D728 /* pine_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662152F1B7F8BFC000C0CFE /* pine_4.png */; };
+		762B1A501B81771D00D9D728 /* pine_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215301B7F8BFC000C0CFE /* pine_3.png */; };
+		762B1A511B81771D00D9D728 /* pine_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215311B7F8BFC000C0CFE /* pine_2.png */; };
+		762B1A521B81771D00D9D728 /* pine_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215321B7F8BFC000C0CFE /* pine_1.png */; };
+		762B1A531B81771D00D9D728 /* paintings_mutis.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215331B7F8BFC000C0CFE /* paintings_mutis.png */; };
+		762B1A541B81771D00D9D728 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215341B7F8BFC000C0CFE /* piano.png */; };
+		762B1A551B81771D00D9D728 /* paintings_chavo.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215351B7F8BFC000C0CFE /* paintings_chavo.png */; };
+		762B1A561B81771D00D9D728 /* logs_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215361B7F8BFC000C0CFE /* logs_3.png */; };
+		762B1A571B81771D00D9D728 /* paintings_betty.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215371B7F8BFC000C0CFE /* paintings_betty.png */; };
+		762B1A581B81771D00D9D728 /* logs_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215381B7F8BFC000C0CFE /* logs_1.png */; };
+		762B1A591B81771D00D9D728 /* logs_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215391B7F8BFC000C0CFE /* logs_2.png */; };
+		762B1A5A1B81771D00D9D728 /* library_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153A1B7F8BFC000C0CFE /* library_4.png */; };
+		762B1A5B1B81771D00D9D728 /* library_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153B1B7F8BFC000C0CFE /* library_2.png */; };
+		762B1A5C1B81771D00D9D728 /* library_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153C1B7F8BFC000C0CFE /* library_3.png */; };
+		762B1A5D1B81771D00D9D728 /* ktablesink_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153D1B7F8BFC000C0CFE /* ktablesink_3.png */; };
+		762B1A5E1B81771D00D9D728 /* library_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153E1B7F8BFC000C0CFE /* library_1.png */; };
+		762B1A5F1B81771D00D9D728 /* ktablesink_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662153F1B7F8BFC000C0CFE /* ktablesink_1.png */; };
+		762B1A601B81771D00D9D728 /* ktablesink_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215401B7F8BFC000C0CFE /* ktablesink_2.png */; };
+		762B1A611B81771D00D9D728 /* ktablecorner_3a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215411B7F8BFC000C0CFE /* ktablecorner_3a.png */; };
+		762B1A621B81771D00D9D728 /* ktablecorner_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215421B7F8BFC000C0CFE /* ktablecorner_2a.png */; };
+		762B1A631B81771D00D9D728 /* ktablecorner_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215431B7F8BFC000C0CFE /* ktablecorner_3.png */; };
+		762B1A641B81771D00D9D728 /* ktablecorner_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215441B7F8BFC000C0CFE /* ktablecorner_2.png */; };
+		762B1A651B81771D00D9D728 /* ktablecorner_1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215451B7F8BFC000C0CFE /* ktablecorner_1a.png */; };
+		762B1A661B81771D00D9D728 /* ktable_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215461B7F8BFC000C0CFE /* ktable_3.png */; };
+		762B1A671B81771D00D9D728 /* ktablecorner_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215471B7F8BFC000C0CFE /* ktablecorner_1.png */; };
+		762B1A681B81771D00D9D728 /* ktable_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215481B7F8BFC000C0CFE /* ktable_2.png */; };
+		762B1A691B81771D00D9D728 /* kitchen_storage_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215491B7F8BFC000C0CFE /* kitchen_storage_2.png */; };
+		762B1A6A1B81771D00D9D728 /* ktable_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154A1B7F8BFC000C0CFE /* ktable_1.png */; };
+		762B1A6B1B81771D00D9D728 /* kitchen_storage_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154B1B7F8BFC000C0CFE /* kitchen_storage_1.png */; };
+		762B1A6C1B81771D00D9D728 /* kingbed_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154C1B7F8BFC000C0CFE /* kingbed_3.png */; };
+		762B1A6D1B81771D00D9D728 /* kingbed_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154D1B7F8BFC000C0CFE /* kingbed_1.png */; };
+		762B1A6E1B81771D00D9D728 /* kingbed_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154E1B7F8BFC000C0CFE /* kingbed_2.png */; };
+		762B1A6F1B81771D00D9D728 /* fridge_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662154F1B7F8BFC000C0CFE /* fridge_2.png */; };
+		762B1A701B81771D00D9D728 /* fridge_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215501B7F8BFC000C0CFE /* fridge_1.png */; };
+		762B1A711B81771D00D9D728 /* foodsacks_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215511B7F8BFC000C0CFE /* foodsacks_3.png */; };
+		762B1A721B81771D00D9D728 /* foodsacks_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215521B7F8BFC000C0CFE /* foodsacks_4.png */; };
+		762B1A731B81771D00D9D728 /* foodsacks_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215531B7F8BFC000C0CFE /* foodsacks_2.png */; };
+		762B1A741B81771D00D9D728 /* flowers_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215541B7F8BFC000C0CFE /* flowers_17.png */; };
+		762B1A751B81771D00D9D728 /* foodsacks_.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215551B7F8BFC000C0CFE /* foodsacks_.png */; };
+		762B1A761B81771D00D9D728 /* flowers_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215561B7F8BFC000C0CFE /* flowers_15.png */; };
+		762B1A771B81771D00D9D728 /* flowers_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215571B7F8BFC000C0CFE /* flowers_16.png */; };
+		762B1A781B81771D00D9D728 /* flowers_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215581B7F8BFC000C0CFE /* flowers_13.png */; };
+		762B1A791B81771D00D9D728 /* flowers_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215591B7F8BFC000C0CFE /* flowers_14.png */; };
+		762B1A7A1B81771D00D9D728 /* flowers_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155A1B7F8BFC000C0CFE /* flowers_11.png */; };
+		762B1A7B1B81771D00D9D728 /* flowers_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155B1B7F8BFC000C0CFE /* flowers_12.png */; };
+		762B1A7C1B81771D00D9D728 /* flowers_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155C1B7F8BFC000C0CFE /* flowers_10.png */; };
+		762B1A7D1B81771D00D9D728 /* flowers_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155D1B7F8BFC000C0CFE /* flowers_08.png */; };
+		762B1A7E1B81771D00D9D728 /* flowers_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155E1B7F8BFC000C0CFE /* flowers_09.png */; };
+		762B1A7F1B81771D00D9D728 /* flowers_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662155F1B7F8BFC000C0CFE /* flowers_06.png */; };
+		762B1A801B81771D00D9D728 /* flowers_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215601B7F8BFC000C0CFE /* flowers_07.png */; };
+		762B1A811B81771D00D9D728 /* flowers_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215611B7F8BFC000C0CFE /* flowers_05.png */; };
+		762B1A821B81771D00D9D728 /* flowers_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215621B7F8BFC000C0CFE /* flowers_03.png */; };
+		762B1A831B81771D00D9D728 /* flowers_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215631B7F8BFC000C0CFE /* flowers_04.png */; };
+		762B1A841B81771D00D9D728 /* flowers_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215641B7F8BFC000C0CFE /* flowers_01.png */; };
+		762B1A851B81771D00D9D728 /* flowers_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215651B7F8BFC000C0CFE /* flowers_02.png */; };
+		762B1A861B81771D00D9D728 /* fire place_3_on_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215661B7F8BFC000C0CFE /* fire place_3_on_b.png */; };
+		762B1A871B81771D00D9D728 /* fire place_3_off_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215671B7F8BFC000C0CFE /* fire place_3_off_b.png */; };
+		762B1A881B81771D00D9D728 /* fire place_3_on_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215681B7F8BFC000C0CFE /* fire place_3_on_a.png */; };
+		762B1A891B81771D00D9D728 /* fire place_3_off_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215691B7F8BFC000C0CFE /* fire place_3_off_a.png */; };
+		762B1A8A1B81771D00D9D728 /* fire place_2_on_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156A1B7F8BFC000C0CFE /* fire place_2_on_b.png */; };
+		762B1A8B1B81771D00D9D728 /* fire place_2_off_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156B1B7F8BFC000C0CFE /* fire place_2_off_b.png */; };
+		762B1A8C1B81771D00D9D728 /* fire place_2_on_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156C1B7F8BFC000C0CFE /* fire place_2_on_a.png */; };
+		762B1A8D1B81771D00D9D728 /* fire place_2_off_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156D1B7F8BFC000C0CFE /* fire place_2_off_a.png */; };
+		762B1A8E1B81771D00D9D728 /* fire place_1_on_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156E1B7F8BFC000C0CFE /* fire place_1_on_b.png */; };
+		762B1A8F1B81771D00D9D728 /* fire place_1_off_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662156F1B7F8BFC000C0CFE /* fire place_1_off_b.png */; };
+		762B1A901B81771D00D9D728 /* fire place_1_on_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215701B7F8BFC000C0CFE /* fire place_1_on_a.png */; };
+		762B1A911B81771D00D9D728 /* fire place_1_off_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215711B7F8BFC000C0CFE /* fire place_1_off_a.png */; };
+		762B1A921B81771D00D9D728 /* evil mirror_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215721B7F8BFC000C0CFE /* evil mirror_1.png */; };
+		762B1A931B81771D00D9D728 /* evil mirror_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215731B7F8BFC000C0CFE /* evil mirror_2.png */; };
+		762B1A941B81771D00D9D728 /* disk_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215741B7F8BFC000C0CFE /* disk_3.png */; };
+		762B1A951B81771D00D9D728 /* disk_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215751B7F8BFC000C0CFE /* disk_1.png */; };
+		762B1A961B81771D00D9D728 /* disk_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215761B7F8BFC000C0CFE /* disk_2.png */; };
+		762B1A971B81771D00D9D728 /* dinner table chairs_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215771B7F8BFC000C0CFE /* dinner table chairs_3.png */; };
+		762B1A981B81771D00D9D728 /* dinner table chairs_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215781B7F8BFC000C0CFE /* dinner table chairs_2.png */; };
+		762B1A991B81771D00D9D728 /* desk_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215791B7F8BFC000C0CFE /* desk_6.png */; };
+		762B1A9A1B81771D00D9D728 /* dinner table chairs_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157A1B7F8BFC000C0CFE /* dinner table chairs_1.png */; };
+		762B1A9B1B81771D00D9D728 /* desk_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157B1B7F8BFC000C0CFE /* desk_4.png */; };
+		762B1A9C1B81771D00D9D728 /* desk_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157C1B7F8BFC000C0CFE /* desk_5.png */; };
+		762B1A9D1B81771D00D9D728 /* desk_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157D1B7F8BFC000C0CFE /* desk_3.png */; };
+		762B1A9E1B81771D00D9D728 /* desk_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157E1B7F8BFC000C0CFE /* desk_1.png */; };
+		762B1A9F1B81771D00D9D728 /* desk_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662157F1B7F8BFC000C0CFE /* desk_2.png */; };
+		762B1AA01B81771D00D9D728 /* coffin_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215801B7F8BFC000C0CFE /* coffin_4.png */; };
+		762B1AA11B81771D00D9D728 /* coffin_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215811B7F8BFC000C0CFE /* coffin_5.png */; };
+		762B1AA21B81771D00D9D728 /* coffin_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215821B7F8BFC000C0CFE /* coffin_3.png */; };
+		762B1AA31B81771D00D9D728 /* coffin_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215831B7F8BFC000C0CFE /* coffin_1.png */; };
+		762B1AA41B81771D00D9D728 /* coffin_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215841B7F8BFC000C0CFE /* coffin_2.png */; };
+		762B1AA51B81771D00D9D728 /* clock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215851B7F8BFC000C0CFE /* clock_1.png */; };
+		762B1AA61B81771D00D9D728 /* clock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215861B7F8BFC000C0CFE /* clock_2.png */; };
+		762B1AA71B81771D00D9D728 /* chair_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215871B7F8BFC000C0CFE /* chair_2.png */; };
+		762B1AA81B81771D00D9D728 /* chair_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215881B7F8BFC000C0CFE /* chair_1.png */; };
+		762B1AA91B81771D00D9D728 /* billiard_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215891B7F8BFC000C0CFE /* billiard_2.png */; };
+		762B1AAA1B81771D00D9D728 /* billiard_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158A1B7F8BFC000C0CFE /* billiard_3.png */; };
+		762B1AAB1B81771D00D9D728 /* Billiard_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158B1B7F8BFC000C0CFE /* Billiard_1.png */; };
+		762B1AAC1B81771D00D9D728 /* bathtub_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158C1B7F8BFC000C0CFE /* bathtub_1.png */; };
+		762B1AAD1B81771D00D9D728 /* bathtub_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158D1B7F8BFC000C0CFE /* bathtub_2.png */; };
+		762B1AAE1B81771D00D9D728 /* bath_sink_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158E1B7F8BFC000C0CFE /* bath_sink_2.png */; };
+		762B1AAF1B81771D00D9D728 /* barrels_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7662158F1B7F8BFC000C0CFE /* barrels_3.png */; };
+		762B1AB01B81771D00D9D728 /* bath_sink_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215901B7F8BFC000C0CFE /* bath_sink_1.png */; };
+		762B1AB11B81771D00D9D728 /* barrels_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215911B7F8BFC000C0CFE /* barrels_1.png */; };
+		762B1AB21B81771D00D9D728 /* barrels_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215921B7F8BFC000C0CFE /* barrels_2.png */; };
+		762B1AB31B81771D00D9D728 /* barrel_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215931B7F8BFC000C0CFE /* barrel_2.png */; };
+		762B1AB41B81771D00D9D728 /* barrel_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 766215941B7F8BFC000C0CFE /* barrel_1.png */; };
+		762B1AB51B81772100D9D728 /* BobBody.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B21B7F8BB4000C0CFE /* BobBody.png */; };
+		762B1AB61B81772100D9D728 /* BobHead.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B31B7F8BB4000C0CFE /* BobHead.png */; };
+		762B1AB71B81772100D9D728 /* BobLeftArm.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B41B7F8BB4000C0CFE /* BobLeftArm.png */; };
+		762B1AB81B81772100D9D728 /* BobLeftHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B51B7F8BB4000C0CFE /* BobLeftHand.png */; };
+		762B1AB91B81772100D9D728 /* BobPupil.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B61B7F8BB4000C0CFE /* BobPupil.png */; };
+		762B1ABA1B81772100D9D728 /* BobRightArm.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B71B7F8BB4000C0CFE /* BobRightArm.png */; };
+		762B1ABB1B81772100D9D728 /* BobWink.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214B81B7F8BB4000C0CFE /* BobWink.png */; };
+		762B1ABC1B81772400D9D728 /* Vivian4Chan.png in Resources */ = {isa = PBXBuildFile; fileRef = 766214AD1B7F8BA1000C0CFE /* Vivian4Chan.png */; };
+		762B1ABD1B81772D00D9D728 /* Vivian4Chan.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C11B7F8BD5000C0CFE /* Vivian4Chan.jsonf */; };
+		762B1ABE1B81772D00D9D728 /* BathtubShark.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C21B7F8BD5000C0CFE /* BathtubShark.jsonf */; };
+		762B1ABF1B81772D00D9D728 /* Sculpture_move.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C31B7F8BD5000C0CFE /* Sculpture_move.jsonf */; };
+		762B1AC01B81772D00D9D728 /* DoorFive.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C41B7F8BD5000C0CFE /* DoorFive.jsonf */; };
+		762B1AC11B81772D00D9D728 /* DoorFour.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C51B7F8BD5000C0CFE /* DoorFour.jsonf */; };
+		762B1AC21B81772D00D9D728 /* DoorSeven.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C61B7F8BD5000C0CFE /* DoorSeven.jsonf */; };
+		762B1AC31B81772D00D9D728 /* DoorSix.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C71B7F8BD5000C0CFE /* DoorSix.jsonf */; };
+		762B1AC41B81772D00D9D728 /* DoorTwo.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C81B7F8BD5000C0CFE /* DoorTwo.jsonf */; };
+		762B1AC51B81772D00D9D728 /* Exorcist.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214C91B7F8BD5000C0CFE /* Exorcist.jsonf */; };
+		762B1AC61B81772D00D9D728 /* Tourist1.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CA1B7F8BD5000C0CFE /* Tourist1.jsonf */; };
+		762B1AC71B81772D00D9D728 /* Tourist2.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CB1B7F8BD5000C0CFE /* Tourist2.jsonf */; };
+		762B1AC81B81772D00D9D728 /* BusinessWoman.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CC1B7F8BD5000C0CFE /* BusinessWoman.jsonf */; };
+		762B1AC91B81772D00D9D728 /* Bath_Sink.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CD1B7F8BD5000C0CFE /* Bath_Sink.jsonf */; };
+		762B1ACA1B81772D00D9D728 /* Bulldozer.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CE1B7F8BD5000C0CFE /* Bulldozer.jsonf */; };
+		762B1ACB1B81772D00D9D728 /* Investigator.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214CF1B7F8BD5000C0CFE /* Investigator.jsonf */; };
+		762B1ACC1B81772D00D9D728 /* Businessman.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D01B7F8BD5000C0CFE /* Businessman.jsonf */; };
+		762B1ACD1B81772D00D9D728 /* Chair.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D11B7F8BD5000C0CFE /* Chair.jsonf */; };
+		762B1ACE1B81772D00D9D728 /* chandelier.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D21B7F8BD5000C0CFE /* chandelier.jsonf */; };
+		762B1ACF1B81772D00D9D728 /* Chest.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D31B7F8BD5000C0CFE /* Chest.jsonf */; };
+		762B1AD01B81772D00D9D728 /* Coupleman.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D41B7F8BD5000C0CFE /* Coupleman.jsonf */; };
+		762B1AD11B81772D00D9D728 /* Couplewoman.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D51B7F8BD5000C0CFE /* Couplewoman.jsonf */; };
+		762B1AD21B81772D00D9D728 /* DancingBarrel.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D61B7F8BD5000C0CFE /* DancingBarrel.jsonf */; };
+		762B1AD31B81772D00D9D728 /* Doctor.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D71B7F8BD5000C0CFE /* Doctor.jsonf */; };
+		762B1AD41B81772D00D9D728 /* Door.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D81B7F8BD5000C0CFE /* Door.jsonf */; };
+		762B1AD51B81772D00D9D728 /* DoorBigOne.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214D91B7F8BD5000C0CFE /* DoorBigOne.jsonf */; };
+		762B1AD61B81772D00D9D728 /* DoorEight.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DA1B7F8BD5000C0CFE /* DoorEight.jsonf */; };
+		762B1AD71B81772D00D9D728 /* DoorNine.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DB1B7F8BD5000C0CFE /* DoorNine.jsonf */; };
+		762B1AD81B81772D00D9D728 /* fire.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DC1B7F8BD5000C0CFE /* fire.jsonf */; };
+		762B1AD91B81772D00D9D728 /* Gamer.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DD1B7F8BD5000C0CFE /* Gamer.jsonf */; };
+		762B1ADA1B81772D00D9D728 /* GhostAllAnimations.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DE1B7F8BD5000C0CFE /* GhostAllAnimations.jsonf */; };
+		762B1ADB1B81772D00D9D728 /* Gilda.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214DF1B7F8BD5000C0CFE /* Gilda.jsonf */; };
+		762B1ADC1B81772D00D9D728 /* Gothic.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E01B7F8BD5000C0CFE /* Gothic.jsonf */; };
+		762B1ADD1B81772D00D9D728 /* Hero.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E11B7F8BD5000C0CFE /* Hero.jsonf */; };
+		762B1ADE1B81772D00D9D728 /* Hunter.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E21B7F8BD5000C0CFE /* Hunter.jsonf */; };
+		762B1ADF1B81772D00D9D728 /* Idiot.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E31B7F8BD5000C0CFE /* Idiot.jsonf */; };
+		762B1AE01B81772D00D9D728 /* JackInTheBox.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E41B7F8BD5000C0CFE /* JackInTheBox.jsonf */; };
+		762B1AE11B81772D00D9D728 /* MusicLover.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E51B7F8BD5000C0CFE /* MusicLover.jsonf */; };
+		762B1AE21B81772D00D9D728 /* Ninja.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E61B7F8BD5000C0CFE /* Ninja.jsonf */; };
+		762B1AE31B81772D00D9D728 /* Painting_m.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E71B7F8BD5000C0CFE /* Painting_m.jsonf */; };
+		762B1AE41B81772D00D9D728 /* paintingA.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E81B7F8BD5000C0CFE /* paintingA.jsonf */; };
+		762B1AE51B81772D00D9D728 /* Pans.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214E91B7F8BD5000C0CFE /* Pans.jsonf */; };
+		762B1AE61B81772D00D9D728 /* Policeman.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214EA1B7F8BD5000C0CFE /* Policeman.jsonf */; };
+		762B1AE71B81772D00D9D728 /* Renovator.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214EB1B7F8BD5000C0CFE /* Renovator.jsonf */; };
+		762B1AE81B81772D00D9D728 /* Reporter.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214EC1B7F8BD5000C0CFE /* Reporter.jsonf */; };
+		762B1AE91B81772D00D9D728 /* Sacks_Moving.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214ED1B7F8BD5000C0CFE /* Sacks_Moving.jsonf */; };
+		762B1AEA1B81772D00D9D728 /* Scadery.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214EE1B7F8BD5000C0CFE /* Scadery.jsonf */; };
+		762B1AEB1B81772D00D9D728 /* ScaryMirror.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214EF1B7F8BD5000C0CFE /* ScaryMirror.jsonf */; };
+		762B1AEC1B81772D00D9D728 /* Skeptic.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F01B7F8BD5000C0CFE /* Skeptic.jsonf */; };
+		762B1AED1B81772D00D9D728 /* StoveFire.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F11B7F8BD5000C0CFE /* StoveFire.jsonf */; };
+		762B1AEE1B81772D00D9D728 /* Teen1.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F21B7F8BD5000C0CFE /* Teen1.jsonf */; };
+		762B1AEF1B81772D00D9D728 /* Teen2.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F31B7F8BD5000C0CFE /* Teen2.jsonf */; };
+		762B1AF01B81772D00D9D728 /* Teen3.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F41B7F8BD5000C0CFE /* Teen3.jsonf */; };
+		762B1AF11B81772D00D9D728 /* Tourist3.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F51B7F8BD5000C0CFE /* Tourist3.jsonf */; };
+		762B1AF21B81772D00D9D728 /* Vase.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F61B7F8BD5000C0CFE /* Vase.jsonf */; };
+		762B1AF31B81772D00D9D728 /* Vivian.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F71B7F8BD5000C0CFE /* Vivian.jsonf */; };
+		762B1AF41B81772D00D9D728 /* Wardrobe_Evil.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F81B7F8BD5000C0CFE /* Wardrobe_Evil.jsonf */; };
+		762B1AF51B81772D00D9D728 /* Zombie.jsonf in Resources */ = {isa = PBXBuildFile; fileRef = 766214F91B7F8BD5000C0CFE /* Zombie.jsonf */; };
+		762B1AF61B81773600D9D728 /* Sprites.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218641B7F8CEE000C0CFE /* Sprites.json */; };
+		762B1AF71B81773A00D9D728 /* BathtubShark.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218051B7F8CC4000C0CFE /* BathtubShark.json */; };
+		762B1AF81B81773A00D9D728 /* Wardrobe_Evil.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218071B7F8CC4000C0CFE /* Wardrobe_Evil.json */; };
+		762B1AF91B81773A00D9D728 /* Sacks_Moving.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218091B7F8CC4000C0CFE /* Sacks_Moving.json */; };
+		762B1AFA1B81773A00D9D728 /* Sculpture_move.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662180B1B7F8CC4000C0CFE /* Sculpture_move.json */; };
+		762B1AFB1B81773A00D9D728 /* ScaryMirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662180D1B7F8CC4000C0CFE /* ScaryMirror.json */; };
+		762B1AFC1B81773A00D9D728 /* Chest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662180E1B7F8CC4000C0CFE /* Chest.json */; };
+		762B1AFD1B81773A00D9D728 /* DancingBarrel.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218101B7F8CC4000C0CFE /* DancingBarrel.json */; };
+		762B1AFE1B81773A00D9D728 /* Bath_Sink.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218121B7F8CC4000C0CFE /* Bath_Sink.json */; };
+		762B1AFF1B81773A00D9D728 /* Vase.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218151B7F8CC4000C0CFE /* Vase.json */; };
+		762B1B001B81773A00D9D728 /* Chair.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218171B7F8CC4000C0CFE /* Chair.json */; };
+		762B1B011B81773A00D9D728 /* Painting_m.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218181B7F8CC4000C0CFE /* Painting_m.json */; };
+		762B1B021B81773A00D9D728 /* JackInTheBox.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662181A1B7F8CC4000C0CFE /* JackInTheBox.json */; };
+		762B1B031B81773A00D9D728 /* fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662181C1B7F8CC4000C0CFE /* fire.json */; };
+		762B1B041B81773A00D9D728 /* Pans.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662181E1B7F8CC4000C0CFE /* Pans.json */; };
+		762B1B051B81773A00D9D728 /* paintingA.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218201B7F8CC4000C0CFE /* paintingA.json */; };
+		762B1B061B81773A00D9D728 /* chandelier.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218221B7F8CC4000C0CFE /* chandelier.json */; };
+		762B1B071B81773A00D9D728 /* StoveFire.json in Resources */ = {isa = PBXBuildFile; fileRef = 766218251B7F8CC4000C0CFE /* StoveFire.json */; };
+		762B1B081B81773E00D9D728 /* DoorOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217981B7F8C93000C0CFE /* DoorOne.json */; };
+		762B1B091B81773E00D9D728 /* DoorTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662179A1B7F8C93000C0CFE /* DoorTwo.json */; };
+		762B1B0A1B81773E00D9D728 /* DoorFour.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662179C1B7F8C93000C0CFE /* DoorFour.json */; };
+		762B1B0B1B81773E00D9D728 /* DoorFive.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662179E1B7F8C93000C0CFE /* DoorFive.json */; };
+		762B1B0C1B81773E00D9D728 /* DoorSix.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217A01B7F8C93000C0CFE /* DoorSix.json */; };
+		762B1B0D1B81773E00D9D728 /* DoorSeven.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217A21B7F8C93000C0CFE /* DoorSeven.json */; };
+		762B1B0E1B81773E00D9D728 /* DoorEight.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217A51B7F8C93000C0CFE /* DoorEight.json */; };
+		762B1B0F1B81773E00D9D728 /* DoorNine.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217A71B7F8C93000C0CFE /* DoorNine.json */; };
+		762B1B101B81773E00D9D728 /* DoorBigOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217A81B7F8C93000C0CFE /* DoorBigOne.json */; };
+		762B1B111B81773E00D9D728 /* Door.json in Resources */ = {isa = PBXBuildFile; fileRef = 766217AB1B7F8C93000C0CFE /* Door.json */; };
+		762B1B121B81774100D9D728 /* GhostAllAnimations.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216A81B7F8C30000C0CFE /* GhostAllAnimations.json */; };
+		762B1B131B81774600D9D728 /* Bulldozer.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216301B7F8C19000C0CFE /* Bulldozer.json */; };
+		762B1B141B81774600D9D728 /* Vivian.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216321B7F8C19000C0CFE /* Vivian.json */; };
+		762B1B151B81774600D9D728 /* Businessman.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216341B7F8C19000C0CFE /* Businessman.json */; };
+		762B1B161B81774600D9D728 /* BusinessWoman.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216361B7F8C19000C0CFE /* BusinessWoman.json */; };
+		762B1B171B81774600D9D728 /* Coupleman.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216381B7F8C19000C0CFE /* Coupleman.json */; };
+		762B1B181B81774600D9D728 /* Couplewoman.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662163A1B7F8C19000C0CFE /* Couplewoman.json */; };
+		762B1B191B81774600D9D728 /* Doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662163C1B7F8C19000C0CFE /* Doctor.json */; };
+		762B1B1A1B81774600D9D728 /* Exorcist.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662163E1B7F8C19000C0CFE /* Exorcist.json */; };
+		762B1B1B1B81774600D9D728 /* Gamer.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216401B7F8C19000C0CFE /* Gamer.json */; };
+		762B1B1C1B81774600D9D728 /* Gilda.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216421B7F8C19000C0CFE /* Gilda.json */; };
+		762B1B1D1B81774600D9D728 /* Gothic.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216441B7F8C19000C0CFE /* Gothic.json */; };
+		762B1B1E1B81774600D9D728 /* Hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216461B7F8C19000C0CFE /* Hero.json */; };
+		762B1B1F1B81774600D9D728 /* Hunter.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216481B7F8C19000C0CFE /* Hunter.json */; };
+		762B1B201B81774600D9D728 /* Idiot.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662164A1B7F8C19000C0CFE /* Idiot.json */; };
+		762B1B211B81774600D9D728 /* Investigator.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662164C1B7F8C19000C0CFE /* Investigator.json */; };
+		762B1B221B81774600D9D728 /* MusicLover.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662164E1B7F8C19000C0CFE /* MusicLover.json */; };
+		762B1B231B81774600D9D728 /* Ninja.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216501B7F8C19000C0CFE /* Ninja.json */; };
+		762B1B241B81774600D9D728 /* Policeman.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216521B7F8C19000C0CFE /* Policeman.json */; };
+		762B1B251B81774600D9D728 /* Renovator.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216541B7F8C19000C0CFE /* Renovator.json */; };
+		762B1B261B81774600D9D728 /* Reporter.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216561B7F8C19000C0CFE /* Reporter.json */; };
+		762B1B271B81774600D9D728 /* Scadery.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216581B7F8C19000C0CFE /* Scadery.json */; };
+		762B1B281B81774600D9D728 /* Skeptic.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662165A1B7F8C19000C0CFE /* Skeptic.json */; };
+		762B1B291B81774600D9D728 /* Teen3.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662165C1B7F8C19000C0CFE /* Teen3.json */; };
+		762B1B2A1B81774600D9D728 /* Teen2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7662165E1B7F8C19000C0CFE /* Teen2.json */; };
+		762B1B2B1B81774600D9D728 /* Teen1.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216601B7F8C19000C0CFE /* Teen1.json */; };
+		762B1B2C1B81774600D9D728 /* Zombie.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216621B7F8C19000C0CFE /* Zombie.json */; };
+		762B1B2D1B81774600D9D728 /* Tourist3.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216651B7F8C19000C0CFE /* Tourist3.json */; };
+		762B1B2E1B81774600D9D728 /* Tourist2.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216671B7F8C19000C0CFE /* Tourist2.json */; };
+		762B1B2F1B81774600D9D728 /* Tourist1.json in Resources */ = {isa = PBXBuildFile; fileRef = 766216691B7F8C19000C0CFE /* Tourist1.json */; };
+		762B1B301B81774B00D9D728 /* Vivian4Chan.json in Resources */ = {isa = PBXBuildFile; fileRef = 766214AE1B7F8BA1000C0CFE /* Vivian4Chan.json */; };
 		765BF3EE1B7F9365003C3B00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BF3ED1B7F9365003C3B00 /* main.m */; };
 		765BF3F31B7F9365003C3B00 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 765BF3F11B7F9365003C3B00 /* MainMenu.xib */; };
 		765BF3FF1B7F9365003C3B00 /* Afterlife_Empire_No_SteamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BF3FE1B7F9365003C3B00 /* Afterlife_Empire_No_SteamTests.m */; };
@@ -843,7 +1678,7 @@
 		765BF74C1B7FAB88003C3B00 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BF74B1B7FAB88003C3B00 /* GameWindow.m */; };
 		765BF74D1B7FAC17003C3B00 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 765BF74B1B7FAB88003C3B00 /* GameWindow.m */; };
 		766213D71B7F83F3000C0CFE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766213D61B7F83F3000C0CFE /* AppDelegate.mm */; };
-		766213D91B7F83F3000C0CFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 766213D81B7F83F3000C0CFE /* main.m */; };
+		766213D91B7F83F3000C0CFE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766213D81B7F83F3000C0CFE /* main.mm */; };
 		766213DB1B7F83F3000C0CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766213DA1B7F83F3000C0CFE /* Images.xcassets */; };
 		766213DE1B7F83F3000C0CFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766213DC1B7F83F3000C0CFE /* MainMenu.xib */; };
 		766213EA1B7F83F3000C0CFE /* Afterlife_EmpireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766213E91B7F83F3000C0CFE /* Afterlife_EmpireTests.m */; };
@@ -1686,6 +2521,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		762B17E41B81732C00D9D728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766213C81B7F83F3000C0CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 762B17D01B81732C00D9D728;
+			remoteInfo = "Afterlife Empire Demo";
+		};
 		765BF3F91B7F9365003C3B00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 766213C81B7F83F3000C0CFE /* Project object */;
@@ -1703,6 +2545,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		762B18171B81754C00D9D728 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				762B18181B81756F00D9D728 /* libsteam_api.dylib in CopyFiles */,
+				762B18191B81758400D9D728 /* steam_appid.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		766214771B7F89AF000C0CFE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1717,9 +2570,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		762B17D11B81732C00D9D728 /* Afterlife Empire Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Afterlife Empire Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		762B17D41B81732C00D9D728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762B17D81B81732C00D9D728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		762B17DA1B81732C00D9D728 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		762B17DD1B81732C00D9D728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		762B17E31B81732C00D9D728 /* Afterlife Empire DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Afterlife Empire DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		762B17E81B81732C00D9D728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762B17E91B81732C00D9D728 /* Afterlife_Empire_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Afterlife_Empire_DemoTests.m; sourceTree = "<group>"; };
 		765BF3E61B7F9365003C3B00 /* Afterlife Empire No Steam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Afterlife Empire No Steam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BF3E91B7F9365003C3B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		765BF3EA1B7F9365003C3B00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		765BF3ED1B7F9365003C3B00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		765BF3F21B7F9365003C3B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		765BF3F81B7F9365003C3B00 /* Afterlife Empire No SteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Afterlife Empire No SteamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1733,7 +2593,7 @@
 		766213D41B7F83F3000C0CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766213D51B7F83F3000C0CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		766213D61B7F83F3000C0CFE /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		766213D81B7F83F3000C0CFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		766213D81B7F83F3000C0CFE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		766213DA1B7F83F3000C0CFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		766213DD1B7F83F3000C0CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		766213E31B7F83F3000C0CFE /* Afterlife EmpireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Afterlife EmpireTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2620,6 +3480,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		762B17CE1B81732C00D9D728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B18141B8174B700D9D728 /* OpenAL.framework in Frameworks */,
+				762B18151B8174C600D9D728 /* libsteam_api.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762B17E01B81732C00D9D728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765BF3E31B7F9365003C3B00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2655,10 +3531,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		762B17D21B81732C00D9D728 /* Afterlife Empire Demo */ = {
+			isa = PBXGroup;
+			children = (
+				762B17DA1B81732C00D9D728 /* Images.xcassets */,
+				762B17DC1B81732C00D9D728 /* MainMenu.xib */,
+				762B17D31B81732C00D9D728 /* Supporting Files */,
+			);
+			path = "Afterlife Empire Demo";
+			sourceTree = "<group>";
+		};
+		762B17D31B81732C00D9D728 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				762B17D41B81732C00D9D728 /* Info.plist */,
+				762B17D81B81732C00D9D728 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		762B17E61B81732C00D9D728 /* Afterlife Empire DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				762B17E91B81732C00D9D728 /* Afterlife_Empire_DemoTests.m */,
+				762B17E71B81732C00D9D728 /* Supporting Files */,
+			);
+			path = "Afterlife Empire DemoTests";
+			sourceTree = "<group>";
+		};
+		762B17E71B81732C00D9D728 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				762B17E81B81732C00D9D728 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		765BF3E71B7F9365003C3B00 /* Afterlife Empire No Steam */ = {
 			isa = PBXGroup;
 			children = (
-				765BF3EA1B7F9365003C3B00 /* AppDelegate.h */,
 				765BF3F11B7F9365003C3B00 /* MainMenu.xib */,
 				765BF3E81B7F9365003C3B00 /* Supporting Files */,
 			);
@@ -2707,6 +3618,8 @@
 				766213E61B7F83F3000C0CFE /* Afterlife EmpireTests */,
 				765BF3E71B7F9365003C3B00 /* Afterlife Empire No Steam */,
 				765BF3FB1B7F9365003C3B00 /* Afterlife Empire No SteamTests */,
+				762B17D21B81732C00D9D728 /* Afterlife Empire Demo */,
+				762B17E61B81732C00D9D728 /* Afterlife Empire DemoTests */,
 				766213D11B7F83F3000C0CFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -2718,6 +3631,8 @@
 				766213E31B7F83F3000C0CFE /* Afterlife EmpireTests.xctest */,
 				765BF3E61B7F9365003C3B00 /* Afterlife Empire No Steam.app */,
 				765BF3F81B7F9365003C3B00 /* Afterlife Empire No SteamTests.xctest */,
+				762B17D11B81732C00D9D728 /* Afterlife Empire Demo.app */,
+				762B17E31B81732C00D9D728 /* Afterlife Empire DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2738,7 +3653,7 @@
 			isa = PBXGroup;
 			children = (
 				766213D41B7F83F3000C0CFE /* Info.plist */,
-				766213D81B7F83F3000C0CFE /* main.m */,
+				766213D81B7F83F3000C0CFE /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -4092,6 +5007,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		762B17D01B81732C00D9D728 /* Afterlife Empire Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762B17EF1B81732C00D9D728 /* Build configuration list for PBXNativeTarget "Afterlife Empire Demo" */;
+			buildPhases = (
+				762B17CD1B81732C00D9D728 /* Sources */,
+				762B17CE1B81732C00D9D728 /* Frameworks */,
+				762B17CF1B81732C00D9D728 /* Resources */,
+				762B18171B81754C00D9D728 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Afterlife Empire Demo";
+			productName = "Afterlife Empire Demo";
+			productReference = 762B17D11B81732C00D9D728 /* Afterlife Empire Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		762B17E21B81732C00D9D728 /* Afterlife Empire DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762B17F01B81732C00D9D728 /* Build configuration list for PBXNativeTarget "Afterlife Empire DemoTests" */;
+			buildPhases = (
+				762B17DF1B81732C00D9D728 /* Sources */,
+				762B17E01B81732C00D9D728 /* Frameworks */,
+				762B17E11B81732C00D9D728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				762B17E51B81732C00D9D728 /* PBXTargetDependency */,
+			);
+			name = "Afterlife Empire DemoTests";
+			productName = "Afterlife Empire DemoTests";
+			productReference = 762B17E31B81732C00D9D728 /* Afterlife Empire DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		765BF3E51B7F9365003C3B00 /* Afterlife Empire No Steam */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 765BF4041B7F9365003C3B00 /* Build configuration list for PBXNativeTarget "Afterlife Empire No Steam" */;
@@ -4172,6 +5123,13 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = AfterlifeEmpireinc;
 				TargetAttributes = {
+					762B17D01B81732C00D9D728 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					762B17E21B81732C00D9D728 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 762B17D01B81732C00D9D728;
+					};
 					765BF3E51B7F9365003C3B00 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -4205,11 +5163,820 @@
 				766213E21B7F83F3000C0CFE /* Afterlife EmpireTests */,
 				765BF3E51B7F9365003C3B00 /* Afterlife Empire No Steam */,
 				765BF3F71B7F9365003C3B00 /* Afterlife Empire No SteamTests */,
+				762B17D01B81732C00D9D728 /* Afterlife Empire Demo */,
+				762B17E21B81732C00D9D728 /* Afterlife Empire DemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		762B17CF1B81732C00D9D728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B1AFC1B81773A00D9D728 /* Chest.json in Resources */,
+				762B19F91B81770300D9D728 /* Workshop.png in Resources */,
+				762B1AE11B81772D00D9D728 /* MusicLover.jsonf in Resources */,
+				762B19F61B81770300D9D728 /* QuadRgrass.png in Resources */,
+				762B1ACA1B81772D00D9D728 /* Bulldozer.jsonf in Resources */,
+				762B1AED1B81772D00D9D728 /* StoveFire.jsonf in Resources */,
+				762B1A911B81771D00D9D728 /* fire place_1_off_a.png in Resources */,
+				762B18521B81760500D9D728 /* Zombie_Run_4.wav in Resources */,
+				762B1A5F1B81771D00D9D728 /* ktablesink_1.png in Resources */,
+				762B18611B81760800D9D728 /* Tourist_RH_Scream_2.wav in Resources */,
+				762B1A401B81771D00D9D728 /* Smalltable_3.png in Resources */,
+				762B188C1B81761C00D9D728 /* TeenBoy_Run_05.wav in Resources */,
+				762B18571B81760500D9D728 /* Zombie_Scream_3.wav in Resources */,
+				762B1B071B81773A00D9D728 /* StoveFire.json in Resources */,
+				762B18F11B81769E00D9D728 /* Ninja_Run_4.wav in Resources */,
+				762B18401B8175F100D9D728 /* BM_Run5.wav in Resources */,
+				762B19311B8176DA00D9D728 /* NormalFast.vsh in Resources */,
+				762B196C1B8176F100D9D728 /* HelpScreen.png in Resources */,
+				762B1A341B81771D00D9D728 /* sofa_front_1.png in Resources */,
+				762B19571B8176EB00D9D728 /* Painting_m.png in Resources */,
+				762B1A861B81771D00D9D728 /* fire place_3_on_b.png in Resources */,
+				762B182F1B8175DF00D9D728 /* Possess_07.wav in Resources */,
+				762B1ADB1B81772D00D9D728 /* Gilda.jsonf in Resources */,
+				762B186A1B81760D00D9D728 /* Tourist_PH_Scream_2.wav in Resources */,
+				762B193F1B8176E100D9D728 /* Select.fsh in Resources */,
+				762B1B241B81774600D9D728 /* Policeman.json in Resources */,
+				762B1A0B1B81771700D9D728 /* Investigator.png in Resources */,
+				762B1A361B81771D00D9D728 /* sofa_back_2.png in Resources */,
+				762B1A4E1B81771D00D9D728 /* pine_5.png in Resources */,
+				762B18761B81761100D9D728 /* Touris_BH_Scream_2.wav in Resources */,
+				762B18B51B81767E00D9D728 /* Exorcista_Scream_5.wav in Resources */,
+				762B1B271B81774600D9D728 /* Scadery.json in Resources */,
+				762B1B041B81773A00D9D728 /* Pans.json in Resources */,
+				762B18371B8175E300D9D728 /* EQ_07.wav in Resources */,
+				762B197A1B8176F100D9D728 /* PropButton.png in Resources */,
+				762B18D21B81768F00D9D728 /* Hunter_Scream_1.wav in Resources */,
+				762B19771B8176F100D9D728 /* OptionEND.png in Resources */,
+				762B1A601B81771D00D9D728 /* ktablesink_2.png in Resources */,
+				762B1AF11B81772D00D9D728 /* Tourist3.jsonf in Resources */,
+				762B18641B81760D00D9D728 /* Tourist_PH_Die_3.wav in Resources */,
+				762B1AEE1B81772D00D9D728 /* Teen1.jsonf in Resources */,
+				762B1A121B81771700D9D728 /* Skeptic.png in Resources */,
+				762B18A91B81767A00D9D728 /* Doctora_Scream_1.wav in Resources */,
+				762B1B251B81774600D9D728 /* Renovator.json in Resources */,
+				762B196D1B8176F100D9D728 /* DeleteButton.png in Resources */,
+				762B183D1B8175F100D9D728 /* BM_Run2.wav in Resources */,
+				762B1A8D1B81771D00D9D728 /* fire place_2_off_a.png in Resources */,
+				762B19201B8176AE00D9D728 /* Scaredy_Scream_1.wav in Resources */,
+				762B1B081B81773E00D9D728 /* DoorOne.json in Resources */,
+				762B18721B81761100D9D728 /* Touris_BH_Run_4.wav in Resources */,
+				762B18C51B81768600D9D728 /* Gotica_Run_2.wav in Resources */,
+				762B1ADD1B81772D00D9D728 /* Hero.jsonf in Resources */,
+				762B182A1B8175D900D9D728 /* Risa_15.wav in Resources */,
+				762B1B031B81773A00D9D728 /* fire.json in Resources */,
+				762B192B1B8176DA00D9D728 /* NormalFastAlpha.vsh in Resources */,
+				762B1A4C1B81771D00D9D728 /* pine_7.png in Resources */,
+				762B18E21B81769A00D9D728 /* MusicLoverFX_Die_01-02.wav in Resources */,
+				762B1A141B81771700D9D728 /* Teen2.png in Resources */,
+				762B1B0D1B81773E00D9D728 /* DoorSeven.json in Resources */,
+				762B1A0C1B81771700D9D728 /* MusicLover.png in Resources */,
+				762B19081B8176A600D9D728 /* Renovator_Die_4.wav in Resources */,
+				762B1B1A1B81774600D9D728 /* Exorcist.json in Resources */,
+				762B18581B81760500D9D728 /* Zombie_Scream_4.wav in Resources */,
+				762B18981B81767300D9D728 /* CoupleMan_Die_1.wav in Resources */,
+				762B18F81B8176A200D9D728 /* Police_Die_2.wav in Resources */,
+				762B1AF81B81773A00D9D728 /* Wardrobe_Evil.json in Resources */,
+				762B1AEB1B81772D00D9D728 /* ScaryMirror.jsonf in Resources */,
+				762B18691B81760D00D9D728 /* Tourist_PH_Scream_1.wav in Resources */,
+				762B1A4F1B81771D00D9D728 /* pine_4.png in Resources */,
+				762B18DA1B81769300D9D728 /* Idiot_Run_Fx_07.wav in Resources */,
+				762B1AB41B81771D00D9D728 /* barrel_1.png in Resources */,
+				762B18531B81760500D9D728 /* Zombie_Run_5.wav in Resources */,
+				762B19BB1B81770300D9D728 /* Outside2LW_mansion.png in Resources */,
+				762B1B141B81774600D9D728 /* Vivian.json in Resources */,
+				762B183E1B8175F100D9D728 /* BM_Run3.wav in Resources */,
+				762B18B01B81767E00D9D728 /* Exorcista_Run_3.wav in Resources */,
+				762B1A451B81771D00D9D728 /* single bed_2a.png in Resources */,
+				762B18821B81761900D9D728 /* TeenGirl1_Run_2.wav in Resources */,
+				762B19EF1B81770300D9D728 /* Outside2Lcorner2_cabin.png in Resources */,
+				762B19661B8176F100D9D728 /* GhostHunterIcon.png in Resources */,
+				762B19A41B81770300D9D728 /* Bedroom3LW_mansion.png in Resources */,
+				762B18AC1B81767E00D9D728 /* Exorcista_Die_2.wav in Resources */,
+				762B19B51B81770300D9D728 /* MusicroomLW_mansion.png in Resources */,
+				762B182C1B8175DC00D9D728 /* Vortex_03.wav in Resources */,
+				762B18461B81760100D9D728 /* Interface_Select.wav in Resources */,
+				762B18751B81761100D9D728 /* Touris_BH_Scream_1.wav in Resources */,
+				762B199B1B81770300D9D728 /* Bedroom1RW_mansion.png in Resources */,
+				762B18301B8175DF00D9D728 /* Possess_08.wav in Resources */,
+				762B1A331B81771D00D9D728 /* sofa_back_5.png in Resources */,
+				762B19671B8176F100D9D728 /* Police_Shield.png in Resources */,
+				762B1A8A1B81771D00D9D728 /* fire place_2_on_b.png in Resources */,
+				762B186F1B81761100D9D728 /* Touris_BH_Die_3.wav in Resources */,
+				762B198F1B81770300D9D728 /* Dirt.png in Resources */,
+				762B18591B81760500D9D728 /* Zombie_Scream_5.wav in Resources */,
+				762B19821B8176F600D9D728 /* DoorFive.png in Resources */,
+				762B1A531B81771D00D9D728 /* paintings_mutis.png in Resources */,
+				762B18EB1B81769E00D9D728 /* Ninja_Die_2.wav in Resources */,
+				762B18BC1B81768200D9D728 /* Gamer_Run_04.wav in Resources */,
+				762B19D61B81770300D9D728 /* DinningroomL_cabin.png in Resources */,
+				762B19B71B81770300D9D728 /* Outside1L_mansion.png in Resources */,
+				762B18E91B81769A00D9D728 /* MusicLoverFX_Scream_01-05.wav in Resources */,
+				762B197E1B8176F100D9D728 /* TileChangeButton.png in Resources */,
+				762B19DA1B81770300D9D728 /* KitchenL_cabin.png in Resources */,
+				762B18311B8175DF00D9D728 /* Possess_10.wav in Resources */,
+				762B1A3D1B81771D00D9D728 /* Smalltable_6.png in Resources */,
+				762B1A761B81771D00D9D728 /* flowers_15.png in Resources */,
+				762B1B131B81774600D9D728 /* Bulldozer.json in Resources */,
+				762B1A6C1B81771D00D9D728 /* kingbed_3.png in Resources */,
+				762B1AA21B81771D00D9D728 /* coffin_3.png in Resources */,
+				762B187A1B81761500D9D728 /* TeenGirl2_Die_3.wav in Resources */,
+				762B198B1B8176FA00D9D728 /* NewGame.png in Resources */,
+				762B1A0D1B81771700D9D728 /* Ninja.png in Resources */,
+				762B1A2A1B81771D00D9D728 /* tools table_2.png in Resources */,
+				762B1B281B81774600D9D728 /* Skeptic.json in Resources */,
+				762B18C71B81768600D9D728 /* Gotica_Scream_2.wav in Resources */,
+				762B19861B8176F600D9D728 /* DoorNine.png in Resources */,
+				762B19C11B81770300D9D728 /* Vest.png in Resources */,
+				762B1AAC1B81771D00D9D728 /* bathtub_1.png in Resources */,
+				762B18991B81767300D9D728 /* CoupleMan_Die_2.wav in Resources */,
+				762B1A921B81771D00D9D728 /* evil mirror_1.png in Resources */,
+				762B1A151B81771700D9D728 /* Teen1.png in Resources */,
+				762B1A9D1B81771D00D9D728 /* desk_3.png in Resources */,
+				762B18E71B81769A00D9D728 /* MusicLoverFX_Run_01-08.wav in Resources */,
+				762B19C41B81770300D9D728 /* VestR_mansion.png in Resources */,
+				762B19591B8176EB00D9D728 /* fire.png in Resources */,
+				762B19EB1B81770300D9D728 /* Outside1RW_cabin.png in Resources */,
+				762B189B1B81767300D9D728 /* CoupleMan_Run_2.wav in Resources */,
+				762B181F1B8175C700D9D728 /* Terror3.wav in Resources */,
+				762B1A631B81771D00D9D728 /* ktablecorner_3.png in Resources */,
+				762B18491B81760500D9D728 /* Zombie_Die_1.wav in Resources */,
+				762B17DB1B81732C00D9D728 /* Images.xcassets in Resources */,
+				762B196B1B8176F100D9D728 /* AudioButton.png in Resources */,
+				762B181E1B8175C700D9D728 /* Terror2.wav in Resources */,
+				762B19511B8176EB00D9D728 /* ScaryMirror.png in Resources */,
+				762B1A541B81771D00D9D728 /* piano.png in Resources */,
+				762B18CD1B81768A00D9D728 /* Heroina_Scream_1.wav in Resources */,
+				762B1A411B81771D00D9D728 /* single bed_3a.png in Resources */,
+				762B1A051B81771700D9D728 /* Gamer.png in Resources */,
+				762B19C61B81770300D9D728 /* Bathroom_castle.png in Resources */,
+				762B198E1B81770300D9D728 /* Outside.png in Resources */,
+				762B193B1B8176E100D9D728 /* GlowShaderFade.fsh in Resources */,
+				762B19E91B81770300D9D728 /* Outside1Rcorner1_cabin.png in Resources */,
+				762B1AF21B81772D00D9D728 /* Vase.jsonf in Resources */,
+				762B190E1B8176A600D9D728 /* Renovator_Scream_2.wav in Resources */,
+				762B1A981B81771D00D9D728 /* dinner table chairs_2.png in Resources */,
+				762B19441B8176E800D9D728 /* EYES-02.png in Resources */,
+				762B1AB61B81772100D9D728 /* BobHead.png in Resources */,
+				762B193A1B8176E100D9D728 /* DrawColor.fsh in Resources */,
+				762B18EC1B81769E00D9D728 /* Ninja_Die_3.wav in Resources */,
+				762B18331B8175DF00D9D728 /* Possess_12.wav in Resources */,
+				762B1AFD1B81773A00D9D728 /* DancingBarrel.json in Resources */,
+				762B18381B8175E300D9D728 /* EQ_08.wav in Resources */,
+				762B193E1B8176E100D9D728 /* NormalFastHalfAlpha.fsh in Resources */,
+				762B18681B81760D00D9D728 /* Tourist_PH_Run_3.wav in Resources */,
+				762B1A821B81771D00D9D728 /* flowers_03.png in Resources */,
+				762B18F91B8176A200D9D728 /* Police_Die_3.wav in Resources */,
+				762B18221B8175D500D9D728 /* Copy_03.wav in Resources */,
+				762B184B1B81760500D9D728 /* Zombie_Die_3.wav in Resources */,
+				762B1A5A1B81771D00D9D728 /* library_4.png in Resources */,
+				762B1B171B81774600D9D728 /* Coupleman.json in Resources */,
+				762B19341B8176E100D9D728 /* NormalFastColorShift.fsh in Resources */,
+				762B18AD1B81767E00D9D728 /* Exorcista_Die_3.wav in Resources */,
+				762B1B231B81774600D9D728 /* Ninja.json in Resources */,
+				762B18B91B81768200D9D728 /* Gamer_Die_05.wav in Resources */,
+				762B185A1B81760500D9D728 /* Zombie_Scream_6.wav in Resources */,
+				762B187F1B81761500D9D728 /* TeenGirl2_Scream_3.wav in Resources */,
+				762B18891B81761C00D9D728 /* TeenBoy_Run_02-01.wav in Resources */,
+				762B18911B81766E00D9D728 /* BW_Die_02.wav in Resources */,
+				762B183C1B8175F100D9D728 /* BM_Run1.wav in Resources */,
+				762B19811B8176F600D9D728 /* DoorFour.png in Resources */,
+				762B1A961B81771D00D9D728 /* disk_2.png in Resources */,
+				762B19DE1B81770300D9D728 /* LibraryR_cabin.png in Resources */,
+				762B193C1B8176E100D9D728 /* HighLightShader.fsh in Resources */,
+				762B18AF1B81767E00D9D728 /* Exorcista_Run_2.wav in Resources */,
+				762B1A221B81771D00D9D728 /* Wall elements_shield_2.png in Resources */,
+				762B1A581B81771D00D9D728 /* logs_1.png in Resources */,
+				762B1B2F1B81774600D9D728 /* Tourist1.json in Resources */,
+				762B1A831B81771D00D9D728 /* flowers_04.png in Resources */,
+				762B1ACE1B81772D00D9D728 /* chandelier.jsonf in Resources */,
+				762B1AA51B81771D00D9D728 /* clock_1.png in Resources */,
+				762B19A11B81770300D9D728 /* Bedroom3_mansion.png in Resources */,
+				762B189F1B81767600D9D728 /* Casada_Die_2.wav in Resources */,
+				762B19911B81770300D9D728 /* OutSideR.png in Resources */,
+				762B18621B81760800D9D728 /* Tourist_RH_Scream_3.wav in Resources */,
+				762B18A71B81767A00D9D728 /* Doctora_Run_1.wav in Resources */,
+				762B1A131B81771700D9D728 /* Teen3.png in Resources */,
+				762B19F21B81770300D9D728 /* QuadCgrass.png in Resources */,
+				762B19491B8176E800D9D728 /* Triangle.png in Resources */,
+				762B19C21B81770300D9D728 /* VestL_mansion.png in Resources */,
+				762B1A3C1B81771D00D9D728 /* Smalltable_5.png in Resources */,
+				762B1B011B81773A00D9D728 /* Painting_m.json in Resources */,
+				762B19E61B81770300D9D728 /* Outside1LW_cabin.png in Resources */,
+				762B18931B81766E00D9D728 /* BW_Run_1.wav in Resources */,
+				762B19CA1B81770300D9D728 /* Bedroom1L_cabin.png in Resources */,
+				762B19711B8176F100D9D728 /* BackgroundGame.png in Resources */,
+				762B1B1C1B81774600D9D728 /* Gilda.json in Resources */,
+				762B18DB1B81769300D9D728 /* Idiot_Scream_Fx_01-02.wav in Resources */,
+				762B19BC1B81770300D9D728 /* Outside2R_mansion.png in Resources */,
+				762B1B301B81774B00D9D728 /* Vivian4Chan.json in Resources */,
+				762B18441B81760100D9D728 /* Interface_Accept.wav in Resources */,
+				762B18E61B81769A00D9D728 /* MusicLoverFX_Run_01-05.wav in Resources */,
+				762B18251B8175D900D9D728 /* Risa_07.wav in Resources */,
+				762B19041B8176A200D9D728 /* PoliceTalking_03.wav in Resources */,
+				762B19061B8176A600D9D728 /* Renovator_Die_2.wav in Resources */,
+				762B1B261B81774600D9D728 /* Reporter.json in Resources */,
+				762B18CA1B81768A00D9D728 /* Heroina_Die_1.wav in Resources */,
+				762B18D91B81769300D9D728 /* Idiot_Run_Fx_06.wav in Resources */,
+				762B18321B8175DF00D9D728 /* Possess_11.wav in Resources */,
+				762B1A6E1B81771D00D9D728 /* kingbed_2.png in Resources */,
+				762B19F71B81770300D9D728 /* StorageL_cabin.png in Resources */,
+				762B1A1A1B81771700D9D728 /* Tourist1.png in Resources */,
+				762B18DD1B81769300D9D728 /* Idiot_Scream_Fx_01-08.wav in Resources */,
+				762B19D71B81770300D9D728 /* DinningroomR_cabin.png in Resources */,
+				762B19231B8176B100D9D728 /* Skeptic_Die_1.wav in Resources */,
+				762B1A461B81771D00D9D728 /* single bed_1a.png in Resources */,
+				762B1A161B81771700D9D728 /* Zombie.png in Resources */,
+				762B1AE71B81772D00D9D728 /* Renovator.jsonf in Resources */,
+				762B1B051B81773A00D9D728 /* paintingA.json in Resources */,
+				762B19C51B81770300D9D728 /* VestRL_mansion.png in Resources */,
+				762B19471B8176E800D9D728 /* GHOSTLoadScreen.png in Resources */,
+				762B19A61B81770300D9D728 /* Bedroom3RL_mansion.png in Resources */,
+				762B18ED1B81769E00D9D728 /* Ninja_Die_4.wav in Resources */,
+				762B192E1B8176DA00D9D728 /* DrawColor.vsh in Resources */,
+				762B1AB11B81771D00D9D728 /* barrels_1.png in Resources */,
+				762B1AA81B81771D00D9D728 /* chair_1.png in Resources */,
+				762B18B11B81767E00D9D728 /* Exorcista_Scream_0.wav in Resources */,
+				762B190B1B8176A600D9D728 /* Renovator_Run_3.wav in Resources */,
+				762B19381B8176E100D9D728 /* NormalFastReverseAlpha.fsh in Resources */,
+				762B188D1B81761C00D9D728 /* TeenBoy_Run_06.wav in Resources */,
+				762B18921B81766E00D9D728 /* BW_Die_01.wav in Resources */,
+				762B190C1B8176A600D9D728 /* Renovator_Run_4.wav in Resources */,
+				762B18FD1B8176A200D9D728 /* Police_Run_3.wav in Resources */,
+				762B19F81B81770300D9D728 /* StorageR_cabin.png in Resources */,
+				762B18C21B81768600D9D728 /* Gotica_Die_3.wav in Resources */,
+				762B183A1B8175F100D9D728 /* BM_Die1.wav in Resources */,
+				762B19BD1B81770300D9D728 /* Outside2RW_mansion.png in Resources */,
+				762B19241B8176B100D9D728 /* Skeptic_Die_2.wav in Resources */,
+				762B193D1B8176E100D9D728 /* NormalFast.fsh in Resources */,
+				762B1A4A1B81771D00D9D728 /* rocking chair.png in Resources */,
+				762B1ADE1B81772D00D9D728 /* Hunter.jsonf in Resources */,
+				762B19F31B81770300D9D728 /* QuadL_cabin.png in Resources */,
+				762B188B1B81761C00D9D728 /* TeenBoy_Run_04.wav in Resources */,
+				762B18871B81761C00D9D728 /* TeenBoy_Die_03-03.wav in Resources */,
+				762B1AF71B81773A00D9D728 /* BathtubShark.json in Resources */,
+				762B18BE1B81768200D9D728 /* Gamer_Scream_01-05.wav in Resources */,
+				762B19D21B81770300D9D728 /* Bedroom3.png in Resources */,
+				762B1A371B81771D00D9D728 /* sofa_back_3.png in Resources */,
+				762B19851B8176F600D9D728 /* DoorEight.png in Resources */,
+				762B18661B81760D00D9D728 /* Tourist_PH_Run_1.wav in Resources */,
+				762B1A4D1B81771D00D9D728 /* pine_6.png in Resources */,
+				762B19CD1B81770300D9D728 /* Bedroom1RW_cabin.png in Resources */,
+				762B19801B8176F600D9D728 /* DoorTwo.png in Resources */,
+				762B18841B81761900D9D728 /* TeenGirl1_Scream_1.wav in Resources */,
+				762B18261B8175D900D9D728 /* Risa_08.wav in Resources */,
+				762B19CE1B81770300D9D728 /* Bedroom2.png in Resources */,
+				762B18F21B81769E00D9D728 /* Ninja_Run_5.wav in Resources */,
+				762B19D91B81770300D9D728 /* kitchen.png in Resources */,
+				762B18511B81760500D9D728 /* Zombie_Run_3.wav in Resources */,
+				762B19D41B81770300D9D728 /* Bedroom3R_cabin.png in Resources */,
+				762B1AB71B81772100D9D728 /* BobLeftArm.png in Resources */,
+				762B19E31B81770300D9D728 /* Outside1L2_cabin.png in Resources */,
+				762B18E51B81769A00D9D728 /* MusicLoverFX_Run_01-02.wav in Resources */,
+				762B197D1B8176F100D9D728 /* SpriteButton.png in Resources */,
+				762B199D1B81770300D9D728 /* Bedroom2L_mansion.png in Resources */,
+				762B199A1B81770300D9D728 /* Bedroom1R_mansion.png in Resources */,
+				762B19631B8176F100D9D728 /* EnergyButtonIcon.png in Resources */,
+				762B187E1B81761500D9D728 /* TeenGirl2_Scream_2.wav in Resources */,
+				762B19E21B81770300D9D728 /* Outside1L_cabin.png in Resources */,
+				762B1AC81B81772D00D9D728 /* BusinessWoman.jsonf in Resources */,
+				762B19131B8176AA00D9D728 /* Reportera_Run_1.wav in Resources */,
+				762B19AC1B81770300D9D728 /* HallRL_mansion.png in Resources */,
+				762B1A971B81771D00D9D728 /* dinner table chairs_3.png in Resources */,
+				762B18361B8175E300D9D728 /* EQ_03.wav in Resources */,
+				762B1A501B81771D00D9D728 /* pine_3.png in Resources */,
+				762B189C1B81767300D9D728 /* CoupleMan_Scream_1.wav in Resources */,
+				762B18561B81760500D9D728 /* Zombie_Scream_2.wav in Resources */,
+				762B1A431B81771D00D9D728 /* single bed_3.png in Resources */,
+				762B1A7A1B81771D00D9D728 /* flowers_11.png in Resources */,
+				762B1B091B81773E00D9D728 /* DoorTwo.json in Resources */,
+				762B1AF01B81772D00D9D728 /* Teen3.jsonf in Resources */,
+				762B19151B8176AA00D9D728 /* Reportera_Run_3.wav in Resources */,
+				762B1B1E1B81774600D9D728 /* Hero.json in Resources */,
+				762B1A6D1B81771D00D9D728 /* kingbed_1.png in Resources */,
+				762B181A1B8175C700D9D728 /* AudioTestGen.wav in Resources */,
+				762B18881B81761C00D9D728 /* TeenBoy_Run_01-01.wav in Resources */,
+				762B18AE1B81767E00D9D728 /* Exorcista_Run_1.wav in Resources */,
+				762B1A071B81771700D9D728 /* Gothic.png in Resources */,
+				762B19361B8176E100D9D728 /* HighLightShader_Color.fsh in Resources */,
+				762B18EA1B81769E00D9D728 /* Ninja_Die_1.wav in Resources */,
+				762B1A671B81771D00D9D728 /* ktablecorner_1.png in Resources */,
+				762B18F01B81769E00D9D728 /* Ninja_Run_3.wav in Resources */,
+				762B18BB1B81768200D9D728 /* Gamer_Run_03.wav in Resources */,
+				762B1AFA1B81773A00D9D728 /* Sculpture_move.json in Resources */,
+				762B1A661B81771D00D9D728 /* ktable_3.png in Resources */,
+				762B1AAB1B81771D00D9D728 /* Billiard_1.png in Resources */,
+				762B1B001B81773A00D9D728 /* Chair.json in Resources */,
+				762B1A771B81771D00D9D728 /* flowers_16.png in Resources */,
+				762B187D1B81761500D9D728 /* TeenGirl2_Scream_1.wav in Resources */,
+				762B185E1B81760800D9D728 /* Tourist_RH_Run_1.wav in Resources */,
+				762B1AC61B81772D00D9D728 /* Tourist1.jsonf in Resources */,
+				762B19021B8176A200D9D728 /* PoliceTalking_01.wav in Resources */,
+				762B19DD1B81770300D9D728 /* LibraryLW_cabin.png in Resources */,
+				762B197C1B8176F100D9D728 /* DoorButton.png in Resources */,
+				762B18241B8175D500D9D728 /* Copy_05.wav in Resources */,
+				762B1AF51B81772D00D9D728 /* Zombie.jsonf in Resources */,
+				762B1A891B81771D00D9D728 /* fire place_3_off_a.png in Resources */,
+				762B18B61B81768200D9D728 /* Gamer_Die_02.wav in Resources */,
+				762B19F51B81770300D9D728 /* QuadR_cabin.png in Resources */,
+				762B19701B8176F100D9D728 /* OptionButton.png in Resources */,
+				762B1AFE1B81773A00D9D728 /* Bath_Sink.json in Resources */,
+				762B1AF61B81773600D9D728 /* Sprites.json in Resources */,
+				762B1AD31B81772D00D9D728 /* Doctor.jsonf in Resources */,
+				762B195C1B8176EB00D9D728 /* chandelier.png in Resources */,
+				762B18DF1B81769700D9D728 /* Investigador_Run.wav in Resources */,
+				762B18A81B81767A00D9D728 /* Doctora_Run_2.wav in Resources */,
+				762B194F1B8176EB00D9D728 /* Sacks_Moving.png in Resources */,
+				762B19951B81770300D9D728 /* BathroomR_mansion.png in Resources */,
+				762B18501B81760500D9D728 /* Zombie_Run_2.wav in Resources */,
+				762B1AA91B81771D00D9D728 /* billiard_2.png in Resources */,
+				762B1AE91B81772D00D9D728 /* Sacks_Moving.jsonf in Resources */,
+				762B1A061B81771700D9D728 /* Gilda.png in Resources */,
+				762B1B0C1B81773E00D9D728 /* DoorSix.json in Resources */,
+				762B19BA1B81770300D9D728 /* Outside2L_mansion.png in Resources */,
+				762B19221B8176AE00D9D728 /* Scaredy_Scream_3.wav in Resources */,
+				762B1A281B81771D00D9D728 /* tools table_4.png in Resources */,
+				762B19371B8176E100D9D728 /* NormalFastAlpha.fsh in Resources */,
+				762B18551B81760500D9D728 /* Zombie_Scream_1.wav in Resources */,
+				762B1A741B81771D00D9D728 /* flowers_17.png in Resources */,
+				762B198C1B8176FA00D9D728 /* NoSaveGame.png in Resources */,
+				762B19C91B81770300D9D728 /* bedroom1.png in Resources */,
+				762B1A8B1B81771D00D9D728 /* fire place_2_off_b.png in Resources */,
+				762B1A611B81771D00D9D728 /* ktablecorner_3a.png in Resources */,
+				762B19A71B81770300D9D728 /* Hall1.png in Resources */,
+				762B19921B81770300D9D728 /* Tile.png in Resources */,
+				762B1AE61B81772D00D9D728 /* Policeman.jsonf in Resources */,
+				762B19731B8176F100D9D728 /* ArrowL.png in Resources */,
+				762B1A101B81771700D9D728 /* Reporter.png in Resources */,
+				762B19B31B81770300D9D728 /* Musicroom.png in Resources */,
+				762B19FB1B81770300D9D728 /* WorkshopR.png in Resources */,
+				762B183F1B8175F100D9D728 /* BM_Run4.wav in Resources */,
+				762B18291B8175D900D9D728 /* Risa_14.wav in Resources */,
+				762B1AB31B81771D00D9D728 /* barrel_2.png in Resources */,
+				762B181C1B8175C700D9D728 /* Music1.wav in Resources */,
+				762B1A041B81771700D9D728 /* Exorcist.png in Resources */,
+				762B1B021B81773A00D9D728 /* JackInTheBox.json in Resources */,
+				762B19901B81770300D9D728 /* OutSideL.png in Resources */,
+				762B19111B8176AA00D9D728 /* Reportera_Die_1.wav in Resources */,
+				762B19321B8176DA00D9D728 /* NormalFastHalfAlpha.vsh in Resources */,
+				762B18CF1B81768F00D9D728 /* Hunter_Die_2.wav in Resources */,
+				762B1AA61B81771D00D9D728 /* clock_2.png in Resources */,
+				762B1AC31B81772D00D9D728 /* DoorSix.jsonf in Resources */,
+				762B187C1B81761500D9D728 /* TeenGirl2_Run_2.wav in Resources */,
+				762B1AF31B81772D00D9D728 /* Vivian.jsonf in Resources */,
+				762B19421B8176E800D9D728 /* BottomBorder.png in Resources */,
+				762B19FD1B81771700D9D728 /* Bulldozer.png in Resources */,
+				762B19AF1B81770300D9D728 /* Library.png in Resources */,
+				762B1A271B81771D00D9D728 /* tools table_6.png in Resources */,
+				762B1A5C1B81771D00D9D728 /* library_3.png in Resources */,
+				762B1A491B81771D00D9D728 /* round table_3.png in Resources */,
+				762B1AC21B81772D00D9D728 /* DoorSeven.jsonf in Resources */,
+				762B1A6B1B81771D00D9D728 /* kitchen_storage_1.png in Resources */,
+				762B19D51B81770300D9D728 /* dinningroom.png in Resources */,
+				762B18781B81761500D9D728 /* TeenGirl2_Die_1.wav in Resources */,
+				762B1A1C1B81771D00D9D728 /* winestorage_1.png in Resources */,
+				762B1AEC1B81772D00D9D728 /* Skeptic.jsonf in Resources */,
+				762B1A441B81771D00D9D728 /* single bed_2.png in Resources */,
+				762B1B0A1B81773E00D9D728 /* DoorFour.json in Resources */,
+				762B19AB1B81770300D9D728 /* HallR_mansion.png in Resources */,
+				762B19401B8176E800D9D728 /* BackgroundPattern.png in Resources */,
+				762B19F41B81770300D9D728 /* QuadLgrass.png in Resources */,
+				762B19181B8176AA00D9D728 /* Reportera_Scream_3.wav in Resources */,
+				762B19531B8176EB00D9D728 /* DancingBarrel.png in Resources */,
+				762B185B1B81760800D9D728 /* Tourist_RH_Die_1.wav in Resources */,
+				762B1AE21B81772D00D9D728 /* Ninja.jsonf in Resources */,
+				762B18AA1B81767A00D9D728 /* Doctora_Scream_2.wav in Resources */,
+				762B19A81B81770300D9D728 /* Hall2.png in Resources */,
+				762B19941B81770300D9D728 /* BathroomL_mansion.png in Resources */,
+				762B192C1B8176DA00D9D728 /* NormalFastReverseAlpha.vsh in Resources */,
+				762B18861B81761C00D9D728 /* TeenBoy_Die_02-01.wav in Resources */,
+				762B19B21B81770300D9D728 /* LibraryR_mansion.png in Resources */,
+				762B1A641B81771D00D9D728 /* ktablecorner_2.png in Resources */,
+				762B18471B81760100D9D728 /* Interface_WellDone.wav in Resources */,
+				762B1A011B81771700D9D728 /* Coupleman.png in Resources */,
+				762B1B221B81774600D9D728 /* MusicLover.json in Resources */,
+				762B1ADC1B81772D00D9D728 /* Gothic.jsonf in Resources */,
+				762B1A091B81771700D9D728 /* Hunter.png in Resources */,
+				762B18B31B81767E00D9D728 /* Exorcista_Scream_2.wav in Resources */,
+				762B18CC1B81768A00D9D728 /* Heroina_Run_2.wav in Resources */,
+				762B19D01B81770300D9D728 /* Bedroom2LW_cabin.png in Resources */,
+				762B1A251B81771D00D9D728 /* tree_1.png in Resources */,
+				762B18941B81766E00D9D728 /* BW_Run_2.wav in Resources */,
+				762B1ABD1B81772D00D9D728 /* Vivian4Chan.jsonf in Resources */,
+				762B18801B81761900D9D728 /* TeenGirl1_Die1.wav in Resources */,
+				762B1ADA1B81772D00D9D728 /* GhostAllAnimations.jsonf in Resources */,
+				762B1B181B81774600D9D728 /* Couplewoman.json in Resources */,
+				762B1AE31B81772D00D9D728 /* Painting_m.jsonf in Resources */,
+				762B17DE1B81732C00D9D728 /* MainMenu.xib in Resources */,
+				762B1B0B1B81773E00D9D728 /* DoorFive.json in Resources */,
+				762B1A711B81771D00D9D728 /* foodsacks_3.png in Resources */,
+				762B19EC1B81770300D9D728 /* Outside2L_cabin.png in Resources */,
+				762B1B151B81774600D9D728 /* Businessman.json in Resources */,
+				762B1A931B81771D00D9D728 /* evil mirror_2.png in Resources */,
+				762B19FA1B81770300D9D728 /* WorkshopL.png in Resources */,
+				762B18BA1B81768200D9D728 /* Gamer_Run_02.wav in Resources */,
+				762B1B0F1B81773E00D9D728 /* DoorNine.json in Resources */,
+				762B195D1B8176EB00D9D728 /* StoveFire.png in Resources */,
+				762B18BD1B81768200D9D728 /* Gamer_Scream_01-02.wav in Resources */,
+				762B1AD21B81772D00D9D728 /* DancingBarrel.jsonf in Resources */,
+				762B19B81B81770300D9D728 /* Outside1R_mansion.png in Resources */,
+				762B18951B81766E00D9D728 /* BW_Run_3.wav in Resources */,
+				762B1AC11B81772D00D9D728 /* DoorFour.jsonf in Resources */,
+				762B1AAE1B81771D00D9D728 /* bath_sink_2.png in Resources */,
+				762B198A1B8176FA00D9D728 /* SaveGame.png in Resources */,
+				762B1A421B81771D00D9D728 /* Smalltable_1.png in Resources */,
+				762B18211B8175CB00D9D728 /* Nope.wav in Resources */,
+				762B1A8F1B81771D00D9D728 /* fire place_1_off_b.png in Resources */,
+				762B18BF1B81768200D9D728 /* Gamer_Scream_01-08.wav in Resources */,
+				762B19411B8176E800D9D728 /* WindowBorder.png in Resources */,
+				762B1A031B81771700D9D728 /* Doctor.png in Resources */,
+				762B1AE01B81772D00D9D728 /* JackInTheBox.jsonf in Resources */,
+				762B18D71B81769300D9D728 /* Idiot_Die_Fx_01-08.wav in Resources */,
+				762B1ACF1B81772D00D9D728 /* Chest.jsonf in Resources */,
+				762B19E51B81770300D9D728 /* Outside1Lcorner2_cabin.png in Resources */,
+				762B1AD51B81772D00D9D728 /* DoorBigOne.jsonf in Resources */,
+				762B197F1B8176F600D9D728 /* DoorOne.png in Resources */,
+				762B1AB91B81772100D9D728 /* BobPupil.png in Resources */,
+				762B1A901B81771D00D9D728 /* fire place_1_on_a.png in Resources */,
+				762B18C01B81768600D9D728 /* Gotica_Die_1.wav in Resources */,
+				762B18411B8175F100D9D728 /* BM_Scream1.wav in Resources */,
+				762B1A2C1B81771D00D9D728 /* tools table_1.png in Resources */,
+				762B197B1B8176F100D9D728 /* TileButton.png in Resources */,
+				762B19251B8176B100D9D728 /* Skeptic_Run_1.wav in Resources */,
+				762B188E1B81761C00D9D728 /* TeenBoy_Scream_01.wav in Resources */,
+				762B18E81B81769A00D9D728 /* MusicLoverFX_Scream_01-02.wav in Resources */,
+				762B19171B8176AA00D9D728 /* Reportera_Scream_2.wav in Resources */,
+				762B18B21B81767E00D9D728 /* Exorcista_Scream_1.wav in Resources */,
+				762B19AA1B81770300D9D728 /* HallLl_mansion.png in Resources */,
+				762B181D1B8175C700D9D728 /* Terror1.wav in Resources */,
+				762B18431B8175F100D9D728 /* BM_Scream3.wav in Resources */,
+				762B19E11B81770300D9D728 /* LivingroomR_cabin.png in Resources */,
+				762B1AAA1B81771D00D9D728 /* billiard_3.png in Resources */,
+				762B1A7C1B81771D00D9D728 /* flowers_10.png in Resources */,
+				762B1A521B81771D00D9D728 /* pine_1.png in Resources */,
+				762B18AB1B81767E00D9D728 /* Exorcista_Die_1.wav in Resources */,
+				762B19561B8176EB00D9D728 /* Chair.png in Resources */,
+				762B18E31B81769A00D9D728 /* MusicLoverFX_Die_01-05.wav in Resources */,
+				762B18421B8175F100D9D728 /* BM_Scream2.wav in Resources */,
+				762B19A51B81770300D9D728 /* Bedroom3R_mansion.png in Resources */,
+				762B1A321B81771D00D9D728 /* sofa_front_2.png in Resources */,
+				762B18A31B81767600D9D728 /* Casada_Scream_2.wav in Resources */,
+				762B1A941B81771D00D9D728 /* disk_3.png in Resources */,
+				762B19291B8176DA00D9D728 /* NormalFastColorShift.vsh in Resources */,
+				762B18831B81761900D9D728 /* TeenGirl1_Run_3.wav in Resources */,
+				762B190F1B8176A600D9D728 /* Renovator_Scream_3.wav in Resources */,
+				762B18FE1B8176A200D9D728 /* Police_Scream_1.wav in Resources */,
+				762B192A1B8176DA00D9D728 /* NormalFastShadow.vsh in Resources */,
+				762B1AEA1B81772D00D9D728 /* Scadery.jsonf in Resources */,
+				762B1A841B81771D00D9D728 /* flowers_01.png in Resources */,
+				762B18601B81760800D9D728 /* Tourist_RH_Scream_1.wav in Resources */,
+				762B194C1B8176E800D9D728 /* Scenerio.png in Resources */,
+				762B18F61B81769E00D9D728 /* Ninja_Scream_3.wav in Resources */,
+				762B1A991B81771D00D9D728 /* desk_6.png in Resources */,
+				762B1A231B81771D00D9D728 /* tree_3.png in Resources */,
+				762B19871B8176F600D9D728 /* DoorBigOne.png in Resources */,
+				762B18671B81760D00D9D728 /* Tourist_PH_Run_2.wav in Resources */,
+				762B18D41B81768F00D9D728 /* Hunter_Scream_3.wav in Resources */,
+				762B18B41B81767E00D9D728 /* Exorcista_Scream_3.wav in Resources */,
+				762B19BF1B81770300D9D728 /* StorageroomL_mansion.png in Resources */,
+				762B192D1B8176DA00D9D728 /* deselectTextureShader.vsh in Resources */,
+				762B1A211B81771D00D9D728 /* Wall elements_shield_1.png in Resources */,
+				762B1A2F1B81771D00D9D728 /* sofa_front_5.png in Resources */,
+				762B1A0F1B81771700D9D728 /* Renovator.png in Resources */,
+				762B1ACB1B81772D00D9D728 /* Investigator.jsonf in Resources */,
+				762B19A21B81770300D9D728 /* Bedroom3L_mansion.png in Resources */,
+				762B19BE1B81770300D9D728 /* storageroom.png in Resources */,
+				762B19261B8176B100D9D728 /* Skeptic_Run_2.wav in Resources */,
+				762B1A681B81771D00D9D728 /* ktable_2.png in Resources */,
+				762B1B211B81774600D9D728 /* Investigator.json in Resources */,
+				762B18B71B81768200D9D728 /* Gamer_Die_03.wav in Resources */,
+				762B1A1D1B81771D00D9D728 /* winestorage_2.png in Resources */,
+				762B191B1B8176AE00D9D728 /* Scaredy_Die_3.wav in Resources */,
+				762B1A691B81771D00D9D728 /* kitchen_storage_2.png in Resources */,
+				762B19DF1B81770300D9D728 /* Livingroom.png in Resources */,
+				762B18711B81761100D9D728 /* Touris_BH_Run_2.wav in Resources */,
+				762B1A7D1B81771D00D9D728 /* flowers_08.png in Resources */,
+				762B1B191B81774600D9D728 /* Doctor.json in Resources */,
+				762B19E01B81770300D9D728 /* LivingroomL_cabin.png in Resources */,
+				762B19741B8176F100D9D728 /* IconPlace.png in Resources */,
+				762B1AE41B81772D00D9D728 /* paintingA.jsonf in Resources */,
+				762B185D1B81760800D9D728 /* Tourist_RH_Die_3.wav in Resources */,
+				762B18741B81761100D9D728 /* Touris_BH_Run_6.wav in Resources */,
+				762B19E41B81770300D9D728 /* Outside1Lcorner1_cabin.png in Resources */,
+				762B1B111B81773E00D9D728 /* Door.json in Resources */,
+				762B19641B8176F100D9D728 /* TileButtonIcon.png in Resources */,
+				762B1A4B1B81771D00D9D728 /* round table_1.png in Resources */,
+				762B1A751B81771D00D9D728 /* foodsacks_.png in Resources */,
+				762B19161B8176AA00D9D728 /* Reportera_Scream_1.wav in Resources */,
+				762B194B1B8176E800D9D728 /* Mods.png in Resources */,
+				762B187B1B81761500D9D728 /* TeenGirl2_Run_1.wav in Resources */,
+				762B19CB1B81770300D9D728 /* Bedroom1LW_cabin.png in Resources */,
+				762B19F11B81770300D9D728 /* Quad.png in Resources */,
+				762B1A2B1B81771D00D9D728 /* tools table_3.png in Resources */,
+				762B1A2D1B81771D00D9D728 /* stoveoven.png in Resources */,
+				762B19121B8176AA00D9D728 /* Reportera_Die_2.wav in Resources */,
+				762B19971B81770300D9D728 /* bedroom1_mansion.png in Resources */,
+				762B19501B8176EB00D9D728 /* Sculpture_move.png in Resources */,
+				762B1A111B81771700D9D728 /* Scadery.png in Resources */,
+				762B1B1F1B81774600D9D728 /* Hunter.json in Resources */,
+				762B18F41B81769E00D9D728 /* Ninja_Scream_1.wav in Resources */,
+				762B1ABC1B81772400D9D728 /* Vivian4Chan.png in Resources */,
+				762B1A081B81771700D9D728 /* Hero.png in Resources */,
+				762B1A311B81771D00D9D728 /* sofa_front_4.png in Resources */,
+				762B19001B8176A200D9D728 /* Police_Scream_3.wav in Resources */,
+				762B190D1B8176A600D9D728 /* Renovator_Scream_1.wav in Resources */,
+				762B18D11B81768F00D9D728 /* Hunter_Run_2.wav in Resources */,
+				762B1B1D1B81774600D9D728 /* Gothic.json in Resources */,
+				762B186D1B81761100D9D728 /* Touris_BH_Die_1.wav in Resources */,
+				762B1A1E1B81771D00D9D728 /* wardrobe_2.png in Resources */,
+				762B182E1B8175DF00D9D728 /* Possess_06.wav in Resources */,
+				762B1AF41B81772D00D9D728 /* Wardrobe_Evil.jsonf in Resources */,
+				762B18631B81760D00D9D728 /* Tourist_PH_Die_1.wav in Resources */,
+				762B19461B8176E800D9D728 /* EYES-04.png in Resources */,
+				762B19ED1B81770300D9D728 /* Outside2L2_cabin.png in Resources */,
+				762B1A781B81771D00D9D728 /* flowers_13.png in Resources */,
+				762B18811B81761900D9D728 /* TeenGirl1_Die2.wav in Resources */,
+				762B19B41B81770300D9D728 /* MusicroomL_mansion.png in Resources */,
+				762B18D61B81769300D9D728 /* Idiot_Die_Fx_01-05.wav in Resources */,
+				762B19611B8176F100D9D728 /* ModActivate.png in Resources */,
+				762B1AEF1B81772D00D9D728 /* Teen2.jsonf in Resources */,
+				762B1A001B81771700D9D728 /* BusinessWoman.png in Resources */,
+				762B18EF1B81769E00D9D728 /* Ninja_Run_2.wav in Resources */,
+				762B1B101B81773E00D9D728 /* DoorBigOne.json in Resources */,
+				762B19141B8176AA00D9D728 /* Reportera_Run_2.wav in Resources */,
+				762B1A381B81771D00D9D728 /* Smalltable_9.png in Resources */,
+				762B18F51B81769E00D9D728 /* Ninja_Scream_2.wav in Resources */,
+				762B1AB21B81771D00D9D728 /* barrels_2.png in Resources */,
+				762B198D1B81770300D9D728 /* Grass.png in Resources */,
+				762B1AB81B81772100D9D728 /* BobLeftHand.png in Resources */,
+				762B1AC01B81772D00D9D728 /* DoorFive.jsonf in Resources */,
+				762B18A01B81767600D9D728 /* Casada_Run_1.wav in Resources */,
+				762B184F1B81760500D9D728 /* Zombie_Run_1.wav in Resources */,
+				762B183B1B8175F100D9D728 /* BM_Die2.wav in Resources */,
+				762B1A021B81771700D9D728 /* Couplewoman.png in Resources */,
+				762B188F1B81761C00D9D728 /* TeenBoy_Scream_02.wav in Resources */,
+				762B18541B81760500D9D728 /* Zombie_Run_6.wav in Resources */,
+				762B1ABF1B81772D00D9D728 /* Sculpture_move.jsonf in Resources */,
+				762B19691B8176F100D9D728 /* PokeArrow.png in Resources */,
+				762B19761B8176F100D9D728 /* GhostButton.png in Resources */,
+				762B19791B8176F100D9D728 /* TrapButton.png in Resources */,
+				762B1A2E1B81771D00D9D728 /* toilet.png in Resources */,
+				762B1B2E1B81774600D9D728 /* Tourist2.json in Resources */,
+				762B1A261B81771D00D9D728 /* tools.png in Resources */,
+				762B199E1B81770300D9D728 /* Bedroom2LL_mansion.png in Resources */,
+				762B18EE1B81769E00D9D728 /* Ninja_Run_1.wav in Resources */,
+				762B1A351B81771D00D9D728 /* sofa_back_4.png in Resources */,
+				762B1B201B81774600D9D728 /* Idiot.json in Resources */,
+				762B1A3E1B81771D00D9D728 /* Smalltable_4.png in Resources */,
+				762B18C11B81768600D9D728 /* Gotica_Die_2.wav in Resources */,
+				762B1A571B81771D00D9D728 /* paintings_betty.png in Resources */,
+				762B1A181B81771700D9D728 /* Tourist3.png in Resources */,
+				762B19C81B81770300D9D728 /* BathroomR_cabin.png in Resources */,
+				762B191A1B8176AE00D9D728 /* Scaredy_Die_2.wav in Resources */,
+				762B1B1B1B81774600D9D728 /* Gamer.json in Resources */,
+				762B19651B8176F100D9D728 /* TrapButtonIcon.png in Resources */,
+				762B19101B8176A600D9D728 /* Renovator_Scream_4.wav in Resources */,
+				762B19551B8176EB00D9D728 /* Vase.png in Resources */,
+				762B191C1B8176AE00D9D728 /* Scaredy_Run_1.wav in Resources */,
+				762B199F1B81770300D9D728 /* Bedroom2R_mansion.png in Resources */,
+				762B19D31B81770300D9D728 /* Bedroom3L_cabin.png in Resources */,
+				762B18FB1B8176A200D9D728 /* Police_Run_1.wav in Resources */,
+				762B18C91B81768600D9D728 /* Gotica_Scream_4.wav in Resources */,
+				762B18C41B81768600D9D728 /* Gotica_Run_1.wav in Resources */,
+				762B19A91B81770300D9D728 /* HallL_mansion.png in Resources */,
+				762B195F1B8176F100D9D728 /* BackButton.png in Resources */,
+				762B189E1B81767600D9D728 /* Casada_Die_1.wav in Resources */,
+				762B18F71B8176A200D9D728 /* Police_Die_1.wav in Resources */,
+				762B19F01B81770300D9D728 /* Outside2LWcabin.png in Resources */,
+				762B1A471B81771D00D9D728 /* single bed_1.png in Resources */,
+				762B1AD71B81772D00D9D728 /* DoorNine.jsonf in Resources */,
+				762B1A1F1B81771D00D9D728 /* wardrobe_3.png in Resources */,
+				762B1A591B81771D00D9D728 /* logs_2.png in Resources */,
+				762B1B2D1B81774600D9D728 /* Tourist3.json in Resources */,
+				762B1ADF1B81772D00D9D728 /* Idiot.jsonf in Resources */,
+				762B19A01B81770300D9D728 /* Bedroom2RW_mansion.png in Resources */,
+				762B19FE1B81771700D9D728 /* Vivian.png in Resources */,
+				762B19881B8176F600D9D728 /* Door.png in Resources */,
+				762B1ABE1B81772D00D9D728 /* BathtubShark.jsonf in Resources */,
+				762B19FF1B81771700D9D728 /* Businessman.png in Resources */,
+				762B195A1B8176EB00D9D728 /* Pans.png in Resources */,
+				762B182B1B8175DC00D9D728 /* Vortex_02.wav in Resources */,
+				762B1A191B81771700D9D728 /* Tourist2.png in Resources */,
+				762B19CC1B81770300D9D728 /* Bedroom1R_cabin.png in Resources */,
+				762B19541B8176EB00D9D728 /* Bath_Sink.png in Resources */,
+				762B18C61B81768600D9D728 /* Gotica_Scream_1.wav in Resources */,
+				762B18851B81761C00D9D728 /* TeenBoy_Die_01-01.wav in Resources */,
+				762B1B121B81774100D9D728 /* GhostAllAnimations.json in Resources */,
+				762B185C1B81760800D9D728 /* Tourist_RH_Die_2.wav in Resources */,
+				762B194D1B8176EB00D9D728 /* BathtubShark.png in Resources */,
+				762B194E1B8176EB00D9D728 /* Wardrobe_Evil.png in Resources */,
+				762B18A61B81767A00D9D728 /* Doctora_Die_3.wav in Resources */,
+				762B185F1B81760800D9D728 /* Tourist_RH_Run_2.wav in Resources */,
+				762B19331B8176DA00D9D728 /* Select.vsh in Resources */,
+				762B1B2C1B81774600D9D728 /* Zombie.json in Resources */,
+				762B18DE1B81769700D9D728 /* Investigador_Die.wav in Resources */,
+				762B1A291B81771D00D9D728 /* tools table_5.png in Resources */,
+				762B19091B8176A600D9D728 /* Renovator_Run_1.wav in Resources */,
+				762B18FF1B8176A200D9D728 /* Police_Scream_2.wav in Resources */,
+				762B1A871B81771D00D9D728 /* fire place_3_off_b.png in Resources */,
+				762B1ABB1B81772100D9D728 /* BobWink.png in Resources */,
+				762B18E01B81769700D9D728 /* Investigador_Scream_1.wav in Resources */,
+				762B18D31B81768F00D9D728 /* Hunter_Scream_2.wav in Resources */,
+				762B18791B81761500D9D728 /* TeenGirl2_Die_2.wav in Resources */,
+				762B19B91B81770300D9D728 /* Outside1RW_mansion.png in Resources */,
+				762B18E41B81769A00D9D728 /* MusicLoverFX_Die_01-08.wav in Resources */,
+				762B1AC91B81772D00D9D728 /* Bath_Sink.jsonf in Resources */,
+				762B182D1B8175DC00D9D728 /* Vortex_04.wav in Resources */,
+				762B1AA01B81771D00D9D728 /* coffin_4.png in Resources */,
+				762B18231B8175D500D9D728 /* Copy_04.wav in Resources */,
+				762B19621B8176F100D9D728 /* AwarenessButtonIcon.png in Resources */,
+				762B1A6A1B81771D00D9D728 /* ktable_1.png in Resources */,
+				762B19031B8176A200D9D728 /* PoliceTalking_02.wav in Resources */,
+				762B19981B81770300D9D728 /* Bedroom1L_mansion.png in Resources */,
+				762B1AA41B81771D00D9D728 /* coffin_2.png in Resources */,
+				762B1A7E1B81771D00D9D728 /* flowers_09.png in Resources */,
+				762B1AAD1B81771D00D9D728 /* bathtub_2.png in Resources */,
+				762B1AE51B81772D00D9D728 /* Pans.jsonf in Resources */,
+				762B19D11B81770300D9D728 /* Bedroom2R_cabin.png in Resources */,
+				762B19781B8176F100D9D728 /* overlayForText.png in Resources */,
+				762B19E81B81770300D9D728 /* Outside1R2_cabin.png in Resources */,
+				762B19E71B81770300D9D728 /* Outside1R_cabin.png in Resources */,
+				762B19831B8176F600D9D728 /* DoorSix.png in Resources */,
+				762B1A721B81771D00D9D728 /* foodsacks_4.png in Resources */,
+				762B1AE81B81772D00D9D728 /* Reporter.jsonf in Resources */,
+				762B1AD01B81772D00D9D728 /* Coupleman.jsonf in Resources */,
+				762B1A3B1B81771D00D9D728 /* Smalltable_8.png in Resources */,
+				762B1A7B1B81771D00D9D728 /* flowers_12.png in Resources */,
+				762B1A1B1B81771D00D9D728 /* rocking-chair.png in Resources */,
+				762B18D81B81769300D9D728 /* Idiot_Run_Fx_05.wav in Resources */,
+				762B1AB51B81772100D9D728 /* BobBody.png in Resources */,
+				762B1A9A1B81771D00D9D728 /* dinner table chairs_1.png in Resources */,
+				762B188A1B81761C00D9D728 /* TeenBoy_Run_03-01.wav in Resources */,
+				762B1AC71B81772D00D9D728 /* Tourist2.jsonf in Resources */,
+				762B19AD1B81770300D9D728 /* KitchenL_mansion.png in Resources */,
+				762B1A811B81771D00D9D728 /* flowers_05.png in Resources */,
+				762B190A1B8176A600D9D728 /* Renovator_Run_2.wav in Resources */,
+				762B1A9B1B81771D00D9D728 /* desk_4.png in Resources */,
+				762B1A301B81771D00D9D728 /* sofa_front_3.png in Resources */,
+				762B184A1B81760500D9D728 /* Zombie_Die_2.wav in Resources */,
+				762B1A7F1B81771D00D9D728 /* flowers_06.png in Resources */,
+				762B18901B81761C00D9D728 /* TeenBoy_Scream_03.wav in Resources */,
+				762B1B0E1B81773E00D9D728 /* DoorEight.json in Resources */,
+				762B19391B8176E100D9D728 /* deselectTextureShader.fsh in Resources */,
+				762B19991B81770300D9D728 /* Bedroom1LL_mansion.png in Resources */,
+				762B19011B8176A200D9D728 /* Police_Scream_4.wav in Resources */,
+				762B19211B8176AE00D9D728 /* Scaredy_Scream_2.wav in Resources */,
+				762B195B1B8176EB00D9D728 /* paintingA.png in Resources */,
+				762B1A201B81771D00D9D728 /* wardrobe_1.png in Resources */,
+				762B19451B8176E800D9D728 /* EYES-03.png in Resources */,
+				762B19DB1B81770300D9D728 /* KitchenR_cabin.png in Resources */,
+				762B18771B81761100D9D728 /* Touris_BH_Scream_3.wav in Resources */,
+				762B1A731B81771D00D9D728 /* foodsacks_2.png in Resources */,
+				762B1A8E1B81771D00D9D728 /* fire place_1_on_b.png in Resources */,
+				762B1A0A1B81771700D9D728 /* Idiot.png in Resources */,
+				762B19281B8176B100D9D728 /* Skeptic_Scream_2.wav in Resources */,
+				762B18731B81761100D9D728 /* Touris_BH_Run_5.wav in Resources */,
+				762B1A791B81771D00D9D728 /* flowers_14.png in Resources */,
+				762B19751B8176F100D9D728 /* HeaderUIBar.png in Resources */,
+				762B1B161B81774600D9D728 /* BusinessWoman.json in Resources */,
+				762B18CB1B81768A00D9D728 /* Heroina_Run_1.wav in Resources */,
+				762B1AFB1B81773A00D9D728 /* ScaryMirror.json in Resources */,
+				762B1ACC1B81772D00D9D728 /* Businessman.jsonf in Resources */,
+				762B18FA1B8176A200D9D728 /* Police_Die_4.wav in Resources */,
+				762B181B1B8175C700D9D728 /* Lose.wav in Resources */,
+				762B18D01B81768F00D9D728 /* Hunter_Run_1.wav in Resources */,
+				762B1ACD1B81772D00D9D728 /* Chair.jsonf in Resources */,
+				762B1B061B81773A00D9D728 /* chandelier.json in Resources */,
+				762B195E1B8176F100D9D728 /* MoveSpriteIcon.png in Resources */,
+				762B18271B8175D900D9D728 /* Risa_09.wav in Resources */,
+				762B19581B8176EB00D9D728 /* JackInTheBox.png in Resources */,
+				762B1A701B81771D00D9D728 /* fridge_1.png in Resources */,
+				762B1AC51B81772D00D9D728 /* Exorcist.jsonf in Resources */,
+				762B1A881B81771D00D9D728 /* fire place_3_on_a.png in Resources */,
+				762B18971B81766E00D9D728 /* BW_Scream_2.wav in Resources */,
+				762B1AD41B81772D00D9D728 /* Door.jsonf in Resources */,
+				762B191D1B8176AE00D9D728 /* Scaredy_Run_2.wav in Resources */,
+				762B19961B81770300D9D728 /* bush_mansion.png in Resources */,
+				762B19C31B81770300D9D728 /* VestLL_mansion.png in Resources */,
+				762B186B1B81760D00D9D728 /* Tourist_PH_Scream_3.wav in Resources */,
+				762B18391B8175E300D9D728 /* EQ_09.wav in Resources */,
+				762B1AD81B81772D00D9D728 /* fire.jsonf in Resources */,
+				762B19271B8176B100D9D728 /* Skeptic_Scream_1.wav in Resources */,
+				762B19431B8176E800D9D728 /* EYES-01.png in Resources */,
+				762B18481B81760100D9D728 /* Interface_Wrong.wav in Resources */,
+				762B1AD91B81772D00D9D728 /* Gamer.jsonf in Resources */,
+				762B19071B8176A600D9D728 /* Renovator_Die_3.wav in Resources */,
+				762B1A5D1B81771D00D9D728 /* ktablesink_3.png in Resources */,
+				762B1A851B81771D00D9D728 /* flowers_02.png in Resources */,
+				762B196F1B8176F100D9D728 /* Gameover.png in Resources */,
+				762B1B291B81774600D9D728 /* Teen3.json in Resources */,
+				762B18D51B81769300D9D728 /* Idiot_Die_Fx_01-02.wav in Resources */,
+				762B1A8C1B81771D00D9D728 /* fire place_2_on_a.png in Resources */,
+				762B19B11B81770300D9D728 /* LibraryLW_mansion.png in Resources */,
+				762B1AD61B81772D00D9D728 /* DoorEight.jsonf in Resources */,
+				762B1A561B81771D00D9D728 /* logs_3.png in Resources */,
+				762B1A481B81771D00D9D728 /* round table_2.png in Resources */,
+				762B19AE1B81770300D9D728 /* KitchenR_mansion.png in Resources */,
+				762B19DC1B81770300D9D728 /* LibraryL_cabin.png in Resources */,
+				762B19721B8176F100D9D728 /* ArrowR.png in Resources */,
+				762B18281B8175D900D9D728 /* Risa_10.wav in Resources */,
+				762B19841B8176F600D9D728 /* DoorSeven.png in Resources */,
+				762B19A31B81770300D9D728 /* Bedroom3LL_mansion.png in Resources */,
+				762B18DC1B81769300D9D728 /* Idiot_Scream_Fx_01-05.wav in Resources */,
+				762B186E1B81761100D9D728 /* Touris_BH_Die_2.wav in Resources */,
+				762B1B2A1B81774600D9D728 /* Teen2.json in Resources */,
+				762B184C1B81760500D9D728 /* Zombie_Die_4.wav in Resources */,
+				762B19351B8176E100D9D728 /* NormalFastShadow.fsh in Resources */,
+				762B1A801B81771D00D9D728 /* flowers_07.png in Resources */,
+				762B1ABA1B81772100D9D728 /* BobRightArm.png in Resources */,
+				762B18961B81766E00D9D728 /* BW_Scream_1.wav in Resources */,
+				762B199C1B81770300D9D728 /* Bedroom2_mansion.png in Resources */,
+				762B18451B81760100D9D728 /* Interface_Cancel.wav in Resources */,
+				762B19B01B81770300D9D728 /* LibraryL_mansion.png in Resources */,
+				762B18201B8175CB00D9D728 /* AudioTest.wav in Resources */,
+				762B1A9C1B81771D00D9D728 /* desk_5.png in Resources */,
+				762B1A651B81771D00D9D728 /* ktablecorner_1a.png in Resources */,
+				762B1A6F1B81771D00D9D728 /* fridge_2.png in Resources */,
+				762B184E1B81760500D9D728 /* Zombie_Die_6.wav in Resources */,
+				762B18B81B81768200D9D728 /* Gamer_Die_04.wav in Resources */,
+				762B1AA71B81771D00D9D728 /* chair_2.png in Resources */,
+				762B1AB01B81771D00D9D728 /* bath_sink_1.png in Resources */,
+				762B19B61B81770300D9D728 /* MusicroomR_mansion.png in Resources */,
+				762B19D81B81770300D9D728 /* DinningroomRW_cabin.png in Resources */,
+				762B1AC41B81772D00D9D728 /* DoorTwo.jsonf in Resources */,
+				762B19931B81770300D9D728 /* Bathroom_mansion.png in Resources */,
+				762B18A21B81767600D9D728 /* Casada_Scream_1.wav in Resources */,
+				762B1A5B1B81771D00D9D728 /* library_2.png in Resources */,
+				762B19EE1B81770300D9D728 /* Outside2Lcorner1_cabin.png in Resources */,
+				762B1AD11B81772D00D9D728 /* Couplewoman.jsonf in Resources */,
+				762B191E1B8176AE00D9D728 /* Scaredy_Run_3.wav in Resources */,
+				762B196E1B8176F100D9D728 /* PlayButton.png in Resources */,
+				762B19051B8176A600D9D728 /* Renovator_Die_1.wav in Resources */,
+				762B18351B8175E300D9D728 /* EQ_02.wav in Resources */,
+				762B18701B81761100D9D728 /* Touris_BH_Run_1.wav in Resources */,
+				762B1A951B81771D00D9D728 /* disk_1.png in Resources */,
+				762B19C01B81770300D9D728 /* StorageroomR_mansion.png in Resources */,
+				762B19891B8176FA00D9D728 /* CreditScreen.png in Resources */,
+				762B1A511B81771D00D9D728 /* pine_2.png in Resources */,
+				762B1A3F1B81771D00D9D728 /* Smalltable_2.png in Resources */,
+				762B189A1B81767300D9D728 /* CoupleMan_Run_1.wav in Resources */,
+				762B1A5E1B81771D00D9D728 /* library_1.png in Resources */,
+				762B189D1B81767300D9D728 /* CoupleMan_Scream_2.wav in Resources */,
+				762B19FC1B81771200D9D728 /* GhostAllAnimations.png in Resources */,
+				762B1AFF1B81773A00D9D728 /* Vase.json in Resources */,
+				762B19521B8176EB00D9D728 /* Chest.png in Resources */,
+				762B19CF1B81770300D9D728 /* Bedroom2L_cabin.png in Resources */,
+				762B18341B8175E300D9D728 /* EQ_01.wav in Resources */,
+				762B19C71B81770300D9D728 /* BathroomL_cabin.png in Resources */,
+				762B19EA1B81770300D9D728 /* Outside1Rcorner2_cabin.png in Resources */,
+				762B1A241B81771D00D9D728 /* tree_2.png in Resources */,
+				762B18C81B81768600D9D728 /* Gotica_Scream_3.wav in Resources */,
+				762B1A621B81771D00D9D728 /* ktablecorner_2a.png in Resources */,
+				762B194A1B8176E800D9D728 /* FreePlay.png in Resources */,
+				762B19681B8176F100D9D728 /* CircleToFindThings.png in Resources */,
+				762B1AF91B81773A00D9D728 /* Sacks_Moving.json in Resources */,
+				762B18FC1B8176A200D9D728 /* Police_Run_2.wav in Resources */,
+				762B1AAF1B81771D00D9D728 /* barrels_3.png in Resources */,
+				762B19601B8176F100D9D728 /* HelpScreenScroll.png in Resources */,
+				762B1A551B81771D00D9D728 /* paintings_chavo.png in Resources */,
+				762B1B2B1B81774600D9D728 /* Teen1.json in Resources */,
+				762B18A41B81767600D9D728 /* Casada_Scream_3.wav in Resources */,
+				762B18A11B81767600D9D728 /* Casada_Run_2.wav in Resources */,
+				762B18F31B81769E00D9D728 /* Ninja_Run_6.wav in Resources */,
+				762B1A9F1B81771D00D9D728 /* desk_2.png in Resources */,
+				762B18C31B81768600D9D728 /* Gotica_Die_4.wav in Resources */,
+				762B19481B8176E800D9D728 /* Credits.png in Resources */,
+				762B1A0E1B81771700D9D728 /* Policeman.png in Resources */,
+				762B184D1B81760500D9D728 /* Zombie_Die_5.wav in Resources */,
+				762B186C1B81760D00D9D728 /* Tourist_PH_Scream_4.wav in Resources */,
+				762B192F1B8176DA00D9D728 /* GlowShaderFade.vsh in Resources */,
+				762B18651B81760D00D9D728 /* Tourist_PH_Die_4.wav in Resources */,
+				762B1A9E1B81771D00D9D728 /* desk_1.png in Resources */,
+				762B196A1B8176F100D9D728 /* MusicButton.png in Resources */,
+				762B18CE1B81768F00D9D728 /* Hunter_Die_1.wav in Resources */,
+				762B18A51B81767A00D9D728 /* Doctora_Die_2.wav in Resources */,
+				762B1AA11B81771D00D9D728 /* coffin_5.png in Resources */,
+				762B18E11B81769700D9D728 /* Investigador_Scream_2.wav in Resources */,
+				762B1A391B81771D00D9D728 /* sofa_back_1.png in Resources */,
+				762B19301B8176DA00D9D728 /* HighLightShader.vsh in Resources */,
+				762B19191B8176AE00D9D728 /* Scaredy_Die_1.wav in Resources */,
+				762B1AA31B81771D00D9D728 /* coffin_1.png in Resources */,
+				762B191F1B8176AE00D9D728 /* Scaredy_Run_4.wav in Resources */,
+				762B1A3A1B81771D00D9D728 /* Smalltable_7.png in Resources */,
+				762B1A171B81771700D9D728 /* TilesButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762B17E11B81732C00D9D728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765BF3E41B7F9365003C3B00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5834,6 +7601,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		762B17CD1B81732C00D9D728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B17F11B8173DF00D9D728 /* AppDelegate.mm in Sources */,
+				762B18101B81746400D9D728 /* GameView.mm in Sources */,
+				762B18011B81744C00D9D728 /* SaveMap.cpp in Sources */,
+				762B18071B81744C00D9D728 /* TranslationMatrix.cpp in Sources */,
+				762B18111B81746400D9D728 /* MovieFullScreenOSX.mm in Sources */,
+				762B180E1B81746400D9D728 /* TextureGenerator_Cocoa.mm in Sources */,
+				762B18121B81746400D9D728 /* NSImage+MGCropExtensions.m in Sources */,
+				762B18131B81746400D9D728 /* OpenGLMovieLayer.m in Sources */,
+				762B17FD1B81744C00D9D728 /* GlobalDebugger.cpp in Sources */,
+				762B18081B81744C00D9D728 /* Tweener.cpp in Sources */,
+				762B17F81B81744C00D9D728 /* Circle.cpp in Sources */,
+				762B18001B81744C00D9D728 /* Player.cpp in Sources */,
+				762B17F21B81744C00D9D728 /* Achievements.cpp in Sources */,
+				762B18061B81744C00D9D728 /* Tiles.cpp in Sources */,
+				762B18161B81750800D9D728 /* DebugTools_OSX.mm in Sources */,
+				762B18051B81744C00D9D728 /* Sprite.cpp in Sources */,
+				762B180B1B81745000D9D728 /* BitmapFontClass.cpp in Sources */,
+				762B17FE1B81744C00D9D728 /* ModManager.cpp in Sources */,
+				762B18031B81744C00D9D728 /* ScreenTranslator.cpp in Sources */,
+				762B180F1B81746400D9D728 /* FileManager_OSX.mm in Sources */,
+				762B17F31B81744C00D9D728 /* AudioController.cpp in Sources */,
+				762B17FB1B81744C00D9D728 /* GameClock.cpp in Sources */,
+				762B180C1B81745700D9D728 /* Steam_API_Access.cpp in Sources */,
+				762B17FA1B81744C00D9D728 /* FrameBuffer.cpp in Sources */,
+				762B17D91B81732C00D9D728 /* main.m in Sources */,
+				762B18021B81744C00D9D728 /* SaveObject.cpp in Sources */,
+				762B18091B81744C00D9D728 /* UnitFinder.cpp in Sources */,
+				762B17F71B81744C00D9D728 /* Camera.cpp in Sources */,
+				762B17F61B81744C00D9D728 /* Bulldozer.cpp in Sources */,
+				762B180D1B81745700D9D728 /* CSteamAchievements.cpp in Sources */,
+				762B17F41B81744C00D9D728 /* AudioTranscode.cpp in Sources */,
+				762B180A1B81744C00D9D728 /* UserInterface.cpp in Sources */,
+				762B17FF1B81744C00D9D728 /* Pathfinding.cpp in Sources */,
+				762B17F51B81744C00D9D728 /* BobZombie.cpp in Sources */,
+				762B17FC1B81744C00D9D728 /* GameLogic.cpp in Sources */,
+				762B18041B81744C00D9D728 /* ShaderManager.cpp in Sources */,
+				762B17F91B81744C00D9D728 /* Door.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762B17DF1B81732C00D9D728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B17EA1B81732C00D9D728 /* Afterlife_Empire_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765BF3E21B7F9365003C3B00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5905,7 +7724,7 @@
 				7662144B1B7F8442000C0CFE /* Player.cpp in Sources */,
 				766214491B7F8442000C0CFE /* ModManager.cpp in Sources */,
 				765BF74C1B7FAB88003C3B00 /* GameWindow.m in Sources */,
-				766213D91B7F83F3000C0CFE /* main.m in Sources */,
+				766213D91B7F83F3000C0CFE /* main.mm in Sources */,
 				7662143E1B7F8442000C0CFE /* BobZombie.cpp in Sources */,
 				766214511B7F8442000C0CFE /* TextureGenerator_Cocoa.mm in Sources */,
 				766214401B7F8442000C0CFE /* Camera.cpp in Sources */,
@@ -5942,6 +7761,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		762B17E51B81732C00D9D728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 762B17D01B81732C00D9D728 /* Afterlife Empire Demo */;
+			targetProxy = 762B17E41B81732C00D9D728 /* PBXContainerItemProxy */;
+		};
 		765BF3FA1B7F9365003C3B00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 765BF3E51B7F9365003C3B00 /* Afterlife Empire No Steam */;
@@ -5955,6 +7779,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		762B17DC1B81732C00D9D728 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				762B17DD1B81732C00D9D728 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		765BF3F11B7F9365003C3B00 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -5974,6 +7806,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		762B17EB1B81732C00D9D728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../,
+					../Steam,
+				);
+				INFOPLIST_FILE = "Afterlife Empire Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matthewrappard/Dropbox/AfterLifeEmpireSourceCode/Collect/steam,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		762B17EC1B81732C00D9D728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../,
+					../Steam,
+				);
+				INFOPLIST_FILE = "Afterlife Empire Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matthewrappard/Dropbox/AfterLifeEmpireSourceCode/Collect/steam,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		762B17ED1B81732C00D9D728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Afterlife Empire DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afterlife Empire Demo.app/Contents/MacOS/Afterlife Empire Demo";
+			};
+			name = Debug;
+		};
+		762B17EE1B81732C00D9D728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Afterlife Empire DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Afterlife Empire Demo.app/Contents/MacOS/Afterlife Empire Demo";
+			};
+			name = Release;
+		};
 		765BF4001B7F9365003C3B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6173,6 +8089,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEMO=1";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -6230,6 +8147,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		762B17EF1B81732C00D9D728 /* Build configuration list for PBXNativeTarget "Afterlife Empire Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762B17EB1B81732C00D9D728 /* Debug */,
+				762B17EC1B81732C00D9D728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		762B17F01B81732C00D9D728 /* Build configuration list for PBXNativeTarget "Afterlife Empire DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762B17ED1B81732C00D9D728 /* Debug */,
+				762B17EE1B81732C00D9D728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		765BF4041B7F9365003C3B00 /* Build configuration list for PBXNativeTarget "Afterlife Empire No Steam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
